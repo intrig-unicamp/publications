@@ -1,0 +1,221 @@
+\section{Network Service Orchestration}
+\label{sec:nso}
+
+\subsection{Towards a Practical Definition}
+\label{sec:def}
+
+We refer to the \acrfull{nso} when applied in the services deployment performed by telecommunication operators and service providers. We regard NSO not precisely as a unique technology but a concept to  understand network services in detail, relying on multiple technologies and paradigms to achieve such an overarching goal. In a nutshell, network service orchestration comprises the semantics of requested service, and thereby it coordinates specific actions in order to fulfill the service requirements and to manage its end-to-end lifecycle. 
+
+The entire orchestration process proposed by NSO involves business and operations that go beyond the delivery of \textit{network services} as defined by \gls{etsi}. \gls{etsi} \gls{nfvmano} is a platform for management and orchestration required to provisioning \glspl{vnf} in an \gls{nfv} domain. The \gls{mano} is agnostic and thus has no insight of what is executed within a \gls{vnf}, restricting its responsibility and capability to the VNF instantiation and lifecycle management.
+
+Based on Figure~\ref{mdo}, the \gls{mdo} understands the operating capabilities of the \gls{ns} in a broad sense. When a customer demands an \gls{ns}, firstly it requests the order to a service provider or telecommunication operator through Business-to-Business (B2B) interface or a trading platform we refer to as Marketplace. After that, the \gls{mdo} interacts with any \gls{mano} element or other elements (e.g., OSS/BSS, SDN Controllers, Analytic Systems)  to create the \gls{ns}. Therefore, a given MANO does not know if the VNFs it is deploying is a load balancer, firewall, or gateway. Meanwhile, the \gls{do} just coordinates and manages the orchestration process at a given domain, connecting the involved elements such as network systems, SDN controllers, management software, and IT software platforms.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[scale=.4]{Figures/02_Background/OrchManaAut}
+      \caption{Relationship among orchestration, management, and automation. Both orchestration and management use automation in their processes.}
+      \label{diff}
+\end{figure}
+
+The \gls{nso} works at a higher level in the control and management stack with interfaces to the OSS/BSS. During a network service creation, the orchestration process can exceed the domains boundaries being necessary to use resources and/or services of other providers or operators. Such resources comprised of physical and virtual components. Thus, the \gls{nso} is supposed to provide service delivery both within single and/or multi-domain environments (more details in Section~\ref{sec:domain}). In this sense, different organizations and telecommunication enterprises have developed many open source projects, driving orchestration evolution towards open standards that it will permit the implementation of products with a large scale of integration. Section~\ref{sec:proj} addresses some of these projects.
+
+In addition, the customers are demanding full information regarding a given hired network service such as detailed pricing, real-time analytics, and a certain control over the service. NSO can offer more information to the customers and put more control into their hand. Its objective is to understand the service profoundly and to enable that providers/operators attend customer demands. 
+
+From an operator and service provider viewpoint, NSO enables to set up new end-to-end services in minutes, keeping those services working and ensuring acceptable performance levels. This process reduces OPEX and provides enhanced services creating new market opportunities and raising the revenues.  As well as, it opens up chances for different companies become service providers or provide virtual network functions.
+
+\gls{nso} is in charge of all network service lifecycle and delivers an end-to-end connectivity service. To achieve so, orchestration is supported by advances in cloud computing, and technologies such as \gls{sdn} and \gls{nfv}, which offer the ability to reconfigure the network quickly as well as programming the forwarding and processing of the traffic. Figure~\ref{nso_rel} aims at illustrating the relationships between \gls{nso}, \gls{nfv}, \gls{sdn}, and Cloud Computing.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[scale=.4]{Figures/03_NSO/nso_rel}
+    \caption{Illustration of relationships between \gls{nso}, \gls{nfv}, \gls{sdn}, and Cloud.}
+    \label{nso_rel}
+\end{figure}
+
+Each one of these paradigms has different functions: high level orchestration for \gls{nso}, function programming for \gls{nfv}, networking programming for \gls{sdn},  and resource virtualization for cloud computing. They can work in an integrated pattern to offer advantages such as agility, cost reduction, automation, softwarization and end-to-end connectivity, to enable novel services and applications such as 5G networks.
+
+After this analysis, we can identify the main NSO features as follows: 
+\begin{itemize}
+\item \textit{High-level vision of the \gls{ns}} that permit an overview of all involved domains, technological and administrative. 
+\item \textit{Smart services deployment and provisioning}. These are related to in-deep knowledge about the services, what enable better make decisions. 
+\item \textit{Single and multi-domain environment support} that provide deployment of end-to-end service independently of geographical location.
+\item \textit{Proper interaction with different MANO and non-MANO elements} which leads to better executed workflows.
+\item \textit{New markets opportunities}, offering enhanced services and reducing OPEX.    
+\end{itemize}
+
+\subsection{Single and Multi-Domain Orchestration}
+\label{sec:domain}
+
+Orchestration in the single and multi-domain environment is different. In a single domain, the orchestrator is in charge of all services and resource availability within its domain as well as has total control over those resources. A domain orchestrator manages the network service lifecycle and interacts with other components not only to control \glspl{vnf}, but also computing, storage, and networking resources. Its scope is limited by administrative boundaries of the provider. As shown in Figure~\ref{mdo}, domain orchestrators can orchestrate heterogeneous technological domains such as \gls{sdn}, \gls{nfv}, Legacy, and Data center. Under single domain environment, it is noticeable that the domain orchestrator works as described by \gls{etsi} in \cite{ETSIIndustrySpecificationGroupISGNFV2014NetworkOptions}. 
+
+However, in a multi-domain environment,  local orchestrators do not know the resources and topologies used by other providers. So, multi-domain orchestration is more complex, since it is supposed to provide end-to-end services, which requires cross-domain information exchange features (cf.~\cite{md2}).  
+Currently, there is not a standard for information exchange process in multi-domain environments, either multi-technology domains or multiple administrative domains. There are some multi-domain orchestration candidates, e.g., T-NOVA FP7 project \cite{FP7projectT-NOVAT-NOVAInfrastructures}, ONAP~\cite{onap}, Escape \cite{Sonkoly2015Multi-DomainClouds}, and \gls{5gex} \cite{Bernardos20155GInfrastructures}. All of them will be discussed later in this survey.
+
+\gls{etsi} proposes some options regarding multi-domain orchestration. Initially, \gls{etsi} \gls{nfv}  Release 2 presents two architectures to address multi-domain scenarios~\cite{ETSIIndustrySpecificationGroupISGNFV2014NetworkOptions}. In the first, the \gls{nfvo} is split into \textit{Network Service Orchestrator}, manages the network service, and \textit{Resource Orchestrator}, provides an abstract resource present in the administrative domain. A use case for this first option is illustrated in Figure~\ref{fig:use1}. A Network Operator offers resources to different departments within the same operator, likewise to a different network operator. One or more Data centers and \glspl{vim} represent an administrative domain and provide an abstracted view of its resources (virtual and physical). The Service Orchestrator and VNF Manager can or can not be part of another domain. In this use case, a service can run on the infrastructure provided and managed by another Service Provider.
+
+The second architecture does not split the \gls{nfvo}, but creates a new reference point between NFVOs (See Figure~\ref{fig:use2}) called  Umbrella \gls{nfvo}. This use case requires the composition of services towards deploying a high-level network service. Such service can include network services hosted and offered by different administrative domains. Each domain is responsible for orchestrating its resources and network services. This approach has objectives similar to first, however, an administrative domain is also composed of \glspl{vnfm} (together with their related \glspl{vnf}) and \gls{nfvo}. The \gls{nfvo} provides standard \gls{nfvo} functionalities, with a scope limited to the network services, \glspl{vnf} and resources that are part of its domain.
+
+More recently, the \gls{etsi} \gls{nfv} Release 3 presented others options to support network services across multiple administrative domains~\cite{ETSIGRDomains}. In particular, the use case entitled ``Network Services provided using multiple administrative domains" proposes a multi-domain architecture using \gls{nfvmano}. Such architecture introduces the new reference point named ``Or-Or" between \glspl{nfvo} to enable communication and interoperability. Differently of second option (Figure~\ref{fig:use2}), in this approach, there is a hierarchy between the domains. In the example shown in Figure~\ref{fig:use3}, \gls{nfvo} in Administrative Domain C is on-top, using network services offered by Administrative Domains A and B, as well as managing composite \gls{ns} lifecycle.    
+
+\begin{figure*}[t!]
+\centering
+ \subfigure[]{
+   \includegraphics[scale=.31]{Figures/03_NSO/mdo_etsi_1}
+   \label{fig:use1}
+ }
+ \subfigure[]{
+   \includegraphics[scale=.31]{Figures/03_NSO/mdo_etsi_2} 
+   \label{fig:use2}
+ }
+ \subfigure[]{
+   \includegraphics[scale=.31]{Figures/03_NSO/mdo_etsi_3} 
+   \label{fig:use3}
+ }
+ \caption{\gls{etsi} approaches for multiple administrative domains: (a) approach in which the orchestrator is split into two components (NSO and RO), (b) approach with multiple orchestrators and a new reference point: Umbrella NFVO, (c) approach that introduces hierarchy and the new reference point Or-Or. Adapted from~\cite{ETSIIndustrySpecificationGroupISGNFV2014NetworkOptions} and~\cite{ETSIGRDomains}.}
+ \label{fig:k-clique}  
+\end{figure*}
+
+In the scope of this paper, end-to-end network services are composed of one or more network functions interconnected by forwarding graphs. Such services might span multiple clouds and geographical locations. Given that, they require complex workflow management, coordination, and synchronization between multiple involved domains (infrastructure entities), which are performed by one (or more) orchestrator(s). Examples of end-to-end services are virtual extensible LAN (VxLAN), video service delivery, and virtual private network.
+
+\subsection{Orchestrator Functions}
+\label{subsec:func}
+
+Section~\ref{sec:def} identifies the various areas of term orchestration. Orchestration can be inserted in the context of cloud, \gls{nfv}, management systems, web services and more recently in the deployment of end-to-end network service in large networks with multiple technologies and administrative domains. In this scope, the orchestrator is the component responsible for automatic resource coordination and control, as well as service provision to customers. 
+
+In the \gls{nfv} context, \gls{etsi} \gls{nfvmano} defines the orchestrator with two main functions including \textit{resources orchestration across multiple \glspl{vim}} and \textit{network service orchestration}~\cite{GSNFV-MAN001:2014}. Network service orchestration functions provided by the \gls{nfvo} are listed below.
+\begin{itemize}
+\item Management of Network Services templates and \gls{vnf} Packages. This includes validation of templates and packages with the objective of verifying the artifacts' authenticity and integrity. Besides, the software images are cataloged in involved \glspl{pop} using the support of \gls{vim}.
+\item Network Service instantiation and management;
+\item Management of the instantiation of \glspl{vnfm} and \glspl{vnf} (with support of \glspl{vnfm});
+\item Validation and authorization of \gls{nfvi} resource requests from \gls{vnf} managers (resources that impact NS);
+\item Management of network service instances topology;
+\item Policy management related to affinity, scaling (auto or manual), fault tolerance, performance, and topology.
+\end{itemize}
+
+\gls{etsi} \gls{nfvo} functions regarding Resource Orchestration is expressed as follows:
+\begin{itemize}
+\item Validation and authorization of \gls{nfvi} resource requests from VNF Managers;
+\item \gls{nfvi} resource management including compute, storage and network;
+\item Collect usage information of \gls{nfvi} resources;
+\end{itemize}
+
+Related to \gls{nso}, the orchestrator, in turn, has a  more comprehensive function: to decouple the high-level service layer (e.g., marketplace, network slicing) from underlying management and resources layer (e.g., VNFs, Controller, EMS), simplifying innovations and enhancing flexibility in both contexts. The orchestrator allows complex functions to be implemented in underlying technologies and infrastructures. For example, real-time analytics of network services can be deployed through the orchestrator. Another example, the orchestrator can connect the traditional OSS/BSS to the virtualized infrastructure. The Figure~\ref{orch} represents the significance of the orchestrator in the context of network service.  
+
+The orchestrator creates an abstraction unified point, enabling to abstract physical and virtual resources, transparently exposing them to service providers and other actors, including marketplace and other orchestrators. It gives service providers further control of their network services and enables developers to create new services and functions.
+
+To accomplish this, the orchestrator must be inserted in each layer of telecommunication network stack, from the application layer down to the data plane. Therefore, different orchestrators can exist in each plane, not being limited to a single orchestrator~\cite{Alvizu2016AdvanceEra}. Some of the existing orchestration solutions use an orchestrator logically centralized and consider only ``softwarized'' networks (see Section~\ref{sec:proj}). However, this is impracticable for large and heterogeneous networks. 
+
+The orchestrator can be classified according to its function in: Service Orchestration (SO), Resource Orchestration (RO), and Lifecycle Orchestration (LO). Figure~\ref{funOrch} illustrates the three primary network service orchestrator functions.
+
+The Service Orchestration is responsible for service composition and decomposition. It can be taken as the upper layer, focused in the interaction with other components such as Marketplace and \gls{oss} / \gls{bss}. The Lifecycle Orchestration deals with the management of workflows, processes, and dependencies across service components. Besides, it maintains the services running according to the contracted Service Level Agreement. Finally, the Resource Orchestration is in charge of mapping service requests to resources, either virtual and/or physical. This mapping occurs across elements such as \gls{nfvo}, \gls{ems}, and \gls{sdn} controllers.
+
+\begin{figure}[t!]
+  \centering
+  \includegraphics[scale=.2]{Figures/03_NSO/orchestrator}
+    \caption{Strategic role of the Orchestrator as the glue between the actual services and the underlying management of resources.}
+    \label{orch}
+\end{figure}
+
+\begin{figure}[t!]
+  \centering
+  \includegraphics[scale=.35]{Figures/03_NSO/fun_orch}
+    \caption{Different orchestrator functions: Resource Orchestration, Service Orchestration, and Lifecycle Orchestration. There is a relationship of dependency and continuity between the functions.}
+    \label{funOrch}
+\end{figure}
+
+Lifecycle is used to manage a network service with various states (created, provisioned, stopped, etc.). When some action is applied to a network service (e.g., provision a network service), many activities may be needed to apply on the components of this network service. Hence, a workflow is used to execute a bunch of tasks in correct order. Each state of lifecycle can generate one or more activities on workflows. The Figure~\ref{fig:lifeWork} depicts the relationship between lifecycle and workflow of a Network Service. 
+
+Figure~\ref{fig:lifeWork2} presents an example to improve the real definition of lifecycle and workflow in the context of network service. One of the states in the service lifecycle is the \textit{Created}. In order to achieve such state is necessary to execute four tasks: create \gls{vdu}1, create \gls{vdu}2, configure network and run the application. Therefore, the state only is finished when all those activities are completed.
+
+\begin{figure*}[thpb]
+\centering
+ \subfigure[]{
+   \includegraphics[scale=.3]{Figures/03_NSO/life_work}
+   \label{fig:lifeWork}
+ }
+ \subfigure[]{
+   \includegraphics[scale=.3]{Figures/03_NSO/life_work2} 
+   \label{fig:lifeWork2}
+ }    
+ \caption{Difference between Lifecycle and Workflow: (a) Lifecycle -- sequence of states and workflow -- activities in correct order and (b) example of network service lifecycle.}
+ \label{fig:lifeworkflow}  
+\end{figure*}
+
+Service lifecycle automation will allow that requested service remains in a desired state of behavior during its lifetime. With the automation, the system responds proactively to changes network and service conditions without human intervention, getting resilience and faults tolerance. These functional aspects of an orchestrator to guarantee the state of a network towards a service goal are also being referred to as Intent-based Networking (IBN), cf.~\cite{ibn}.
+
+\subsection{Taxonomy}
+
+While many aspects of orchestration are under active development and commercial roll-outs, others are still in a preliminary maturity phase. This subsection enumerates  central concepts and characteristics related to any NSO approach. It becomes very challenging trying to summarize  all concepts related to orchestration in a single work, a challenge exacerbated by  the fast evolving pace of so many moving pieces, from standards to enabling technologies. Figure~\ref{tax} presents the proposed taxonomy as the result of extensive literature research as well as practical  experiences with a number of orchestration platforms and research projects.   
+
+\begin{figure*}[thpb]
+  \centering
+  \includegraphics[scale=.37]{Figures/03_NSO/taxonomy}
+    \caption{\gls{nso} Taxonomy with seven approach: Service Model, Software, Resource, Technology, Scope of Application, Architecture, and Standards \acrfull{sdo}.}
+    \label{tax}
+\end{figure*}
+
+We identify seven key aspects to characterize network service orchestration: 
+\begin{enumerate}
+\item \textit{\textbf{Service} Models}. Relates to the type of services unlocked by the \gls{nso}, which may offer new business and relationships and opportunities  (e.g., \gls{vnfaas}, \gls{slaas}).
+\item \textbf{\textit{Software}}: Identifies major software-related characteristics of the orchestration solutions, including specificities of the  management and standard interfaces.
+\item \textbf{\textit{Resource}}: Refers to the type of underlying resources (e.g., network, compute, and storage) used for the network service deployment.
+\item \textbf{\textit{Technology}}: Points to target technologies for \gls{nso} (e.g., Cloud, \gls{sdn}, \gls{nfv}, and Legacy).
+\item \textit{\textbf{Scope}}: Considers the application domain in terms of network segments embraced by the network service orchestration (i.e., from access network to data centers).  
+\item \textbf{\textit{Architecture}}: Unfolds into three relevant architectural dimensions with relate to single- and multi-domain orchestration and functional  organization.
+\item \textit{\textbf{SDO} (Standards Development Organization)}: Relates to standardization activities in scope of the NSO.
+\end{enumerate}
+
+Additional sub-areas contribute to an in-depth analysis in different contexts, which are  further  discussed in the following sections. 
+
+\subsubsection{Service Models}
+This aspect corresponds to the different service models related to orchestration process. Each service is inserted in the context of cloud, \gls{sdn}, and/or \gls{nfv}. Cloud computing offers three categories of services such as \gls{iaas}, \gls{paas} and \gls{saas} \cite{Leavitt2009}. In \gls{iaas}, Cloud Service Provider (CSP) renders a virtual infrastructure to the customers. In \gls{paas}, CSPs provide development environment as a service. Finally, \gls{saas} is a service that furnishes applications hosted and managed in the cloud. 
+
+\gls{sdn} and \gls{naas} paradigms can be gathered to provide end-to-end service provisioning. While SDN supply the orchestration of underlying network (switches, router, and links), the \gls{naas} is responsible for private access to the network and customer security~\cite{Karakus2017QualitySurvey}. 
+
+The \gls{nfv}, in turn, can offer new services including \gls{nfviaas}, \gls{vnfaas}, \gls{slaas} and \gls{vnpaas}. The \gls{nfviaas} provides jointly \gls{iaas} and \gls{naas} tailored for \gls{nfv}. \gls{vnfaas} is a service that implements virtualized Network Functions to the Enterprises and/or end customers. \gls{vnpaas} is a platform available by service providers allowing customers to create their own network services. The \gls{slaas} is a concept that the slices are traded and used to build infrastructure services.
+
+All these services can work in parallel to offer higher-level services. Each one acts in a specific area and offers features to customers, enterprises, or other providers.   
+
+\subsubsection{Software} 
+There are many software artifacts related to orchestration covering from a single cloud environment up to more complex scenarios involving multi-domain orchestration. These solutions are outcomes of open source initiatives, research projects or commercial vendors.   
+
+Open source approaches significantly accelerate consensus, delivering high performance, peer-reviewed code that forms a basis for an ecosystem of solutions. Open source makes it possible to create a single unified orchestration abstraction.  Thus, both research projects and commercial vendors leverage open source technologies to accelerate and improve their solutions. Operators, such as Telefonica, China Mobile, AT\&T, and NTT, appear committed to using open source as a way to speed up their development of orchestration platforms~\cite{Sdxcentral20162016:}.
+
+The \gls{osi}\footnote{http://opensource.org} defines licenses under Open Source Definition compliance, which allows code and software to be freely used, shared and modified. The more popular open source licenses are Apache License 2.0, \gls{bsd}, GNU General Public License (GPL), Mozilla Public License 2.0, and Eclipse Public License. Namely, the most important orchestration projects and frameworks (for instance, Aria, Cloudify, CORD, Gohan, Open Baton, Tacker, ONAP, SONATA, and T-NOVA) present a widespread usage of Apache License 2.0.
+
+Another topic related to open source is governance. In short, governance defines the processes, structures, and organizations. It determines how power is exercised and distributed and how decisions are taken. Commonly, a governing board is responsible for the budget, trademark/legal, marketing, compliance, and overall direction, while a technical steering committee is responsible for technical guidance. 
+
+An open source orchestration project may be organized as a single community (e.g. vendor-lead) or can be hosted (and eventually integrated with other projects) by a foundation entity~\cite{Opensource.comFourOpensource.com}. A remarkable example is the Linux Foundation, which among multiple networking related projects is in charge of  ONAP, an open source platform aiming at the  automation, design, orchestration, and management of SDN and NFV services. Another noteworthy example of an orchestration open source project under the Linux Foundation flagship  aiming at delivering a standard \gls{nfv}/\gls{sdn} platform for the industry is Open Platform for NFV (OPNFV)~\cite{LinuxFoundation}.
+
+NSO solutions need to perform management tasks such as remote device configuration, monitoring and fault management. Moreover, they require defining interface of communication between various software components. For this, there are diverse types of management and  standard interfaces such as \gls{cli}, \gls{api}, and \gls{gui}. The \gls{cli} just is used to execute commands directly in the software using remote access via SSH or Telnet. The \gls{api} enables the remote management and interconnection with other softwares through specifics commands. The majority of solutions use REST-based \gls{api}. \gls{gui}, in turn, offers a graphic interface that makes it easier its use.   
+
+\subsubsection{Resource}
+During the creation of a network service, the resource orchestration is responsible for orchestrating the underlying infrastructure. Such infrastructure is composed of heterogeneous hardware and software for hosting and connecting the network services. The resources include compute, storage, and network~\cite{Ordonez-Lucena2017NetworkChallenges}. In essence, there are three types of networks: packet, optical and wireless (e.g., Wi-Fi, wi-max, and mobile network).
+
+Resources are shared and abstracted making use of virtualization techniques (e.g., para-virtualization~\cite{4299349}, full virtualization~\cite{4482796}, and containers~\cite{6906035}), defining virtual infrastructures that can be used as physical ones. Sharing and management of resources are much more complex in multi-domain scenarios. The NSO needs to know all the available resources towards the efficient deployment of the \glspl{ns}.  
+
+\subsubsection{Technology}
+NSO involves complex workflows and different technologies involved throughout orchestration process: cloud computing, \gls{sdn}, \gls{nfv}, and legacy.      
+
+The cloud computing paradigm provides resource virtualization and improves resource availability and usage by means of orchestration and management procedures. This includes automatic instantiation, migration and snapshot of \glspl{vm}, High-Availability, and dynamic allocation of resources~\cite{ETSI2012NetworkAction}. 
+
+The \gls{sdn} promotes control across network layers and logical centralization of network infrastructure management. Its main functions is to connect the \glspl{vnf} and the \gls{nfvi}-\glspl{pop}. In parallel, the \gls{nfv} technology promotes the network functions programming in order to enable elasticity, automation, and resilience in cloud environments \cite{Rotsos2017NetworkSurvey}. As illustrated in Figure~\ref{nso_rel}, cloud computing, \gls{sdn} and \gls{nfv} are enabler technologies to the \gls{nso}. The NSO must also handle legacy technologies such as MPLS, BGP, SONET / SDH, and WDM. 
+
+\subsubsection{Scope}
+
+Resources of operators under an orchestration application domain can be part of access networks, aggregation networks, core networks and data centers~\cite{5GPPPArchitectureWorkingGroup2016ViewArchitecture}. The access network is the entry point which connects customers to their service provider. It encompasses various technologies, i.e., fixed access, wireless access (Wi-Fi, LTE, radio, WiMAX), optical, and provide connectivity to heterogeneous services such as mobile network and \gls{iot}. The core network is the central part of a telecommunications network that connects local providers to each other. The aggregation network, in turn, connects the access network to core network. The data center is the local where are localized the computing and storage resources.
+
+The infrastructure is formed by heterogeneous technologies that may be owned by different infrastructure providers. The network service orchestration in this environment is a challenging task. The \gls{nso} must have a view of resources and services since access network until the data center to deploy end-to-end network services. Besides, it is also important to provide consistent and continuous service, independent of the underlying infrastructure~\cite{5GPPPArchitectureWorkingGroup2016ViewArchitecture}. 
+
+\subsubsection{Architecture}
+An NSO architecture can be divided into three sub-categories: (i) \textit{domain}, (ii) \textit{organization}, and (iii) \textit{functions}. The \textit{domain} refers to coverage of the orchestration process in one or more administrative domains: single-domain and multi-domain. In each scenario, the orchestration has its peculiarities and challenges.
+
+Single-domain orchestration studies focus on vertical \gls{nfv}/\gls{sdn} orchestration within a same administrative domain. In our definition, an administrative domain can have multiple technological domains, such as \gls{sdn}, \gls{nfv}, and Legacy. The taxonomy is aligned with \gls{etsi} \gls{nfv} architecture that addresses orchestration for \gls{nfv}. The multi-domain orchestration involves the instantiation of network service among two or more administrative domains. It is composed of planes (or layers) with different functions and architecture topology. The multi-domain interfaces are not present in original \gls{etsi} \gls{nfv} architecture
+
+The \textit{organization} refers to the different architectural arrangements of a \gls{nso} solution. We identified three types of organization: hierarchical, cascading and distributed. The hierarchical approach assumes a high-level orchestrator that has visibility of the entire other domains and capable of configuring services across different domains. The service provider facing the customer as a single entry point will maintain relationships with other providers to complete the requested service. According to \cite{Bohn2011NISTArchitecture}, the hierarchical approach is impractical because of scalability and trust constraints.  
+Under the cascade model, the provider partially satisfies the service request but complements the service by using resources from another provider. If this provider does not have all the resources, it also can request for another and so on (e.g., a mobile network provider using a satellite provider). In the distributed model, there is not a central actor, and providers request resource and services from each other on a peer-to-peer fashion.
+
+Finally,  \textit{functions},as discussed in Sec.~\ref{subsec:func}, refers to the main tasks developed by network service orchestrator: service orchestration, resource orchestration, and lifecycle orchestration. These functions can be separated or together in the same component of an orchestration framework. This decision depends on how the orchestrator was developed.
+
+\subsubsection{Standards Development Organization (SDO)}
+Several Standards Development Organizations, including \gls{etsi}, \gls{mef}, \gls{ietf}, and \gls{itu}, are actively working on a collection of standards in order to define reference architectures, protocols, and interfaces in scope of the orchestration domain. Besides, other organizations, academic, vendors and industrial are working in parallel with diverse goals. The main efforts within standardization bodies will be outlined next.
