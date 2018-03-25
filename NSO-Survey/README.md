@@ -29,4 +29,12 @@ for multi-domain Network Service Orchestration, featuring a
 Multi-Domain Orchestrator (MDO) per administrative realm
 and including the notion of a Marketplace for business interactions.
 
-![High-level reference model to illustrate the scope of Network Service Orchestration (NSO)](https://github.com/intrig-unicamp/publications/blob/master/NSO-Survey/Figures/01_Introduction/org.png)
+![High-level reference model to illustrate the scope of Network Service Orchestration (NSO)](https://github.com/intrig-unicamp/publications/blob/master/NSO-Survey/Figures/01_Introduction/mdo.png)
+
+In this survey, our main objectives are to provide a comprehensive
+review of research, standardization and software
+development efforts around the overcharged term of Network
+Service Orchestration. We present an in-depth and up-to-date
+study on network service orchestration covering some history
+and context, related enabling technologies, standardization activities,
+actual solutions, open challenges and research opportunities.
