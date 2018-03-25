@@ -23,3 +23,8 @@ affairs, we finalize by discussing a series of open challenges
 and research opportunities, altogether contributing to a timely
 and comprehensive survey on the vibrant and strategic topic of
 network service orchestration.
+
+Figure below presents a generic high-level reference model
+for multi-domain Network Service Orchestration, featuring a
+Multi-Domain Orchestrator (MDO) per administrative realm
+and including the notion of a Marketplace for business interactions.
