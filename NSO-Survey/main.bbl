@@ -1,0 +1,1412 @@
+\begin{thebibliography}{151}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Techreport
+\bibitem[{{3GPP}(2017a)}]{3gppStudy:28800:2017}
+\bibinfo{author}{{3GPP}}, \bibinfo{year}{2017}a.
+\newblock \bibinfo{title}{{TR 28.800 Release 14: Study on management and
+  orchestration architecture of next generation network and service}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix \url{http://www.3gpp.org/ftp/Specs/html-info/28800.htm}.
+  \bibinfo{note}{accessed 2017-11-28}.
+%Type = Techreport
+\bibitem[{{3GPP}(2017b)}]{3GPP2017TRNetwork}
+\bibinfo{author}{{3GPP}}, \bibinfo{year}{2017}b.
+\newblock \bibinfo{title}{{TR 28.801: Study on management and orchestration of
+  network slicing for next generation network}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix \url{http://www.3gpp.org/ftp/Specs/html-info/28801.htm}.
+%Type = Misc
+\bibitem[{{3GPP TR 28.801 v2.0.1}(2017)}]{3GPP:TR28801:2017}
+\bibinfo{author}{{3GPP TR 28.801 v2.0.1}}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Study on management and orchestration of network
+  slicing for next generation network}}.
+\newblock \URLprefix \url{http://www.3gpp.org/ftp/Specs/html-info/28801.htm}.
+  \bibinfo{note}{accessed on 2017-12-01}.
+%Type = Article
+\bibitem[{{5G PPP Architecture Working
+  Group}(2016)}]{5GPPPArchitectureWorkingGroup2016ViewArchitecture}
+\bibinfo{author}{{5G PPP Architecture Working Group}}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{View on 5G Architecture}}.
+\newblock \bibinfo{journal}{White paper}
+  \DOIprefix\doi{10.13140/RG.2.1.3815.7049}.
+%Type = Phdthesis
+\bibitem[{Alvizu(2016)}]{Alvizu2016AdvanceEra}
+\bibinfo{author}{Alvizu, R.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{Advance Optical Routing Techniques in the Software
+  Defined Era}}.
+\newblock Ph.D. thesis. Politecnico di Milano.
+\newblock \URLprefix \url{http://hdl.handle.net/10589/131914%0A}.
+%Type = Inproceedings
+\bibitem[{Anderson(1983)}]{Anderson1983}
+\bibinfo{author}{Anderson, J.L.}, \bibinfo{year}{1983}.
+\newblock \bibinfo{title}{{Autonomous systems intelligence}}, in:
+  \bibinfo{booktitle}{Proceedings of the 1983 annual conference on Computers :
+  Extending the human resource - ACM 83}, \bibinfo{publisher}{ACM Press},
+  \bibinfo{address}{New York, New York, USA}. pp. \bibinfo{pages}{229--233}.
+\newblock \URLprefix
+  \url{http://portal.acm.org/citation.cfm?doid=800173.809741},
+  \DOIprefix\doi{10.1145/800173.809741}.
+%Type = Inproceedings
+\bibitem[{Arfaoui et~al.(2017)Arfaoui, Vilchez and
+  Wary}]{Arfaoui2017SecurityDirections}
+\bibinfo{author}{Arfaoui, G.}, \bibinfo{author}{Vilchez, J.M.S.},
+  \bibinfo{author}{Wary, J.p.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Security and Resilience in 5G: Current Challenges
+  and Future Directions}}, in: \bibinfo{booktitle}{2017 IEEE
+  Trustcom/BigDataSE/ICESS}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{1010--1015}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/8029548/},
+  \DOIprefix\doi{10.1109/Trustcom/BigDataSE/ICESS.2017.345}.
+%Type = Misc
+\bibitem[{{AT{\&}T}(2016)}]{ATT2016ECOMPPaper}
+\bibinfo{author}{{AT{\&}T}}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{ECOMP ( Enhanced Control , Orchestration ,
+  Management {\&} Policy ) Architecture White Paper}}.
+%Type = Article
+\bibitem[{Bele(2018)}]{bele2018empirical}
+\bibinfo{author}{Bele, S.B.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{An empirical study on ‘clou key words: Cloud
+  computing, architecture, vm, sla, saas, paas, iaas, daas, cloud service
+  provider, cloud computing metaphor} .
+%Type = Article
+\bibitem[{Bernardos et~al.(2015)Bernardos, Dugeon, Galis, Morris and
+  Simon}]{Bernardos20155GInfrastructures}
+\bibinfo{author}{Bernardos, C.J.}, \bibinfo{author}{Dugeon, O.},
+  \bibinfo{author}{Galis, A.}, \bibinfo{author}{Morris, D.},
+  \bibinfo{author}{Simon, C.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{5G Exchange (5GEx) – Multi-domain Orchestration
+  for Software Defined Infrastructures}} .
+%Type = Article
+\bibitem[{Bhamare et~al.(2016)Bhamare, Jain, Samaka and Erbad}]{Bhamare2016}
+\bibinfo{author}{Bhamare, D.}, \bibinfo{author}{Jain, R.},
+  \bibinfo{author}{Samaka, M.}, \bibinfo{author}{Erbad, A.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{A survey on service function chaining}.
+\newblock \bibinfo{journal}{Journal of Network and Computer Applications}
+  \bibinfo{volume}{75}, \bibinfo{pages}{138 -- 155}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S1084804516301989},
+  \DOIprefix\doi{https://doi.org/10.1016/j.jnca.2016.09.001}.
+%Type = Misc
+\bibitem[{{BluePlanet}(2017)}]{BluePlanet2017BLUESUITE}
+\bibinfo{author}{{BluePlanet}}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Blue Planet Software Suite}}.
+\newblock \URLprefix
+  \url{http://media.ciena.com/documents/BP_Blue_Planet_PB.pdf}.
+%Type = Inproceedings
+\bibitem[{Bohn et~al.(2011)Bohn, Messina, Liu, Tong and
+  Mao}]{Bohn2011NISTArchitecture}
+\bibinfo{author}{Bohn, R.B.}, \bibinfo{author}{Messina, J.},
+  \bibinfo{author}{Liu, F.}, \bibinfo{author}{Tong, J.}, \bibinfo{author}{Mao,
+  J.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{{NIST Cloud Computing Reference Architecture}}, in:
+  \bibinfo{booktitle}{2011 IEEE World Congress on Services},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{594--596}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/6012797/},
+  \DOIprefix\doi{10.1109/SERVICES.2011.105}.
+%Type = Inproceedings
+\bibitem[{Calcaterra et~al.(2017)Calcaterra, Cartelli, Modica and
+  Tomarchio}]{DBLP:conf/closer/CalcaterraCMT17}
+\bibinfo{author}{Calcaterra, D.}, \bibinfo{author}{Cartelli, V.},
+  \bibinfo{author}{Modica, G.D.}, \bibinfo{author}{Tomarchio, O.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Combining {TOSCA} and {BPMN} to enable automated
+  cloud service provisioning}, in: \bibinfo{booktitle}{{CLOSER} 2017 -
+  Proceedings of the 7th International Conference on Cloud Computing and
+  Services Science, Porto, Portugal, April 24-26, 2017.}, pp.
+  \bibinfo{pages}{159--168}.
+\newblock \URLprefix \url{https://doi.org/10.5220/0006304701590168},
+  \DOIprefix\doi{10.5220/0006304701590168}.
+%Type = Inproceedings
+\bibitem[{Campbell et~al.(1992)Campbell, Coulson, Garc\'{\i}a and
+  Hutchison}]{Campbell1992}
+\bibinfo{author}{Campbell, A.}, \bibinfo{author}{Coulson, G.},
+  \bibinfo{author}{Garc\'{\i}a, F.}, \bibinfo{author}{Hutchison, D.},
+  \bibinfo{year}{1992}.
+\newblock \bibinfo{title}{A continuous media transport and orchestration
+  service}, \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA}. pp.
+  \bibinfo{pages}{99--110}.
+\newblock \URLprefix \url{http://doi.acm.org/10.1145/144191.144253},
+  \DOIprefix\doi{10.1145/144191.144253}.
+%Type = Misc
+\bibitem[{{Cisco Inc}()}]{CiscoIncNetworkCisco}
+\bibinfo{author}{{Cisco Inc}}, .
+\newblock \bibinfo{title}{{Network Services Orchestrator Data Sheet - Cisco}}.
+\newblock \URLprefix
+  \url{https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/network-services-orchestrator/datasheet-c78-734576.html}.
+%Type = Misc
+\bibitem[{{Cloudify}(2018a)}]{dcisCube}
+\bibinfo{author}{{Cloudify}}, \bibinfo{year}{2018}a.
+\newblock \bibinfo{title}{{DCIS Cube Architecting Initiative}}.
+\newblock \URLprefix
+  \url{https://cloudify.co/wp-content/uploads/2018/05/DcisCubeArchitectureWhiteFinal.pdf}.
+  \bibinfo{note}{accessed 2018-10-24}.
+%Type = Misc
+\bibitem[{{Cloudify}(2018b)}]{onapGuide}
+\bibinfo{author}{{Cloudify}}, \bibinfo{year}{2018}b.
+\newblock \bibinfo{title}{{ONAP: Orchestration for Real Results}}.
+\newblock \URLprefix
+  \url{https://cloudify.co/wp-content/uploads/2018/02/ONAP-Orchestration-Architecture-Use-Cases-WP-Feb-2018.pdf}.
+  \bibinfo{note}{accessed 2018-10-24}.
+%Type = Inproceedings
+\bibitem[{Consel and Kabac(2017)}]{Consel2017InternetOrchestration}
+\bibinfo{author}{Consel, C.}, \bibinfo{author}{Kabac, M.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Internet of Things: From Small- to Large-Scale
+  Orchestration}}, in: \bibinfo{booktitle}{2017 IEEE 37th International
+  Conference on Distributed Computing Systems (ICDCS)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{1748--1755}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/7980112/},
+  \DOIprefix\doi{10.1109/ICDCS.2017.314}.
+%Type = Misc
+\bibitem[{Consortium(2016)}]{sonata}
+\bibinfo{author}{Consortium, S.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{SONATA NFV}}.
+\newblock \URLprefix \url{http://www.sonata-nfv.eu}. \bibinfo{note}{accessed
+  2017-10-04}.
+%Type = Unpublished
+\bibitem[{Contreras and Lopez(2018)}]{Contreras:2018}
+\bibinfo{author}{Contreras, L.M.}, \bibinfo{author}{Lopez, D.R.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{A Network Service Provider Perspective on Network
+  Slicing}}.
+\newblock \URLprefix
+  \url{https://sdn.ieee.org/newsletter/january-2018/a-network-service-provider-perspective-on-network-slicing}.
+%Type = Misc
+\bibitem[{Corporation(2017)}]{BluePlanet2017ProductsOrchestration}
+\bibinfo{author}{Corporation, C.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Products | Multi-domain Service Orchestration}}.
+\newblock \URLprefix
+  \url{http://www.blueplanet.com/products/multi-domain-service-orchestration.html}.
+  \bibinfo{note}{accessed 2017-08-07}.
+%Type = Inproceedings
+\bibitem[{Csoma et~al.(2014)Csoma, Sonkoly, Csikor, N{\'e}meth, Gulyas,
+  Tavernier and Sahhaf}]{csoma2014escape}
+\bibinfo{author}{Csoma, A.}, \bibinfo{author}{Sonkoly, B.},
+  \bibinfo{author}{Csikor, L.}, \bibinfo{author}{N{\'e}meth, F.},
+  \bibinfo{author}{Gulyas, A.}, \bibinfo{author}{Tavernier, W.},
+  \bibinfo{author}{Sahhaf, S.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Escape: Extensible service chain prototyping
+  environment using mininet, click, netconf and pox}, in:
+  \bibinfo{booktitle}{Proceedings of the 2014 ACM Conference on SIGCOMM},
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA}. pp.
+  \bibinfo{pages}{125--126}.
+\newblock \URLprefix \url{http://doi.acm.org/10.1145/2619239.2631448},
+  \DOIprefix\doi{10.1145/2619239.2631448}.
+%Type = Inproceedings
+\bibitem[{Devlic et~al.(2017)Devlic, Hamidian, Liang, Eriksson, Consoli and
+  Lundstedt}]{Devlic2017NESMO:Framework}
+\bibinfo{author}{Devlic, A.}, \bibinfo{author}{Hamidian, A.},
+  \bibinfo{author}{Liang, D.}, \bibinfo{author}{Eriksson, M.},
+  \bibinfo{author}{Consoli, A.}, \bibinfo{author}{Lundstedt, J.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{NESMO: Network slicing management and orchestration
+  framework}}, in: \bibinfo{booktitle}{2017 IEEE International Conference on
+  Communications Workshops (ICC Workshops)}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{1202--1208}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/7962822/},
+  \DOIprefix\doi{10.1109/ICCW.2017.7962822}.
+%Type = Misc
+\bibitem[{Digest(2017)}]{onapconvergedigest}
+\bibinfo{author}{Digest, C.N.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{The Open Network Automation Platform looks like a
+  turning point for telecom architecture}}.
+\newblock \URLprefix
+  \url{http://www.convergedigest.com/2017/04/the-open-network-automation-platform.html}.
+  \bibinfo{note}{accessed 2017-09-05}.
+%Type = Inproceedings
+\bibitem[{Dong et~al.(2010)Dong, Yang, Li, Li, Tian and Guan}]{5416637}
+\bibinfo{author}{Dong, Y.}, \bibinfo{author}{Yang, X.}, \bibinfo{author}{Li,
+  X.}, \bibinfo{author}{Li, J.}, \bibinfo{author}{Tian, K.},
+  \bibinfo{author}{Guan, H.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{High performance network virtualization with sr-iov},
+  in: \bibinfo{booktitle}{HPCA - 16 2010 The Sixteenth International Symposium
+  on High-Performance Computer Architecture}, pp. \bibinfo{pages}{1--10}.
+\newblock \DOIprefix\doi{10.1109/HPCA.2010.5416637}.
+%Type = Inproceedings
+\bibitem[{Draxler et~al.(2017)Draxler, Karl, Peuster, Kouchaksaraei, Bredel,
+  Lessmann, Soenen, Tavernier, Mendel-Brin and
+  Xilouris}]{Draxler2017SONATA:Networksb}
+\bibinfo{author}{Draxler, S.}, \bibinfo{author}{Karl, H.},
+  \bibinfo{author}{Peuster, M.}, \bibinfo{author}{Kouchaksaraei, H.R.},
+  \bibinfo{author}{Bredel, M.}, \bibinfo{author}{Lessmann, J.},
+  \bibinfo{author}{Soenen, T.}, \bibinfo{author}{Tavernier, W.},
+  \bibinfo{author}{Mendel-Brin, S.}, \bibinfo{author}{Xilouris, G.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{SONATA: Service programming and orchestration for
+  virtualized software networks}}, in: \bibinfo{booktitle}{2017 IEEE
+  International Conference on Communications Workshops (ICC Workshops)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{973--978}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/7962785/},
+  \DOIprefix\doi{10.1109/ICCW.2017.7962785}.
+%Type = Inproceedings
+\bibitem[{Elayoubi et~al.(2017)Elayoubi, Bedo, Filippou, Gavras, Giustiniano,
+  Iovanna, Manzalini, Queseth, Rokkas, Surridge and
+  Tjelta}]{elayoubi:hal-01488208}
+\bibinfo{author}{Elayoubi, S.E.}, \bibinfo{author}{Bedo, J.S.},
+  \bibinfo{author}{Filippou, M.}, \bibinfo{author}{Gavras, A.},
+  \bibinfo{author}{Giustiniano, D.}, \bibinfo{author}{Iovanna, P.},
+  \bibinfo{author}{Manzalini, A.}, \bibinfo{author}{Queseth, O.},
+  \bibinfo{author}{Rokkas, T.}, \bibinfo{author}{Surridge, M.},
+  \bibinfo{author}{Tjelta, T.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{5G innovations for new business opportunities}}, in:
+  \bibinfo{booktitle}{{Mobile World Congress}}, \bibinfo{publisher}{{5G
+  Infrastructure association}}, \bibinfo{address}{Barcelone, Spain}.
+\newblock \URLprefix \url{https://hal.inria.fr/hal-01488208}.
+%Type = Misc
+\bibitem[{{Ericsson Inc.}()}]{EricssonInc.EricssonManager}
+\bibinfo{author}{{Ericsson Inc.}}, .
+\newblock \bibinfo{title}{{Ericsson Network Manager}}.
+\newblock \URLprefix
+  \url{https://www.ericsson.com/ourportfolio/it-and-cloud-products/network-manager?nav=productcategory}.
+%Type = Techreport
+\bibitem[{{Ericsson Inc.}(2015)}]{EricssonInc.2015}
+\bibinfo{author}{{Ericsson Inc.}}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{5g Use Cases}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{https://www.ericsson.com/assets/local/news/2015/7/5g-use-cases.pdf}.
+%Type = Misc
+\bibitem[{{ETSI}()}]{ETSIOpenMANO}
+\bibinfo{author}{{ETSI}}, .
+\newblock \bibinfo{title}{{Open Source MANO}}.
+\newblock \URLprefix \url{https://osm.etsi.org/}.
+%Type = Inproceedings
+\bibitem[{{ETSI}(2012)}]{ETSI2012NetworkAction}
+\bibinfo{author}{{ETSI}}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{{Network Functions Virtualisation: An Introduction,
+  Benefits, Enablers, Challenges {\&} Call for Action}}, in:
+  \bibinfo{booktitle}{SDN and OpenFlow World Congress}.
+\newblock \URLprefix \url{https://portal.etsi.org/NFV/NFV_White_Paper.pdf}.
+%Type = Techreport
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(a)}]{ETSINetworkFramework}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}}, a.
+\newblock \bibinfo{title}{{ETSI GS NFV-EVE 005 V1.1.1: Network Functions
+  Virtualisation (NFV); Ecosystem; Report on SDN Usage in NFV Architectural
+  Framework}}.
+\newblock \bibinfo{type}{Technical Report}. ETSI.
+\newblock \URLprefix \url{http://www.etsi.org/deliver/etsi_gs/NFV-
+  EVE/001_099/005/01.01.01_60/gs_nfv-eve005v010101p.pdf}.
+%Type = Techreport
+\bibitem[{{ETSI Industry Specification Group (ISG) NFV}(b)}]{ETSIGRDomains}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}}, b.
+\newblock \bibinfo{title}{{GR NFV-IFA 028 - V3.1.1: Network Functions
+  Virtualisation (NFV) Release 3; Management and Orchestration; Report on
+  architecture options to support multiple administrative domains}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{http://www.etsi.org/deliver/etsi_gr/NFV-IFA/001_099/028/03.01.01_60/gr_NFV-IFA028v030101p.pdf}.
+%Type = Techreport
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(c)}]{ETSIISGNFVGSMetrics}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}}, c.
+\newblock \bibinfo{title}{{GS NFV-INF 010 - V1.1.1: Network Functions
+  Virtualisation (NFV); Service Quality Metrics}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{http://www.etsi.org/deliver/etsi_gs/NFV-INF/001_099/010/01.01.01_60/gs_NFV-INF010v010101p.pdf}.
+%Type = Techreport
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(2013)}]{ETSIIndustrySpecificationGroupISGNFV2013NetworkFramework}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{{ETSI GS NFV 002 V1.1.1: Network Functions
+  Virtualisation (NFV); Architectural Framework}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{http://www.etsi.org/deliver/etsi_gs/NFV/001_099/002/01.01.01_60/gs_NFV002v010101p.pdf}.
+%Type = Misc
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(2014a)}]{ETSIIndustrySpecificationGroupISGNFV2014NetworkNFV}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}},
+  \bibinfo{year}{2014}a.
+\newblock \bibinfo{title}{{ETSI GS NFV 003 V1.2.1: Network Functions
+  Virtualisation (NFV); Terminology for Main Concepts in NFV}}.
+\newblock \URLprefix
+  \url{http://www.etsi.org/deliver/etsi_gs/NFV/001_099/003/01.02.01_60/gs_NFV003v010201p.pdf}.
+%Type = Techreport
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(2014b)}]{GSNFV-MAN001:2014}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}},
+  \bibinfo{year}{2014}b.
+\newblock \bibinfo{title}{{GS NFV-MAN 001 - V1.1.1: Network Functions
+  Virtualisation (NFV); Management and Orchestration}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{http://www.etsi.org/deliver/etsi_gs/NFV-MAN/001_099/001/01.01.01_60/gs_NFV-MAN001v010101p.pdf}.
+%Type = Misc
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(2014c)}]{ETSIGSPractises}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}},
+  \bibinfo{year}{2014}c.
+\newblock \bibinfo{title}{{GS NFV-PER 001 - V1.1.1: Network Functions
+  Virtualisation (NFV) NFV Performance {\&}amp; Portability Best Practises}}.
+\newblock \URLprefix
+  \url{http://www.etsi.org/deliver/etsi_gs/NFV-PER/001_099/001/01.01.01_60/gs_nfv-per001v010101p.pdf}.
+%Type = Techreport
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(2014d)}]{ETSIISGNFV2014GSArchitecture}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}},
+  \bibinfo{year}{2014}d.
+\newblock \bibinfo{title}{{GS NFV-SWA 001 - V1.1.1: Network Functions
+  Virtualisation (NFV); Virtual Network Functions Architecture}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{http://www.etsi.org/deliver/etsi_gs/NFV-SWA/001_099/001/01.01.01_60/gs_NFV-SWA001v010101p.pdf}.
+%Type = Techreport
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(2014e)}]{ETSIIndustrySpecificationGroupISGNFV2014NetworkOptions}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}},
+  \bibinfo{year}{2014}e.
+\newblock \bibinfo{title}{{Network Functions Virtualisation (NFV); Management
+  and Orchestration; Report on Architectural Options}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{http://www.etsi.org/deliver/etsi_gs/NFV-IFA/001_099/009/01.01.01_60/gs_NFV-IFA009v010101p.pdf}.
+%Type = Techreport
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(2016)}]{ETSIISGNFV2016GRGuidance}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{GR NFV-SEC 003 - V1.2.1: Network Functions
+  Virtualisation (NFV); NFV Security; Security and Trust Guidance}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix \url{http://www.etsi.org/standards-search}.
+%Type = Techreport
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(2017a)}]{ETSIISGNFV2017GR3}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}},
+  \bibinfo{year}{2017}a.
+\newblock \bibinfo{title}{{GR NFV-IFA 023 - V3.1.1: Network Functions
+  Virtualisation (NFV); Management and Orchestration; Report on Policy
+  Management in MANO Release 3}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix \url{http://www.etsi.org/standards-search}.
+%Type = Techreport
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(2017b)}]{ETSIISGNFV2017GSSpecification}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}},
+  \bibinfo{year}{2017}b.
+\newblock \bibinfo{title}{{GS NFV-IFA 010 - V2.3.1: Network Functions
+  Virtualisation (NFV) Release 2; Management and Orchestration; Functional
+  requirements specification}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{http://www.etsi.org/deliver/etsi_gs/NFV-IFA/001_099/010/02.03.01_60/gs_NFV-IFA010v020301p.pdf}.
+%Type = Techreport
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(2017c)}]{ETSIISGNFV2017GSSpecificationd}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}},
+  \bibinfo{year}{2017}c.
+\newblock \bibinfo{title}{{GS NFV-IFA 014 - V2.3.1: Network Functions
+  Virtualisation (NFV) Release 2; Management and Orchestration; Network Service
+  Templates Specification}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix \url{http://www.etsi.org/standards-search}.
+%Type = Misc
+\bibitem[{{ETSI Industry Specification Group (ISG)
+  NFV}(2018)}]{ETSIIndustrySpecificationGroupISGNFV2018NetworkNFV}
+\bibinfo{author}{{ETSI Industry Specification Group (ISG) NFV}},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{ETSI GS NFV-SOL 005 V2.4.1: Network Functions
+  Virtualisation (NFV) Release 2; Protocols and Data Models; RESTful protocols
+  specification for the Os-Ma-nfvo Reference Point}}.
+\newblock \URLprefix
+  \url{https://www.etsi.org/deliver/etsi_gs/NFV-SOL/001_099/005/02.04.01_60/gs_NFV-SOL005v020401p.pdf}.
+%Type = Techreport
+\bibitem[{{ETSI ISG}(2018)}]{ETSIISG2018}
+\bibinfo{author}{{ETSI ISG}}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{Experiential networked intelligence (ENI);
+  Context-Aware Policy Management Gap Analysis Disclaimer}}.
+\newblock \bibinfo{type}{Technical Report}. ETSI.
+\newblock \URLprefix
+  \url{https://www.etsi.org/deliver/etsi_gr/ENI/001_099/003/01.01.01_60/gr_ENI003v010101p.pdf}.
+%Type = Techreport
+\bibitem[{{ETSI ISG NFV}(2018)}]{ETSIISGNFV2018}
+\bibinfo{author}{{ETSI ISG NFV}}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{GR NFV-IFA 022 - V3.1.1 - Network Functions
+  Virtualisation (NFV) Release 3; Management and Orchestration; Report on
+  Management and Connectivity for Multi-Site Services}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{https://portal.etsi.org/TB/ETSIDeliverableStatus.aspx}.
+%Type = Article
+\bibitem[{Evans(2011)}]{Evans2011TheEverything}
+\bibinfo{author}{Evans, D.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{{The Internet of Things - How the Next Evolution of
+  the Internet is Changing Everything}}.
+\newblock \bibinfo{journal}{CISCO white paper} ,
+  \bibinfo{pages}{1--11}\URLprefix
+  \url{http://www.cisco.com/web/about/ac79/docs/innov/IoT_IBSG_0411FINAL.pdf}.
+%Type = Inproceedings
+\bibitem[{Fallenbeck et~al.(2006)Fallenbeck, Picht, Smith and
+  Freisleben}]{4299349}
+\bibinfo{author}{Fallenbeck, N.}, \bibinfo{author}{Picht, H.J.},
+  \bibinfo{author}{Smith, M.}, \bibinfo{author}{Freisleben, B.},
+  \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Xen and the art of cluster scheduling}, in:
+  \bibinfo{booktitle}{First International Workshop on Virtualization Technology
+  in Distributed Computing (VTDC 2006)}, pp. \bibinfo{pages}{4--4}.
+\newblock \DOIprefix\doi{10.1109/VTDC.2006.18}.
+%Type = Misc
+\bibitem[{Foundation(2017a)}]{onap}
+\bibinfo{author}{Foundation, L.}, \bibinfo{year}{2017}a.
+\newblock \bibinfo{title}{{ONAP -- Open Network Automation Platform}}.
+\newblock \URLprefix \url{https://www.onap.org/}. \bibinfo{note}{accessed
+  2017-09-05}.
+%Type = Misc
+\bibitem[{Foundation(2017b)}]{onapwiki}
+\bibinfo{author}{Foundation, L.}, \bibinfo{year}{2017}b.
+\newblock \bibinfo{title}{{ONAP Developer Wiki}}.
+\newblock \URLprefix \url{https://wiki.onap.org/}. \bibinfo{note}{accessed
+  2017-09-05}.
+%Type = Techreport
+\bibitem[{{FP7 project T-NOVA}(a)}]{T-NOVAD2.1:Requirements}
+\bibinfo{author}{{FP7 project T-NOVA}}, a.
+\newblock \bibinfo{title}{{D2.1: System Use Cases and Requirements}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{http://www.t-nova.eu/wp-content/uploads/2014/11/TNOVA_D2.1_Use_Cases_and_Requirements.pdf}.
+%Type = Misc
+\bibitem[{{FP7 project T-NOVA}(b)}]{FP7projectT-NOVAT-NOVAInfrastructures}
+\bibinfo{author}{{FP7 project T-NOVA}}, b.
+\newblock \bibinfo{title}{{T-NOVA Project, Network Functions as a Service over
+  Virtualised Infrastructures}}.
+\newblock \URLprefix \url{http://www.t-nova.eu/}.
+%Type = Inproceedings
+\bibitem[{Francescon et~al.(2017)Francescon, Baggio, Fedrizzi, Ferrusy,
+  Ben~Yahiaz and Riggio}]{francescon2017x}
+\bibinfo{author}{Francescon, A.}, \bibinfo{author}{Baggio, G.},
+  \bibinfo{author}{Fedrizzi, R.}, \bibinfo{author}{Ferrusy, R.},
+  \bibinfo{author}{Ben~Yahiaz, I.G.}, \bibinfo{author}{Riggio, R.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{X-–MANO: Cross–-domain management and
+  orchestration of network services}}, in: \bibinfo{booktitle}{2017 IEEE
+  Conference on Network Softwarization (NetSoft)}, \bibinfo{publisher}{IEEE}.
+  pp. \bibinfo{pages}{1--5}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/8004223/},
+  \DOIprefix\doi{10.1109/NETSOFT.2017.8004223}.
+%Type = Misc
+\bibitem[{Fraunhofer and Berlin(2017)}]{openbatongit}
+\bibinfo{author}{Fraunhofer}, \bibinfo{author}{Berlin, T.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Open Baton: An open source reference implementation
+  of the ETSI Network Function Virtualization MANO specification}}.
+\newblock \URLprefix \url{http://openbaton.github.io/}. \bibinfo{note}{accessed
+  2017-09-11}.
+%Type = Unpublished
+\bibitem[{Galis(2018)}]{Galis:2018}
+\bibinfo{author}{Galis, A.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{Perspectives on Network Slicing – Towards the New
+  ``Bread and Butter'' of Networking and Servicing}}.
+\newblock \URLprefix
+  \url{https://sdn.ieee.org/newsletter/january-2018/perspectives-on-network-slicing-towards-the-new-bread-and-butter-of-networking-and-servicing}.
+%Type = Inproceedings
+\bibitem[{Galis et~al.(2009)Galis, Abramowicz, Brunner, Raz, Chemouil, Butler,
+  Polychronopoulos, Clayman, de~Meer, Coupaye, Pras, Sabnani, Massonet and
+  Naqvi}]{Galis2009ManagementInternet}
+\bibinfo{author}{Galis, A.}, \bibinfo{author}{Abramowicz, H.},
+  \bibinfo{author}{Brunner, M.}, \bibinfo{author}{Raz, D.},
+  \bibinfo{author}{Chemouil, P.}, \bibinfo{author}{Butler, J.},
+  \bibinfo{author}{Polychronopoulos, C.}, \bibinfo{author}{Clayman, S.},
+  \bibinfo{author}{de~Meer, H.}, \bibinfo{author}{Coupaye, T.},
+  \bibinfo{author}{Pras, A.}, \bibinfo{author}{Sabnani, K.},
+  \bibinfo{author}{Massonet, P.}, \bibinfo{author}{Naqvi, S.},
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{{Management and service-aware networking
+  architectures (MANA) for future Internet}}, in: \bibinfo{booktitle}{2009
+  Fourth International Conference on Communications and Networking in China},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{1--13}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/5339964/},
+  \DOIprefix\doi{10.1109/CHINACOM.2009.5339964}.
+%Type = Article
+\bibitem[{Garay et~al.(2016)Garay, Matias, Unzilla and
+  Jacob}]{Garay2016ServiceForward}
+\bibinfo{author}{Garay, J.}, \bibinfo{author}{Matias, J.},
+  \bibinfo{author}{Unzilla, J.}, \bibinfo{author}{Jacob, E.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{Service description in the NFV revolution: Trends,
+  challenges and a way forward}}.
+\newblock \bibinfo{journal}{IEEE Communications Magazine} \bibinfo{volume}{54},
+  \bibinfo{pages}{68--74}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/7432174/},
+  \DOIprefix\doi{10.1109/MCOM.2016.7432174}.
+%Type = Misc
+\bibitem[{{GigaSpaces}(2015)}]{GigaSpaces2015}
+\bibinfo{author}{{GigaSpaces}}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{Cloudify}}.
+\newblock \URLprefix \url{http://cloudify.co/}.
+%Type = Inproceedings
+\bibitem[{Giotis et~al.(2015)Giotis, Kryftis and Maglaris}]{Giotis2015}
+\bibinfo{author}{Giotis, K.}, \bibinfo{author}{Kryftis, Y.},
+  \bibinfo{author}{Maglaris, V.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{Policy-based orchestration of NFV services in
+  Software-Defined Networks}}, in: \bibinfo{booktitle}{Proceedings of the 2015
+  1st IEEE Conference on Network Softwarization (NetSoft)},
+  \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{1--5}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/7116145/},
+  \DOIprefix\doi{10.1109/NETSOFT.2015.7116145}.
+%Type = Inproceedings
+\bibitem[{Grit et~al.(2006)Grit, Irwin, Yumerefendi and Chase}]{Grit2006}
+\bibinfo{author}{Grit, L.}, \bibinfo{author}{Irwin, D.},
+  \bibinfo{author}{Yumerefendi, A.}, \bibinfo{author}{Chase, J.},
+  \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{{Virtual Machine Hosting for Networked Clusters:
+  Building the Foundations for "Autonomic" Orchestration}}, in:
+  \bibinfo{booktitle}{First International Workshop on Virtualization Technology
+  in Distributed Computing (VTDC 2006)}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{7--7}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/4299352/},
+  \DOIprefix\doi{10.1109/VTDC.2006.17}.
+%Type = Article
+\bibitem[{Gubbi et~al.(2013)Gubbi, Buyya, Marusic and
+  Palaniswami}]{Gubbi2013InternetDirections}
+\bibinfo{author}{Gubbi, J.}, \bibinfo{author}{Buyya, R.},
+  \bibinfo{author}{Marusic, S.}, \bibinfo{author}{Palaniswami, M.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{{Internet of Things (IoT): A vision, architectural
+  elements, and future directions}}.
+\newblock \bibinfo{journal}{Future Generation Computer Systems}
+  \bibinfo{volume}{29}, \bibinfo{pages}{1645--1660}.
+\newblock \URLprefix \url{http://dx.doi.org/10.1016/j.future.2013.01.010},
+  \DOIprefix\doi{10.1016/j.future.2013.01.010}.
+%Type = Article
+\bibitem[{Guerzoni et~al.(2016)Guerzoni, Caparros, Monti, Giuliani, Melian,
+  Figueiredo, Ramos, Bernardos, Sonkoly, Tusa, Galis, Vaishnavi, Ubaldi,
+  Sgambelluri, Santana and Szabo}]{Guerzoni2016Multi-domainApproach}
+\bibinfo{author}{Guerzoni, R.}, \bibinfo{author}{Caparros, D.P.},
+  \bibinfo{author}{Monti, P.}, \bibinfo{author}{Giuliani, G.},
+  \bibinfo{author}{Melian, J.}, \bibinfo{author}{Figueiredo, R.},
+  \bibinfo{author}{Ramos, A.}, \bibinfo{author}{Bernardos, C.J.},
+  \bibinfo{author}{Sonkoly, B.}, \bibinfo{author}{Tusa, F.},
+  \bibinfo{author}{Galis, A.}, \bibinfo{author}{Vaishnavi, I.},
+  \bibinfo{author}{Ubaldi, F.}, \bibinfo{author}{Sgambelluri, A.},
+  \bibinfo{author}{Santana, C.}, \bibinfo{author}{Szabo, R.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{Multi-domain Orchestration and Management of
+  Software Defined Infrastructures: a Bottom-Up Approach}}.
+\newblock \bibinfo{journal}{EUCNC - Europe Conference on Networks and
+  Communications} , \bibinfo{pages}{3--8}.
+%Type = Misc
+\bibitem[{{H2020 5G-TRANSFORMER
+  Project}(2017)}]{5g-TransformerProject20175GVerticals}
+\bibinfo{author}{{H2020 5G-TRANSFORMER Project}}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{5G Mobile Transport Platform for Verticals}}.
+\newblock \URLprefix \url{http://5g-transformer.eu/}.
+%Type = Techreport
+\bibitem[{{H2020 5G-TRANSFORMER
+  Project}(2018)}]{H20205G-TRANSFORMERProject2018}
+\bibinfo{author}{{H2020 5G-TRANSFORMER Project}}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{Definition of service orchestration and federation
+  algorithms , service monitoring algorithms}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{http://5g-transformer.eu/wp-content/uploads/2018/03/D4.1_Definition_of_service_orchestration_and_federation_algorithms_service_monitoring-algorithms.pdf}.
+%Type = Techreport
+\bibitem[{Halpern and Pignataro(2015)}]{Halpern2015}
+\bibinfo{author}{Halpern, J.}, \bibinfo{author}{Pignataro, C.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{Service Function Chaining (SFC) Architecture}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix \url{https://datatracker.ietf.org/doc/html/rfc7665
+  https://www.rfc-editor.org/info/rfc7665}, \DOIprefix\doi{10.17487/RFC7665}.
+%Type = Techreport
+\bibitem[{Hoban et~al.(2018)Hoban, Canonical, Tierno, Telef{\'{o}}nica, Boyer,
+  Francisco, Ram{\'{o}}n, Telef{\'{o}}nica, {Garc{\'{i}}a De Blas}, Gianpietro,
+  Whitestack, Canonical, Harper, Marchetti, Silvia, Etsi and {Little
+  Vmware}}]{Israel2017OSMOverviewb}
+\bibinfo{author}{Hoban, A.}, \bibinfo{author}{Canonical, A.I.},
+  \bibinfo{author}{Tierno, A.}, \bibinfo{author}{Telef{\'{o}}nica, S.},
+  \bibinfo{author}{Boyer, C.}, \bibinfo{author}{Francisco, E.},
+  \bibinfo{author}{Ram{\'{o}}n, J.}, \bibinfo{author}{Telef{\'{o}}nica, S.},
+  \bibinfo{author}{{Garc{\'{i}}a De Blas}, G.}, \bibinfo{author}{Gianpietro,
+  T.}, \bibinfo{author}{Whitestack, L.}, \bibinfo{author}{Canonical, M.S.},
+  \bibinfo{author}{Harper, M.}, \bibinfo{author}{Marchetti, M.},
+  \bibinfo{author}{Silvia, S.}, \bibinfo{author}{Etsi, A.},
+  \bibinfo{author}{{Little Vmware}, V.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{OSM Release FOUR Technical Overview}}.
+\newblock \bibinfo{type}{Technical Report}. ETSI.
+\newblock \URLprefix \url{www.etsi.org}.
+%Type = Inproceedings
+\bibitem[{Hoyos and Rothenberg(2016)}]{NOn}
+\bibinfo{author}{Hoyos, L.C.}, \bibinfo{author}{Rothenberg, C.E.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Non: Network function virtualization ontology towards
+  semantic service implementation}, in: \bibinfo{booktitle}{2016 8th IEEE
+  Latin-American Conference on Communications (LATINCOM)}, pp.
+  \bibinfo{pages}{1--6}.
+\newblock \DOIprefix\doi{10.1109/LATINCOM.2016.7811570}.
+%Type = Article
+\bibitem[{Hwang et~al.(2015)Hwang, Ramakrishnan and Wood}]{7036139}
+\bibinfo{author}{Hwang, J.}, \bibinfo{author}{Ramakrishnan, K.K.},
+  \bibinfo{author}{Wood, T.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Netvm: High performance and flexible networking using
+  virtualization on commodity platforms}.
+\newblock \bibinfo{journal}{IEEE Transactions on Network and Service
+  Management} \bibinfo{volume}{12}, \bibinfo{pages}{34--47}.
+\newblock \DOIprefix\doi{10.1109/TNSM.2015.2401568}.
+%Type = Misc
+\bibitem[{{Infonetics Research}(2015)}]{SDNevolution}
+\bibinfo{author}{{Infonetics Research}}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{The Evolution of SDN and NFV Orchestration}}.
+\newblock \URLprefix
+  \url{https://www.juniper.net/assets/cn/zh/local/pdf/analyst-reports/2000604-en.pdf}.
+  \bibinfo{note}{accessed 2018-02-12}.
+%Type = Misc
+\bibitem[{{International Telecommunication Union}()}]{ITUITU:World}
+\bibinfo{author}{{International Telecommunication Union}}, .
+\newblock \bibinfo{title}{{ITU: Committed to connecting the world}}.
+\newblock \URLprefix \url{http://www.itu.int/home/}.
+%Type = Techreport
+\bibitem[{{International Telecommunication
+  Union}(2014)}]{InternationalTelecommunicationUnion2014ITU-TNetworking}
+\bibinfo{author}{{International Telecommunication Union}},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{{ITU-T Y.3300: Framework of software-defined
+  networking}}.
+\newblock \bibinfo{type}{Technical Report}.
+%Type = Article
+\bibitem[{{ITU Radiocommunication}(2015)}]{ITU-R2015RecommendationBeyond}
+\bibinfo{author}{{ITU Radiocommunication}}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{Recommendation ITU-R M.2083-0: IMT Vision –
+  Framework and overall objectives of the future development of IMT for 2020
+  and beyond}} \URLprefix
+  \url{https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.2083-0-201509-I!!PDF-E.pdf}.
+%Type = Article
+\bibitem[{{ITU Telecommunication Standardization}(2015)}]{ITU-T2015FGAnalysis}
+\bibinfo{author}{{ITU Telecommunication Standardization}},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{FG IMT-2020: Report on Standards Gap Analysis}}
+  \URLprefix
+  \url{https://www.ietf.org/lib/dt/documents/LIAISON/liaison-2016-02-26-itu-t-sg-13-ietf-ls-on-report-on-standard-gap-analysis-from-itu-t-focus-group-on-imt-2020-and-on-extension-of-lifetime-of-focus-g-attachment-2.pdf}.
+%Type = Techreport
+\bibitem[{{ITU Telecommunication
+  Standardization}(2017a)}]{ITU-T2017RecommendationNetwork}
+\bibinfo{author}{{ITU Telecommunication Standardization}},
+  \bibinfo{year}{2017}a.
+\newblock \bibinfo{title}{{Recommendation ITU-T Y.3100: Terms and definitions
+  for IMT-2020 network}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix \url{http://handle.itu.int/11.1002/1000/13349}.
+%Type = Techreport
+\bibitem[{{ITU Telecommunication
+  Standardization}(2017b)}]{ITU-T2017RecommendationRequirements}
+\bibinfo{author}{{ITU Telecommunication Standardization}},
+  \bibinfo{year}{2017}b.
+\newblock \bibinfo{title}{{Recommendation ITU-T Y.3110: IMT-2020 network
+  management and orchestration requirements}}.
+\newblock \bibinfo{type}{Technical Report}. ITU-T.
+\newblock \URLprefix \url{http://handle.itu.int/11.1002/1000/13350}.
+%Type = Techreport
+\bibitem[{{ITU Telecommunication
+  Standardization}(2017c)}]{ITU-T2017RecommendationFramework}
+\bibinfo{author}{{ITU Telecommunication Standardization}},
+  \bibinfo{year}{2017}c.
+\newblock \bibinfo{title}{{Recommendation ITU-T Y.3111: IMT-2020 network
+  management and orchestration framework}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix \url{http://handle.itu.int/11.1002/1000/13351}.
+%Type = Inproceedings
+\bibitem[{Jaeger(2015)}]{7345422}
+\bibinfo{author}{Jaeger, B.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Security orchestrator: Introducing a security
+  orchestrator in the context of the etsi nfv reference architecture}, in:
+  \bibinfo{booktitle}{2015 IEEE Trustcom/BigDataSE/ISPA}, pp.
+  \bibinfo{pages}{1255--1260}.
+\newblock \DOIprefix\doi{10.1109/Trustcom.2015.514}.
+%Type = Article
+\bibitem[{Jarraya et~al.(2014)Jarraya, Madi and Debbabi}]{Jarraya2014}
+\bibinfo{author}{Jarraya, Y.}, \bibinfo{author}{Madi, T.},
+  \bibinfo{author}{Debbabi, M.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{{A Survey and a Layered Taxonomy of Software-Defined
+  Networking}}.
+\newblock \bibinfo{journal}{IEEE Communications Surveys {\&} Tutorials}
+  \bibinfo{volume}{16}, \bibinfo{pages}{1955--1980}.
+\newblock \URLprefix
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6805151},
+  \DOIprefix\doi{10.1109/COMST.2014.2320094}.
+%Type = Article
+\bibitem[{Karakus and Durresi(2017)}]{Karakus2017QualitySurvey}
+\bibinfo{author}{Karakus, M.}, \bibinfo{author}{Durresi, A.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Quality of Service (QoS) in Software Defined
+  Networking (SDN): A survey}}.
+\newblock \bibinfo{journal}{Journal of Network and Computer Applications}
+  \bibinfo{volume}{80}, \bibinfo{pages}{200--218}.
+\newblock \URLprefix \url{http://dx.doi.org/10.1016/j.jnca.2016.12.019},
+  \DOIprefix\doi{10.1016/j.jnca.2016.12.019}.
+%Type = Article
+\bibitem[{Karl et~al.(2016)Karl, Dräxler, Peuster, Galis, Bredel, Ramos,
+  Martrat, Siddiqui, van Rossem, Tavernier and Xilouris}]{karl2016devops}
+\bibinfo{author}{Karl, H.}, \bibinfo{author}{Dräxler, S.},
+  \bibinfo{author}{Peuster, M.}, \bibinfo{author}{Galis, A.},
+  \bibinfo{author}{Bredel, M.}, \bibinfo{author}{Ramos, A.},
+  \bibinfo{author}{Martrat, J.}, \bibinfo{author}{Siddiqui, M.S.},
+  \bibinfo{author}{van Rossem, S.}, \bibinfo{author}{Tavernier, W.},
+  \bibinfo{author}{Xilouris, G.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Devops for network function virtualisation: an
+  architectural approach}.
+\newblock \bibinfo{journal}{Transactions on Emerging Telecommunications
+  Technologies} \bibinfo{volume}{27}, \bibinfo{pages}{1206--1215}.
+\newblock \URLprefix \url{http://dx.doi.org/10.1002/ett.3084},
+  \DOIprefix\doi{10.1002/ett.3084}. \bibinfo{note}{ett.3084}.
+%Type = Inproceedings
+\bibitem[{Katsalis et~al.(2016)Katsalis, Nikaein and
+  Edmonds}]{Katsalis2016Multi-DomainDirections}
+\bibinfo{author}{Katsalis, K.}, \bibinfo{author}{Nikaein, N.},
+  \bibinfo{author}{Edmonds, A.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{Multi-Domain Orchestration for NFV: Challenges and
+  Research Directions}}, in: \bibinfo{booktitle}{2016 15th International
+  Conference on Ubiquitous Computing and Communications and 2016 International
+  Symposium on Cyberspace and Security (IUCC-CSS)}, \bibinfo{publisher}{IEEE}.
+  pp. \bibinfo{pages}{189--195}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/7828601/},
+  \DOIprefix\doi{10.1109/IUCC-CSS.2016.034}.
+%Type = Misc
+\bibitem[{King and Farrel(2015)}]{RFC7491}
+\bibinfo{author}{King, D.}, \bibinfo{author}{Farrel, A.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{A pce-based architecture for application-based
+  network operations}.
+\newblock \URLprefix \url{http://tools.ietf.org/rfc/rfc7491.txt}.
+  \bibinfo{note}{rFC7491}.
+%Type = Article
+\bibitem[{Kourtis et~al.(2017)Kourtis, McGrath, Gardikis, Xilouris, Riccobene,
+  Papadimitriou, Trouva, Liberati, Trubian, Batalle, Koumaras, Dietrich, Ramos,
+  Ferrer~Riera, Bonnet, Pietrabissa, Ceselli and
+  Petrini}]{Kourtis2017T-NOVA:Infrastructures}
+\bibinfo{author}{Kourtis, M.A.}, \bibinfo{author}{McGrath, M.J.},
+  \bibinfo{author}{Gardikis, G.}, \bibinfo{author}{Xilouris, G.},
+  \bibinfo{author}{Riccobene, V.}, \bibinfo{author}{Papadimitriou, P.},
+  \bibinfo{author}{Trouva, E.}, \bibinfo{author}{Liberati, F.},
+  \bibinfo{author}{Trubian, M.}, \bibinfo{author}{Batalle, J.},
+  \bibinfo{author}{Koumaras, H.}, \bibinfo{author}{Dietrich, D.},
+  \bibinfo{author}{Ramos, A.}, \bibinfo{author}{Ferrer~Riera, J.},
+  \bibinfo{author}{Bonnet, J.}, \bibinfo{author}{Pietrabissa, A.},
+  \bibinfo{author}{Ceselli, A.}, \bibinfo{author}{Petrini, A.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{T-NOVA: An Open-Source MANO Stack for NFV
+  Infrastructures}}.
+\newblock \bibinfo{journal}{IEEE Transactions on Network and Service
+  Management} \bibinfo{volume}{14}, \bibinfo{pages}{586--602}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/7997799/},
+  \DOIprefix\doi{10.1109/TNSM.2017.2733620}.
+%Type = Article
+\bibitem[{Kreutz et~al.(2015)Kreutz, Ramos, Esteves~Verissimo,
+  Esteve~Rothenberg, Azodolmolky and Uhlig}]{surveySDN}
+\bibinfo{author}{Kreutz, D.}, \bibinfo{author}{Ramos, F.M.V.},
+  \bibinfo{author}{Esteves~Verissimo, P.}, \bibinfo{author}{Esteve~Rothenberg,
+  C.}, \bibinfo{author}{Azodolmolky, S.}, \bibinfo{author}{Uhlig, S.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{Software-Defined Networking: A Comprehensive
+  Survey}}.
+\newblock \bibinfo{journal}{Proceedings of the IEEE} \bibinfo{volume}{103},
+  \bibinfo{pages}{14--76}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/6994333/},
+  \DOIprefix\doi{10.1109/JPROC.2014.2371999}.
+%Type = Inproceedings
+\bibitem[{Kuklinski et~al.(2016)Kuklinski, Dinh, Destre and
+  Ben~Yahia}]{Kuklinski2016DesignOrchestrators}
+\bibinfo{author}{Kuklinski, S.}, \bibinfo{author}{Dinh, K.T.},
+  \bibinfo{author}{Destre, C.}, \bibinfo{author}{Ben~Yahia, I.G.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{Design principles of generalized network
+  orchestrators}}, in: \bibinfo{booktitle}{2016 IEEE International Conference
+  on Communications Workshops (ICC)}, \bibinfo{publisher}{IEEE}. pp.
+  \bibinfo{pages}{430--435}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/7503825/},
+  \DOIprefix\doi{10.1109/ICCW.2016.7503825}.
+%Type = Article
+\bibitem[{Le et~al.(2016)Le, Hossain, Islam, Kim, Choi and
+  Jang}]{Le2016SurveyNetworks}
+\bibinfo{author}{Le, N.T.}, \bibinfo{author}{Hossain, M.A.},
+  \bibinfo{author}{Islam, A.}, \bibinfo{author}{Kim, D.y.},
+  \bibinfo{author}{Choi, Y.J.}, \bibinfo{author}{Jang, Y.M.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{Survey of Promising Technologies for 5G Networks}}.
+\newblock \bibinfo{journal}{Mobile Information Systems} \bibinfo{volume}{2016},
+  \bibinfo{pages}{1--25}.
+\newblock \URLprefix \url{https://www.hindawi.com/journals/misy/2016/2676589/},
+  \DOIprefix\doi{10.1155/2016/2676589}.
+%Type = Article
+\bibitem[{Leavitt(2009)}]{Leavitt2009}
+\bibinfo{author}{Leavitt, N.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{{Is Cloud Computing Really Ready for Prime Time?}}
+\newblock \bibinfo{journal}{Computer} \bibinfo{volume}{42},
+  \bibinfo{pages}{15--20}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/4755149/},
+  \DOIprefix\doi{10.1109/MC.2009.20}.
+%Type = Misc
+\bibitem[{{Linux Foundation}(a)}]{LinuxFoundationDPDKKit}
+\bibinfo{author}{{Linux Foundation}}, a.
+\newblock \bibinfo{title}{{DPDK - Data Plane Development Kit}}.
+\newblock \URLprefix \url{https://dpdk.org/}.
+%Type = Misc
+\bibitem[{{Linux Foundation}(b)}]{Foundation}
+\bibinfo{author}{{Linux Foundation}}, b.
+\newblock \bibinfo{title}{{Open Orchestrator}}.
+\newblock \URLprefix \url{https://www.open-o.org/}.
+%Type = Misc
+\bibitem[{{Linux Foundation}(c)}]{LinuxFoundation}
+\bibinfo{author}{{Linux Foundation}}, c.
+\newblock \bibinfo{title}{{OPNFV - Open Platform for NFV}}.
+\newblock \URLprefix \url{https://www.opnfv.org/}. \bibinfo{note}{accessed
+  2018-01-13}.
+%Type = Inproceedings
+\bibitem[{Liu et~al.(2011)Liu, Mao, Van~der Merwe and Fernandez}]{liu2011cloud}
+\bibinfo{author}{Liu, C.}, \bibinfo{author}{Mao, Y.}, \bibinfo{author}{Van~der
+  Merwe, J.}, \bibinfo{author}{Fernandez, M.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Cloud resource orchestration: A data-centric
+  approach}, in: \bibinfo{booktitle}{Proceedings of the biennial Conference on
+  Innovative Data Systems Research (CIDR)}, \bibinfo{organization}{Citeseer}.
+  pp. \bibinfo{pages}{1--8}.
+%Type = Inproceedings
+\bibitem[{Martins et~al.(2014)Martins, Ahmed, Raiciu, Olteanu, Honda, Bifulco
+  and Huici}]{Martins:2014:CAN:2616448.2616491}
+\bibinfo{author}{Martins, J.}, \bibinfo{author}{Ahmed, M.},
+  \bibinfo{author}{Raiciu, C.}, \bibinfo{author}{Olteanu, V.},
+  \bibinfo{author}{Honda, M.}, \bibinfo{author}{Bifulco, R.},
+  \bibinfo{author}{Huici, F.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Clickos and the art of network function
+  virtualization}, in: \bibinfo{booktitle}{Proceedings of the 11th USENIX
+  Conference on Networked Systems Design and Implementation},
+  \bibinfo{publisher}{USENIX Association}, \bibinfo{address}{Berkeley, CA,
+  USA}. pp. \bibinfo{pages}{459--473}.
+\newblock \URLprefix \url{http://dl.acm.org/citation.cfm?id=2616448.2616491}.
+%Type = Techreport
+\bibitem[{{Metro Ethernet Forum}(2015)}]{MEF:Third:2015}
+\bibinfo{author}{{Metro Ethernet Forum}}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{The Third Network: Lifecycle Service Orchestration
+  Vision}}.
+\newblock \bibinfo{type}{Technical Report}. MEF.
+\newblock \URLprefix
+  \url{https://www.mef.net/Assets/White_Papers/MEF_Third_Network_LSO_Vision_FINAL.pdf}.
+  \bibinfo{note}{accessed 2017-10-01}.
+%Type = Unpublished
+\bibitem[{{Metro Ethernet Forum}(2016)}]{MEF:LSO:2016}
+\bibinfo{author}{{Metro Ethernet Forum}}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{Lifecycle Service Orchestration (LSO): Reference
+  Architecture and Framework}}.
+\newblock \URLprefix
+  \url{http://dev.mef.net/Assets/Technical_Specifications/PDF/MEF_55.pdf}.
+  \bibinfo{note}{accessed on 2017-10-01}.
+%Type = Unpublished
+\bibitem[{{Metro Ethernet Forum}(2017)}]{MEF:SDWAN:2017}
+\bibinfo{author}{{Metro Ethernet Forum}}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Understanding SD-WAN Managed Services}}.
+\newblock \URLprefix
+  \url{https://www.mef.net/resources/download?id=45\&fileid=file1}.
+  \bibinfo{note}{accessed on 2017-10-01}.
+%Type = Article
+\bibitem[{Mijumbi et~al.(2016a)Mijumbi, Serrat, Gorricho, Bouten, De~Turck and
+  Boutaba}]{Mijumbi2016NetworkChallenges}
+\bibinfo{author}{Mijumbi, R.}, \bibinfo{author}{Serrat, J.},
+  \bibinfo{author}{Gorricho, J.l.}, \bibinfo{author}{Bouten, N.},
+  \bibinfo{author}{De~Turck, F.}, \bibinfo{author}{Boutaba, R.},
+  \bibinfo{year}{2016}a.
+\newblock \bibinfo{title}{{Network Function Virtualization: State-of-the-Art
+  and Research Challenges}}.
+\newblock \bibinfo{journal}{IEEE Communications Surveys {\&} Tutorials}
+  \bibinfo{volume}{18}, \bibinfo{pages}{236--262}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/7243304/},
+  \DOIprefix\doi{10.1109/COMST.2015.2477041}.
+%Type = Article
+\bibitem[{Mijumbi et~al.(2016b)Mijumbi, Serrat, Gorricho, Latre, Charalambides
+  and Lopez}]{Mijumbi2016ManagementVirtualizationb}
+\bibinfo{author}{Mijumbi, R.}, \bibinfo{author}{Serrat, J.},
+  \bibinfo{author}{Gorricho, J.l.}, \bibinfo{author}{Latre, S.},
+  \bibinfo{author}{Charalambides, M.}, \bibinfo{author}{Lopez, D.},
+  \bibinfo{year}{2016}b.
+\newblock \bibinfo{title}{{Management and orchestration challenges in network
+  functions virtualization}}.
+\newblock \bibinfo{journal}{IEEE Communications Magazine} \bibinfo{volume}{54},
+  \bibinfo{pages}{98--105}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/7378433/},
+  \DOIprefix\doi{10.1109/MCOM.2016.7378433}.
+%Type = Article
+\bibitem[{{NGMN Alliance}(2015a)}]{NGMNAlliance20155GPaper}
+\bibinfo{author}{{NGMN Alliance}}, \bibinfo{year}{2015}a.
+\newblock \bibinfo{title}{{5G White Paper}}.
+\newblock \bibinfo{journal}{Next Generation Mobile Networks, White paper} ,
+  \bibinfo{pages}{1--125}\URLprefix
+  \url{https://www.ngmn.org/uploads/media/NGMN_5G_White_Paper_V1_0_01.pdf}.
+%Type = Techreport
+\bibitem[{{NGMN Alliance}(2015b)}]{NGMNAlliance2015NGMNPaper}
+\bibinfo{author}{{NGMN Alliance}}, \bibinfo{year}{2015}b.
+\newblock \bibinfo{title}{{NGMN 5G White Paper}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{https://www.ngmn.org/uploads/media/NGMN_5G_White_Paper_V1_0.pdf}.
+%Type = Unpublished
+\bibitem[{{NGMN Alliance}(2017)}]{NGMN:5G:2017}
+\bibinfo{author}{{NGMN Alliance}}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{5G Network and Service Management including
+  Orchestration}}.
+\newblock \URLprefix
+  \url{https://www.ngmn.org/fileadmin/user_upload/170307_5G_Network_and_Service_Management__including_Orchestration_2.12.7.pdf}.
+%Type = Techreport
+\bibitem[{{NGMN Alliance}(2018)}]{NGMNAlliance2018}
+\bibinfo{author}{{NGMN Alliance}}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{5G End-to-End Architecture Framework v2.0}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{https://www.ngmn.org/fileadmin/ngmn/content/downloads/Technical/2018/180226_NGMN_E2EArchFramework_v2.0.0.pdf}.
+%Type = Misc
+\bibitem[{NTT(2015)}]{gohan}
+\bibinfo{author}{NTT}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{Gohan - REST-based api server to evolve your cloud
+  service very rapidly}}.
+\newblock \URLprefix \url{http://gohan.cloudwan.io/}. \bibinfo{note}{accessed
+  2017-09-14}.
+%Type = Techreport
+\bibitem[{{Open Networking
+  Foundation}(2016a)}]{OpenNetworkingFoundation2016FrameworkNetworks}
+\bibinfo{author}{{Open Networking Foundation}}, \bibinfo{year}{2016}a.
+\newblock \bibinfo{title}{{Framework and Architecture for the Application of
+  SDN to Carrier networks}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix \url{www.opennetworking.org}.
+%Type = Unpublished
+\bibitem[{{Open Networking Foundation}(2016b)}]{ONF:SDN:2016}
+\bibinfo{author}{{Open Networking Foundation}}, \bibinfo{year}{2016}b.
+\newblock \bibinfo{title}{{TR-521: SDN architecture 1.1}}.
+\newblock \URLprefix
+  \url{https://www.opennetworking.org/images/stories/downloads/sdn-resources/technical-reports/TR-521_SDN_Architecture_issue_1.1.pdf}.
+  \bibinfo{note}{accessed on 2017-10-01}.
+%Type = Unpublished
+\bibitem[{{Open Networking Foundation}(2016c)}]{ONF:CSO:2017}
+\bibinfo{author}{{Open Networking Foundation}}, \bibinfo{year}{2016}c.
+\newblock \bibinfo{title}{{TR-528: Mapping Cross Stratum Orchestration (CSO) to
+  the SDN architecture}}.
+\newblock \URLprefix
+  \url{https://www.opennetworking.org/wp-content/uploads/2014/10/TR-528\_CSO\_Architecture.pdf}.
+%Type = Unpublished
+\bibitem[{{Open Networking Foundation}(2017)}]{ONF:Orch:2017}
+\bibinfo{author}{{Open Networking Foundation}}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{TR-540: Orchestration: A More Holistic View}}.
+\newblock \URLprefix
+  \url{https://www.opennetworking.org/wp-content/uploads/2014/10/TR-540_Orchestration-_A_More_Holistic_View_1.50.47_PM.pdf}.
+  \bibinfo{note}{accessed on 2017-10-01}.
+%Type = Misc
+\bibitem[{{Opensource.com}()}]{Opensource.comFourOpensource.com}
+\bibinfo{author}{{Opensource.com}}, .
+\newblock \bibinfo{title}{{Four ways to organize as an open source community |
+  Opensource.com}}.
+\newblock \URLprefix
+  \url{https://opensource.com/business/13/6/four-types-organizational-structures-within-open-source-communities}.
+%Type = Misc
+\bibitem[{{OpenStack Foundation}(2016)}]{OpenStackFoundation2016}
+\bibinfo{author}{{OpenStack Foundation}}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{Tacker - OpenStack}}.
+\newblock \URLprefix \url{https://wiki.openstack.org/wiki/Tacker}.
+%Type = Misc
+\bibitem[{{Oracle Communications}()}]{OracleCommunicationsOracleSolution}
+\bibinfo{author}{{Oracle Communications}}, .
+\newblock \bibinfo{title}{{Oracle Communications Network Service Orchestration
+  Solution}}.
+\newblock \URLprefix
+  \url{http://www.oracle.com/us/industries/communications/network-service-orchestration-ds-2412291.pdf}.
+%Type = Article
+\bibitem[{Ordonez-Lucena et~al.(2017)Ordonez-Lucena, Ameigeiras, Lopez,
+  Ramos-Munoz, Lorca and Folgueira}]{Ordonez-Lucena2017NetworkChallenges}
+\bibinfo{author}{Ordonez-Lucena, J.}, \bibinfo{author}{Ameigeiras, P.},
+  \bibinfo{author}{Lopez, D.}, \bibinfo{author}{Ramos-Munoz, J.J.},
+  \bibinfo{author}{Lorca, J.}, \bibinfo{author}{Folgueira, J.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Network Slicing for 5G with SDN/NFV: Concepts,
+  Architectures and Challenges}}.
+\newblock \bibinfo{journal}{IEEE Communications Magazine} \URLprefix
+  \url{https://arxiv.org/pdf/1703.04676.pdf http://arxiv.org/abs/1703.04676
+  http://dx.doi.org/10.1109/MCOM.2017.1600935},
+  \DOIprefix\doi{10.1109/MCOM.2017.1600935}.
+%Type = Misc
+\bibitem[{{Organization for the Advancement of Structured Information
+  Standards}(2017)}]{OASIS2017TOSCA1.0}
+\bibinfo{author}{{Organization for the Advancement of Structured Information
+  Standards}}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{TOSCA Simple Profile for Network Functions
+  Virtualization (NFV)—Version 1.0}}.
+\newblock \URLprefix
+  \url{http://docs.oasis-open.org/tosca/tosca-nfv/v1.0/tosca-nfv-v1.0.html}.
+%Type = Misc
+\bibitem[{{Organization for the Advancement of Structured Information
+  Standards}(2018)}]{OASIS2017TOSCA1.2}
+\bibinfo{author}{{Organization for the Advancement of Structured Information
+  Standards}}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{TOSCA Simple Profile in YAML Version 1.2}}.
+\newblock \URLprefix
+  \url{http://docs.oasis-open.org/tosca/TOSCA-Simple-Profile-YAML/v1.2/TOSCA-Simple-Profile-YAML-v1.2.html}.
+%Type = Article
+\bibitem[{Panwar et~al.(2016)Panwar, Sharma and
+  Singh}]{Panwar2016ACommunication}
+\bibinfo{author}{Panwar, N.}, \bibinfo{author}{Sharma, S.},
+  \bibinfo{author}{Singh, A.K.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{A survey on 5G: The next generation of mobile
+  communication}}.
+\newblock \bibinfo{journal}{Physical Communication} \bibinfo{volume}{18},
+  \bibinfo{pages}{64--84}.
+\newblock \URLprefix
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S1874490715000531},
+  \DOIprefix\doi{10.1016/j.phycom.2015.10.006}.
+%Type = Article
+\bibitem[{Peltz(2003)}]{Peltz2003WebChoreography}
+\bibinfo{author}{Peltz, C.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{{Web services orchestration and choreography}}.
+\newblock \bibinfo{journal}{Computer} \bibinfo{volume}{36},
+  \bibinfo{pages}{46--52}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/1236471/},
+  \DOIprefix\doi{10.1109/MC.2003.1236471}.
+%Type = Inproceedings
+\bibitem[{Peterson et~al.(2015)Peterson, Baker, De~Leenheer, Bavier, Bhatia,
+  Wawrzoniak, Nelson and Hartman}]{peterson2015xos}
+\bibinfo{author}{Peterson, L.}, \bibinfo{author}{Baker, S.},
+  \bibinfo{author}{De~Leenheer, M.}, \bibinfo{author}{Bavier, A.},
+  \bibinfo{author}{Bhatia, S.}, \bibinfo{author}{Wawrzoniak, M.},
+  \bibinfo{author}{Nelson, J.}, \bibinfo{author}{Hartman, J.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Xos: An extensible cloud operating system}, in:
+  \bibinfo{booktitle}{Proceedings of the 2Nd International Workshop on
+  Software-Defined Ecosystems}, \bibinfo{publisher}{ACM}, \bibinfo{address}{New
+  York, NY, USA}. pp. \bibinfo{pages}{23--30}.
+\newblock \URLprefix \url{http://doi.acm.org/10.1145/2756594.2756598},
+  \DOIprefix\doi{10.1145/2756594.2756598}.
+%Type = Inproceedings
+\bibitem[{Peuster and Karl(2016)}]{7956044}
+\bibinfo{author}{Peuster, M.}, \bibinfo{author}{Karl, H.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Understand your chains: Towards performance
+  profile-based network service management}, in: \bibinfo{booktitle}{2016 Fifth
+  European Workshop on Software-Defined Networks (EWSDN)}, pp.
+  \bibinfo{pages}{7--12}.
+\newblock \DOIprefix\doi{10.1109/EWSDN.2016.9}.
+%Type = Misc
+\bibitem[{Project(2016a)}]{vitalD23}
+\bibinfo{author}{Project, H.V.}, \bibinfo{year}{2016}a.
+\newblock \bibinfo{title}{{D2.3 System Architecture: Final Report}}.
+\newblock \URLprefix
+  \url{https://drive.google.com/file/d/0B5yhgJbT3R8kam5DbUM1ZHNSVGs/view}.
+  \bibinfo{note}{accessed 2017-12-05}.
+%Type = Misc
+\bibitem[{Project(2016b)}]{vital}
+\bibinfo{author}{Project, H.V.}, \bibinfo{year}{2016}b.
+\newblock \bibinfo{title}{{VIrtualized hybrid satellite-TerrestriAl systems for
+  resilient and fLexible future networks}}.
+\newblock \URLprefix \url{http://www.ict-vital.eu/}. \bibinfo{note}{accessed
+  2017-10-09}.
+%Type = Misc
+\bibitem[{Project(2015)}]{xos}
+\bibinfo{author}{Project, O.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{XOS: A Service Abstract Layer for CORD}}.
+\newblock \URLprefix
+  \url{http://xos.wpengine.com/wp-content/uploads/2015/06/Whitepaper-XOS.pdf}.
+  \bibinfo{note}{accessed 2017-09-26}.
+%Type = Inproceedings
+\bibitem[{Riera et~al.(2016)Riera, Batallé, Bonnet, Días, McGrath, Petralia,
+  Liberati, Giuseppi, Pietrabissa, Ceselli, Petrini, Trubian, Papadimitrou,
+  Dietrich, Ramos, Melián, Xilouris, Kourtis, Kourtis and Markakis}]{7502419}
+\bibinfo{author}{Riera, J.F.}, \bibinfo{author}{Batallé, J.},
+  \bibinfo{author}{Bonnet, J.}, \bibinfo{author}{Días, M.},
+  \bibinfo{author}{McGrath, M.}, \bibinfo{author}{Petralia, G.},
+  \bibinfo{author}{Liberati, F.}, \bibinfo{author}{Giuseppi, A.},
+  \bibinfo{author}{Pietrabissa, A.}, \bibinfo{author}{Ceselli, A.},
+  \bibinfo{author}{Petrini, A.}, \bibinfo{author}{Trubian, M.},
+  \bibinfo{author}{Papadimitrou, P.}, \bibinfo{author}{Dietrich, D.},
+  \bibinfo{author}{Ramos, A.}, \bibinfo{author}{Melián, J.},
+  \bibinfo{author}{Xilouris, G.}, \bibinfo{author}{Kourtis, A.},
+  \bibinfo{author}{Kourtis, T.}, \bibinfo{author}{Markakis, E.K.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Tenor: Steps towards an orchestration platform for
+  multi-pop nfv deployment}, in: \bibinfo{booktitle}{2016 IEEE NetSoft
+  Conference and Workshops (NetSoft)}, pp. \bibinfo{pages}{243--250}.
+\newblock \DOIprefix\doi{10.1109/NETSOFT.2016.7502419}.
+%Type = Inproceedings
+\bibitem[{Robbins(1997)}]{Robbins1997ImplementationArchitecture}
+\bibinfo{author}{Robbins, W.}, \bibinfo{year}{1997}.
+\newblock \bibinfo{title}{{Implementation and performance issues in an
+  object-oriented orchestration architecture}}, in:
+  \bibinfo{booktitle}{Proceedings of IEEE International Conference on
+  Multimedia Computing and Systems}, \bibinfo{publisher}{IEEE Comput. Soc}. pp.
+  \bibinfo{pages}{628--629}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/609789/},
+  \DOIprefix\doi{10.1109/MMCS.1997.609789}.
+%Type = Article
+\bibitem[{Rojas(2018)}]{ibn}
+\bibinfo{author}{Rojas, E.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{From software-defined to human-defined networking:
+  Challenges and opportunities}.
+\newblock \bibinfo{journal}{IEEE Network} \bibinfo{volume}{32},
+  \bibinfo{pages}{179--185}.
+\newblock \DOIprefix\doi{10.1109/MNET.2017.1700070}.
+%Type = Inproceedings
+\bibitem[{Rosa et~al.(2015a)Rosa, Rothenberg and Szabo}]{7313620}
+\bibinfo{author}{Rosa, R.V.}, \bibinfo{author}{Rothenberg, C.E.},
+  \bibinfo{author}{Szabo, R.}, \bibinfo{year}{2015}a.
+\newblock \bibinfo{title}{Vbaas: Vnf benchmark-as-a-service}, in:
+  \bibinfo{booktitle}{2015 Fourth European Workshop on Software Defined
+  Networks}, pp. \bibinfo{pages}{79--84}.
+\newblock \DOIprefix\doi{10.1109/EWSDN.2015.65}.
+%Type = Inproceedings
+\bibitem[{Rosa et~al.(2015b)Rosa, Santos and Rothenberg}]{md2}
+\bibinfo{author}{Rosa, R.V.}, \bibinfo{author}{Santos, M.A.S.},
+  \bibinfo{author}{Rothenberg, C.E.}, \bibinfo{year}{2015}b.
+\newblock \bibinfo{title}{Md2-nfv: The case for multi-domain distributed
+  network functions virtualization}, in: \bibinfo{booktitle}{2015 International
+  Conference and Workshops on Networked Systems (NetSys)}, pp.
+  \bibinfo{pages}{1--5}.
+\newblock \DOIprefix\doi{10.1109/NetSys.2015.7089059}.
+%Type = Inproceedings
+\bibitem[{Rostami et~al.(2016)Rostami, {\"{O}}hl{\'{e}}n, Santos and
+  Vidal}]{Rostami2016Multi-Domain5G}
+\bibinfo{author}{Rostami, A.}, \bibinfo{author}{{\"{O}}hl{\'{e}}n, P.},
+  \bibinfo{author}{Santos, M.A.S.}, \bibinfo{author}{Vidal, A.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{Multi-Domain Orchestration across RAN and Transport
+  for 5G}}, in: \bibinfo{booktitle}{Proceedings of the 2016 conference on ACM
+  SIGCOMM 2016 Conference - SIGCOMM '16}, \bibinfo{publisher}{ACM Press},
+  \bibinfo{address}{New York, NY, USA}. pp. \bibinfo{pages}{613--614}.
+\newblock \URLprefix \url{http://dl.acm.org/citation.cfm?doid=2934872.2959073},
+  \DOIprefix\doi{10.1145/2934872.2959073}.
+%Type = Article
+\bibitem[{Rostami et~al.(2017)Rostami, Ohlen, Wang, Ghebretensae, Skubic,
+  Santos and Vidal}]{rostami-ran-transport-17}
+\bibinfo{author}{Rostami, A.}, \bibinfo{author}{Ohlen, P.},
+  \bibinfo{author}{Wang, K.}, \bibinfo{author}{Ghebretensae, Z.},
+  \bibinfo{author}{Skubic, B.}, \bibinfo{author}{Santos, M.},
+  \bibinfo{author}{Vidal, A.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Orchestration of ran and transport networks for 5g:
+  An sdn approach}.
+\newblock \bibinfo{journal}{IEEE Communications Magazine} \bibinfo{volume}{55},
+  \bibinfo{pages}{64--70}.
+\newblock \DOIprefix\doi{10.1109/MCOM.2017.1600119}.
+%Type = Article
+\bibitem[{Rotsos et~al.(2017)Rotsos, King, Farshad, Bird, Fawcett, Georgalas,
+  Gunkel, Shiomoto, Wang, Mauthe, Race and Hutchison}]{Rotsos2017NetworkSurvey}
+\bibinfo{author}{Rotsos, C.}, \bibinfo{author}{King, D.},
+  \bibinfo{author}{Farshad, A.}, \bibinfo{author}{Bird, J.},
+  \bibinfo{author}{Fawcett, L.}, \bibinfo{author}{Georgalas, N.},
+  \bibinfo{author}{Gunkel, M.}, \bibinfo{author}{Shiomoto, K.},
+  \bibinfo{author}{Wang, A.}, \bibinfo{author}{Mauthe, A.},
+  \bibinfo{author}{Race, N.}, \bibinfo{author}{Hutchison, D.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Network service orchestration standardization: A
+  technology survey}}.
+\newblock \bibinfo{journal}{Computer Standards {\&} Interfaces}
+  \bibinfo{volume}{54}, \bibinfo{pages}{203--215}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0920548916302458},
+  \DOIprefix\doi{10.1016/j.csi.2016.12.006}.
+%Type = Inproceedings
+\bibitem[{S. et~al.(2014)S., J., Martin, Cherian and Sastri}]{6906035}
+\bibinfo{author}{S., A.B.}, \bibinfo{author}{J., H.M.},
+  \bibinfo{author}{Martin, J.P.}, \bibinfo{author}{Cherian, S.},
+  \bibinfo{author}{Sastri, Y.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{System performance evaluation of para virtualization,
+  container virtualization, and full virtualization using xen, openvz, and
+  xenserver}, in: \bibinfo{booktitle}{2014 Fourth International Conference on
+  Advances in Computing and Communications}, pp. \bibinfo{pages}{247--250}.
+\newblock \DOIprefix\doi{10.1109/ICACC.2014.66}.
+%Type = Article
+\bibitem[{{Sdxcentral}(2016a)}]{Sdxcentral20162016:}
+\bibinfo{author}{{Sdxcentral}}, \bibinfo{year}{2016}a.
+\newblock \bibinfo{title}{{2016 Mega NFV Report Pt . 1 :}} \URLprefix
+  \url{https://www.sdxcentral.com/wp-content/uploads/2016/04/SDxCentral-Mega-NFV-Report-Part-1-MANO-and-NFVI-2016-B.pdf}.
+%Type = Techreport
+\bibitem[{{Sdxcentral}(2016b)}]{Sdxcentral2016LifecycleOverview}
+\bibinfo{author}{{Sdxcentral}}, \bibinfo{year}{2016}b.
+\newblock \bibinfo{title}{{Lifecycle Service Orchestration (LSO) Market
+  Overview}}.
+\newblock \bibinfo{type}{Technical Report}.
+%Type = Techreport
+\bibitem[{{SONATA Consortium}(2015)}]{SONATAProject2015D2.2Design}
+\bibinfo{author}{{SONATA Consortium}}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{D2.2 Architecture Design}}.
+\newblock \bibinfo{type}{Technical Report}.
+%Type = Techreport
+\bibitem[{{SONATA Consortium}(2016)}]{SONATAProject2016D2.3Design}
+\bibinfo{author}{{SONATA Consortium}}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{D2.3 Updated Requirements and Architecture Design}}.
+\newblock \bibinfo{type}{Technical Report}.
+%Type = Inproceedings
+\bibitem[{Sonkoly et~al.(2015a)Sonkoly, Czentye, Szabo, Jocha, Elek, Sahhaf,
+  Tavernier and Risso}]{Sonkoly2015Multi-DomainClouds}
+\bibinfo{author}{Sonkoly, B.}, \bibinfo{author}{Czentye, J.},
+  \bibinfo{author}{Szabo, R.}, \bibinfo{author}{Jocha, D.},
+  \bibinfo{author}{Elek, J.}, \bibinfo{author}{Sahhaf, S.},
+  \bibinfo{author}{Tavernier, W.}, \bibinfo{author}{Risso, F.},
+  \bibinfo{year}{2015}a.
+\newblock \bibinfo{title}{{Multi-Domain Service Orchestration Over Networks and
+  Clouds}}, in: \bibinfo{booktitle}{Proceedings of the 2015 ACM Conference on
+  Special Interest Group on Data Communication - SIGCOMM '15},
+  \bibinfo{publisher}{ACM Press}, \bibinfo{address}{New York, New York, USA}.
+  pp. \bibinfo{pages}{377--378}.
+\newblock \URLprefix \url{http://dl.acm.org/citation.cfm?doid=2785956.2790041},
+  \DOIprefix\doi{10.1145/2785956.2790041}.
+%Type = Article
+\bibitem[{Sonkoly et~al.(2015b)Sonkoly, Czentye, Szabo, Jocha, Elek, Sahhaf,
+  Tavernier and Risso}]{sonkoly2015multi}
+\bibinfo{author}{Sonkoly, B.}, \bibinfo{author}{Czentye, J.},
+  \bibinfo{author}{Szabo, R.}, \bibinfo{author}{Jocha, D.},
+  \bibinfo{author}{Elek, J.}, \bibinfo{author}{Sahhaf, S.},
+  \bibinfo{author}{Tavernier, W.}, \bibinfo{author}{Risso, F.},
+  \bibinfo{year}{2015}b.
+\newblock \bibinfo{title}{Multi-domain service orchestration over networks and
+  clouds: A unified approach}.
+\newblock \bibinfo{journal}{ACM SIGCOMM Computer Communication Review}
+  \bibinfo{volume}{45}, \bibinfo{pages}{377--378}.
+%Type = Inproceedings
+\bibitem[{Sonkoly et~al.(2014)Sonkoly, Szabo, Jocha, Czentye, Kind and
+  Westphal}]{Sonkoly2014UNIFYingView}
+\bibinfo{author}{Sonkoly, B.}, \bibinfo{author}{Szabo, R.},
+  \bibinfo{author}{Jocha, D.}, \bibinfo{author}{Czentye, J.},
+  \bibinfo{author}{Kind, M.}, \bibinfo{author}{Westphal, F.J.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{{UNIFYing Cloud and Carrier Network Resources: An
+  Architectural View}}, in: \bibinfo{booktitle}{2015 IEEE Global Communications
+  Conference (GLOBECOM)}, \bibinfo{publisher}{IEEE}. pp. \bibinfo{pages}{1--7}.
+\newblock \URLprefix
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7417869},
+  \DOIprefix\doi{10.1109/GLOCOM.2014.7417869}.
+%Type = Techreport
+\bibitem[{Standardization(2017)}]{ITU-T2017ITU-TIMT-2020}
+\bibinfo{author}{Standardization, I.T.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{ITU-T Y-series Recommendations – Supplement 44:
+  Standardization and open source activities related to network softwarization
+  of IMT-2020}}.
+\newblock \bibinfo{type}{Technical Report}.
+%Type = Article
+\bibitem[{Thyagaturu et~al.(2016a)Thyagaturu, Mercian, McGarry, Reisslein and
+  Kellerer}]{7503119}
+\bibinfo{author}{Thyagaturu, A.S.}, \bibinfo{author}{Mercian, A.},
+  \bibinfo{author}{McGarry, M.P.}, \bibinfo{author}{Reisslein, M.},
+  \bibinfo{author}{Kellerer, W.}, \bibinfo{year}{2016}a.
+\newblock \bibinfo{title}{Software defined optical networks (sdons): A
+  comprehensive survey}.
+\newblock \bibinfo{journal}{IEEE Communications Surveys Tutorials}
+  \bibinfo{volume}{18}, \bibinfo{pages}{2738--2786}.
+\newblock \DOIprefix\doi{10.1109/COMST.2016.2586999}.
+%Type = Article
+\bibitem[{Thyagaturu et~al.(2016b)Thyagaturu, Mercian, McGarry, Reisslein and
+  Kellerer}]{Thyagaturu2016SoftwareSurvey}
+\bibinfo{author}{Thyagaturu, A.S.}, \bibinfo{author}{Mercian, A.},
+  \bibinfo{author}{McGarry, M.P.}, \bibinfo{author}{Reisslein, M.},
+  \bibinfo{author}{Kellerer, W.}, \bibinfo{year}{2016}b.
+\newblock \bibinfo{title}{{Software Defined Optical Networks (SDONs): A
+  Comprehensive Survey}}.
+\newblock \bibinfo{journal}{IEEE Communications Surveys {\&} Tutorials}
+  \bibinfo{volume}{18}, \bibinfo{pages}{2738--2786}.
+\newblock \URLprefix \url{http://arxiv.org/abs/1511.04376
+  http://ieeexplore.ieee.org/document/7503119/},
+  \DOIprefix\doi{10.1109/COMST.2016.2586999}.
+%Type = Misc
+\bibitem[{{TM Forum}()}]{TMForumZOOMProject}
+\bibinfo{author}{{TM Forum}}, .
+\newblock \bibinfo{title}{{ZOOM Project}}.
+\newblock \URLprefix \url{https://www.tmforum.org/collaboration/zoom-project/}.
+%Type = Inproceedings
+\bibitem[{Tosatto et~al.(2015)Tosatto, Ruiu and Attanasio}]{7185168}
+\bibinfo{author}{Tosatto, A.}, \bibinfo{author}{Ruiu, P.},
+  \bibinfo{author}{Attanasio, A.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Container-based orchestration in cloud: State of the
+  art and challenges}, in: \bibinfo{booktitle}{2015 Ninth International
+  Conference on Complex, Intelligent, and Software Intensive Systems}, pp.
+  \bibinfo{pages}{70--75}.
+\newblock \DOIprefix\doi{10.1109/CISIS.2015.35}.
+%Type = Misc
+\bibitem[{UNIFY(2013)}]{unify}
+\bibinfo{author}{UNIFY, F.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{{UNIFY: Unifying Cloud and Carrier Networks}}.
+\newblock \URLprefix \url{http://www.fp7-unify.eu/}. \bibinfo{note}{accessed
+  2017-12-01}.
+%Type = Article
+\bibitem[{Vaughan-Nichols(2011)}]{5984813}
+\bibinfo{author}{Vaughan-Nichols, S.J.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Openflow: The next generation of the network?}
+\newblock \bibinfo{journal}{Computer} \bibinfo{volume}{44},
+  \bibinfo{pages}{13--15}.
+\newblock \DOIprefix\doi{10.1109/MC.2011.250}.
+%Type = Article
+\bibitem[{Vilalta et~al.(2016)Vilalta, Mayoral, Casellas, Mart{\'{i}}nez and
+  Mu{\~{n}}oz}]{Vilalta2016SDNServices}
+\bibinfo{author}{Vilalta, R.}, \bibinfo{author}{Mayoral, A.},
+  \bibinfo{author}{Casellas, R.}, \bibinfo{author}{Mart{\'{i}}nez, R.},
+  \bibinfo{author}{Mu{\~{n}}oz, R.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{SDN / NFV Orchestration of Multi-technology and
+  Multi-domain Networks in Cloud / Fog Architectures for 5G Services}}.
+\newblock \bibinfo{journal}{2016 21st OptoElectronics and Communications
+  Conference (OECC) held jointly with 2016 International Conference on
+  Photonics in Switching (PS)} \bibinfo{volume}{1}, \bibinfo{pages}{1--3}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/7718525/}.
+%Type = Inproceedings
+\bibitem[{Vouk(2008)}]{Vouk2008CloudImplementations}
+\bibinfo{author}{Vouk, M.A.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{{Cloud computing - Issues, research and
+  implementations}}, in: \bibinfo{booktitle}{Proceedings of the International
+  Conference on Information Technology Interfaces, ITI}, pp.
+  \bibinfo{pages}{31--40}.
+\newblock \DOIprefix\doi{10.1109/ITI.2008.4588381}.
+%Type = Inproceedings
+\bibitem[{Walters et~al.(2008)Walters, Chaudhary, Cha, Jr. and Gallo}]{4482796}
+\bibinfo{author}{Walters, J.P.}, \bibinfo{author}{Chaudhary, V.},
+  \bibinfo{author}{Cha, M.}, \bibinfo{author}{Jr., S.G.},
+  \bibinfo{author}{Gallo, S.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{A comparison of virtualization technologies for hpc},
+  in: \bibinfo{booktitle}{22nd International Conference on Advanced Information
+  Networking and Applications (aina 2008)}, pp. \bibinfo{pages}{861--868}.
+\newblock \DOIprefix\doi{10.1109/AINA.2008.45}.
+%Type = Article
+\bibitem[{Weerasiri et~al.(2017)Weerasiri, Barukh, Benatallah, Sheng and
+  Ranjan}]{Weerasiri2017}
+\bibinfo{author}{Weerasiri, D.}, \bibinfo{author}{Barukh, M.C.},
+  \bibinfo{author}{Benatallah, B.}, \bibinfo{author}{Sheng, Q.Z.},
+  \bibinfo{author}{Ranjan, R.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{A Taxonomy and Survey of Cloud Resource
+  Orchestration Techniques}}.
+\newblock \bibinfo{journal}{ACM Computing Surveys} \bibinfo{volume}{50},
+  \bibinfo{pages}{1--41}.
+\newblock \URLprefix \url{http://dl.acm.org/citation.cfm?doid=3071073.3054177},
+  \DOIprefix\doi{10.1145/3054177}.
+%Type = Article
+\bibitem[{Wen et~al.(2017)Wen, Yang, Garraghan, Lin, Xu and
+  Rovatsos}]{Wen2017FogServices}
+\bibinfo{author}{Wen, Z.}, \bibinfo{author}{Yang, R.},
+  \bibinfo{author}{Garraghan, P.}, \bibinfo{author}{Lin, T.},
+  \bibinfo{author}{Xu, J.}, \bibinfo{author}{Rovatsos, M.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Fog orchestration for Internet of Things services}}.
+\newblock \bibinfo{journal}{IEEE Internet Computing} \bibinfo{volume}{21},
+  \bibinfo{pages}{16--24}.
+\newblock \DOIprefix\doi{10.1109/MIC.2017.36}.
+%Type = Article
+\bibitem[{Yi et~al.(2018)Yi, Wang, Li, Das and Huang}]{nfv-survey18}
+\bibinfo{author}{Yi, B.}, \bibinfo{author}{Wang, X.}, \bibinfo{author}{Li, K.},
+  \bibinfo{author}{Das, S.K.}, \bibinfo{author}{Huang, M.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{A comprehensive survey of network function
+  virtualization}.
+\newblock \bibinfo{journal}{Computer Networks} \bibinfo{volume}{133},
+  \bibinfo{pages}{212--262}.
+\newblock \URLprefix \url{https://doi.org/10.1016/j.comnet.2018.01.021},
+  \DOIprefix\doi{10.1016/j.comnet.2018.01.021}.
+%Type = Article
+\bibitem[{{Yong Li} and {Min Chen}(2015)}]{YongLi2015Software-DefinedSurvey}
+\bibinfo{author}{{Yong Li}}, \bibinfo{author}{{Min Chen}},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{Software-Defined Network Function Virtualization: A
+  Survey}}.
+\newblock \bibinfo{journal}{IEEE Access} \bibinfo{volume}{3},
+  \bibinfo{pages}{2542--2553}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/7350211/},
+  \DOIprefix\doi{10.1109/ACCESS.2015.2499271}.
+
+\end{thebibliography}
