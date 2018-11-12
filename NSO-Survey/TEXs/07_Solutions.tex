@@ -1,0 +1,269 @@
+\section{Enabling Technologies and Solutions}
+\label{sec:proj}
+Some of the existing orchestrating solutions are just tied to a specific networking environment, and moreover, some of them can orchestrate an only limited number of services~\cite{Kuklinski2016DesignOrchestrators}. In this section, an overview of main orchestration frameworks is presented, including open source, proposed and commercial solutions. The projects cover different technologies and domains. The Table~\ref{tab:NSOsolutions} summarizes the main characteristics of each open source projects with respect to leader entities, resource domains, scope \gls{nfvmano}, \gls{vnf} definition, Management Interface, and coverage area (single/multi-domain).
+
+\subsection{Open Source Solutions}
+
+Open Source Foundations such as the Apache Foundation and the Linux Foundation are increasingly becoming the hosting entities for large collaborative open source projects in the area of networking. % d many open source projects related to \gls{nfv} and \gls{sdn}. 
+The most important projects are \gls{onos}, \gls{cord}, Open Daylight, OPNFV and, recently, ONAP, formed by the merger of \gls{openo} and ECOMP. All the projects are important to create a well-defined platform for service orchestration.
+
+Note that to 5G network, standardization and open source are essential for fast innovation. Vendors, operators, and communities are betting on open source solutions. Even so, existing solutions are still not mature enough, and advanced network service orchestration platforms are missing~\cite{Katsalis2016Multi-DomainDirections}.
+
+In early 2016, the Linux Foundation formed the \gls{openo} Project to develop the first open source software framework and orchestrator for agile operations of \gls{sdn} and \gls{nfv}. \gls{onos} is also developing an orchestration platform for the \gls{cord} project to provide \gls{xaas} exploiting \gls{sdn}, micro-services and disaggregation using open source software and commodity hardware~\cite{Alvizu2016AdvanceEra}.
+
+Many open source initiatives towards network service orchestration are being deployed and this including operators, \gls{vnf} vendors and integrators. However, these are still in the early stages. We describe next some of these initiatives.%retirado da v1
+
+%In this scenario, operators appear committed to using open source as a path to accelerating their development of NFV/Orchestration platforms \cite{c16}. Some of these include Telefonica (OpenMano \cite{c17}), China Mobile (Open-O), AT\&T (Ecomp \cite{c18}), and NTT (Gohan \cite{c19}). Defining an standard architecture will come down to coordination among a number of different projects and standards bodies – including standards and open-source tools emerging for SDN, NFV and Multi-domain orchestration.
+
+\subsubsection{Cloudify}
+Cloudify~\cite{GigaSpaces2015} is an orchestration-centric framework for cloud orchestration focusing on optimization \gls{nfv} orchestration and management. It provides a \gls{nfvo} and Generic-\gls{vnfm} in the context of the \gls{etsi} \gls{nfv}, and can interact with different \glspl{vim}, containers, and non-virtualized devices and infrastructures. Cloudify is aligned with the \gls{mano} reference architecture but not fully compliant. 
+
+Besides, Cloudify provides full end-to-end lifecycle of \gls{nfv} orchestration through a simple TOSCA-based blueprint following a model-driven and application-centric approach. It includes \gls{aria} as its core orchestration engine providing advanced management and ongoing automation.
+
+In order to help contribute to open source \gls{nfvmano} adoption, Cloudify engages in and sponsors diverse \gls{nfv} projects and standards organizations, such as TOSCA specification, \gls{aria}, \gls{onap} and the NATO's DCIS Cube architecture~\cite{dcisCube}.
+
+%http://www.sigcomm.org/sites/default/files/ccr/papers/2014/August/2619239-2631448.pdf
+%http://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p377.pdf
+%https://sb.tmit.bme.hu/mediawiki/index.php/ESCAPE
+%https://prezi.com/f-ms1rwxxdwa/multi-domain-service-orchestration-over-networks-and-clouds-a-unified-approach/?utm_campaign=share&utm_medium=copy
+%https://github.com/hsnlab/escape
+%https://sb.tmit.bme.hu/escape/
+\subsubsection{ESCAPE}
+Based on the architecture proposed by EU FP7 UNIFY project~\cite{unify}, ESCAPE (Extensible Service ChAin Prototyping Environment) is an NFV proof of concept framework which supports three main layers of the UNIFY architecture: (i) service layer, (ii) orchestrator layer and, (iii) infrastructure layer~\cite{csoma2014escape}. It can operate as a Multi-domain orchestrator for different technological domains, as well as different administrative domains. ESCAPE also supports remote domain management (recursive orchestration), and it operates on joint resource abstraction models (networks and clouds)~\cite{sonkoly2015multi}.  
+
+In the current implementation of the process flow in ESCAPE, it receives a specific service request on its REST API of the Service Layer. It then sends the requested Service Function Chains to the Orchestration Layer to map the service components to its global resource view. As a final step, the calculated service parts are sent to the corresponding local orchestrators towards instantiating the service.
+
+%http://gohan.cloudwan.io/
+%https://thenewstack.io/opensource-nfv-part-4-opensource-mano/
+%https://www.sdxcentral.com/articles/news/4-carriers-create-nfv-mano-open-source-groups/2016/01/
+%https://www.openstack.org/videos/tokio-2015/gohan-an-open-source-service-development-engine-for-sdnnfv-orchestration
+\subsubsection{Gohan}
+NTT's Gohan~\cite{gohan} is a MANO-related initiative for \gls{sdn} and \gls{nfv} orchestration. The Gohan architecture is based on micro-services (just as the TeNOR implementation) within a single unified process in order to keep the system architecture and deployment model simple. A Gohan service definition uses a JSON schema (both definition and configuration of resources). With this schema, Gohan delivers a called schema-driven service deployment, and it includes REST-based API server, database backend, command line interface (CLI), and web user-interface (WebUI). Finally, a couple of applicable use cases for the NTT's Gohan include to use it (i) in the Service Catalog and Orchestration Layer on top of Cloud services and (ii) as a kind of NFV MANO which manages both Cloud VIM and legacy network devices. 
+
+\subsubsection{ONAP}
+Under the Linux Foundation banner, \acrfull{onap}~\cite{onap} resulted from the union of two open source \gls{mano} initiatives (OPEN-O~\cite{Foundation} and OpenECOMP~\cite{ATT2016ECOMPPaper}). The \gls{onap} software platform deploys a unified architecture and implementation, with robust capabilities for the design, creation, orchestration, monitoring and lifecycle management of physical and virtual network functions~\cite{onapwiki}. Also, the \gls{onap} functionalities are expected to address automated deployment and management and policies optimization through an intelligent operation of network resource using big data and \gls{ai}~\cite{onapconvergedigest}.
+
+ONAP is currently being supported and pushed by largest network and cloud operators and technology providers around the world~\cite{onapGuide}. Therefore, ONAP can be used to design, develop, and implement dynamic network services across service provider's network and/or within its own cloud.
+
+%Two of the biggest challenges to merge two large sets of code are: (i) define a higher-level common information model unifying the predominant data models used by OPEN-O (TOSCA) and OpenECOMP (YANG) and, (ii) create a standard process to the onboarding and lifecycle management of VNFs so that end users can introduce these using an automated process (without requiring core developer teams)~\cite{onaplightreading}.
+
+%http://openbaton.github.io/
+\subsubsection{Open Baton}
+Built by the Fraunhofer Fokus Institute and the Technical University of Berlin, Open Baton~\cite{openbatongit} is an open source reference implementation of the NFVO based on the ETSI NFV MANO specification and the TOSCA Standard. It allows it to be a vendor-independent platform (i.e., interoperable with different vendor solutions) and easily extensible (at every level) for supporting new functionalities and existing platforms.
+
+The current Open Baton release 4 includes many different features and components for building a complete environment fully compliant with the NFV specification. Among the most important are: (i) a \gls{nfvo} (exposing TOSCA APIs) , (ii) a generic \gls{vnfm} and Juju \gls{vnfm}, (iii) a marketplace integrated within the Open Baton dashboard, (iv) an Autoscaling and Fault Management System and (v) a powerful event engine for the dispatching of lifecycle events execution.
+
+Finally, Open Baton is included as a supporting project in the project named Orchestra\footnote{https://wiki.opnfv.org/display/PROJ/Orchestra}. This OPNFV initiative seeks to integrate the Open Baton orchestration functionalities with existing OPNFV projects in order to execute testing scenarios (and provide feedbacks) without requiring any modifications in their projects.
+
+%https://www.slideshare.net/GiuseppeCarella/open-baton-a-framework-for-virtual-network-function-management-and-orchestration-mano-for-emerging-softwarebased-5g-networks
+%OpenBaton provides a \gls{nfvo}, a generic \gls{vnfm} 
+
+%A \gls{nfvo}, a generic \gls{vnfm}, a lightweight \gls{ems}, a multi-site NFVI (based on OpenStack and Docker) and a user-user friendly dashboard are part of the OpenBaton's main components for building a complete environment fully compliant with the NFV specification. 
+
+%https://www.fokus.fraunhofer.de/new/open-baton-rel3
+%https://wiki.opnfv.org/display/PROJ/Orchestra
+
+%It provides a Generic VNFM for easily integrating existing network functions
+%It provides a Network Function Virtualisation Orchestrator (NFVO) exposing a dashboard for managing Network Services. It provides a Generic-VNFM and a lightweight Element Management System (EMS). It integrates with a multi-site NFV Infrastructure based on OpenStack and Docker.
+
+\subsubsection{Open Source MANO (OSM)}
+\gls{etsi} Open Source MANO~\cite{ETSIOpenMANO} is an ETSI-hosted project to develop an Open Source \gls{nfvmano} platform aligned with \gls{etsi} \gls{nfv} Information Models and that meets the requirements of production \gls{nfv} networks. The project launched its fourth release~\cite{Israel2017OSMOverviewb} in May 2018 and presented improvements in closed‐loop capabilities and modeling and networking logic. In addition, this release provides cloud native installation and a new northbound interface, aligned with ETSI NFV specification SOL005~\cite{ ETSIIndustrySpecificationGroupISGNFV2018NetworkNFV}. 
+
+The \gls{osm} architecture has a clear split of orchestration function between Resource Orchestrator and Service Orchestrator. It integrates open source software initiatives such as Riftware as Network Service Orchestrator and GUI, OpenMANO as Resource Orchestrator (\gls{nfvo}), and Juju~\footnote{https://www.ubuntu.com/cloud/juju} Server as Configuration Manager (G-VNFM). The resource orchestrator supports both cloud and SDN environments. The service orchestrator provides \gls{vnf} and NS lifecycle management and consumes open Information/Data Models, such as YANG. Its architecture covers only a single administrative domain.  
+
+\subsubsection{Tacker}
+Tacker~\cite{OpenStackFoundation2016} is an OpenStack project to build a generic \gls{vnfm} and a \gls{nfvo} to deploy network services and \glspl{vnf} on a Cloud/\gls{nfv} infrastructure platform (e.g., OpenStack). Tacker is based on \gls{etsi} \gls{mano} architectural framework, which provides a functional stack to orchestrate end-to-end network services using \glspl{vnf}.
+
+The \gls{nfvo} is responsible for the high-level management of \glspl{vnf} and managing resources in the \gls{vim}. The \gls{vnfm} manages components that belongs to the same \gls{vnf} instance controlling the \gls{vnf} lifecycle. The Tacker also does mapping to SFC (Service Function Chain) and supports auto scaling and TOSCA \gls{nfv} Profile (using heat-translator).
+
+The tacker components are directly integrated into OpenStack and thus provides limited interoperability with others \glspl{vim}. It combines the \gls{nfvo} and \gls{vnfm} into a single element nevertheless, internally, the functionalities are divided. Another limitation is that it just works in single domain environments.   
+
+% \subsubsection{Open-O}
+% \acrfull{openo}~\cite{Foundation} is a project backed by the Linux Foundation which objective is bringing the industry together to develop the first open source software framework and orchestrator. The framework is responsibility for deliver end-to-end services across \gls{nfv}) Infrastructure, as well as \acrlong{sdn} and legacy network services.
+
+% Besides, \acrfull{openo} promotes create and manage any service over any network. Its architecture is compliant with the \gls{etsi} \gls{nfvmano} but not fully compliant, and has adopted standard service modeling languages TOSCA to ensure portability and flexibility. The project deploys component beyond \gls{etsi} scope for MANO. 
+
+% Actually, the Linux Foundation announced the merger of open source ECOMP and \acrfull{openo} to create the new \gls{onap} Project. 
+
+% \subsubsection{OpenECOMP} Hosted by the Linux foundation, this Enhanced Control, Orchestration, Management and Policy (ECOMP)~\cite{ATT2016ECOMPPaper} platform provides real-time, policy-driven automation of service/network/cloud delivery and lifecycle management. The OpenECOMP architecture consists of two major frameworks: (i) a design time framework to define and program the platform and (ii) a runtime execution framework to execute the logic programmed in the design phase, which furthermore extends the ETSI-NFV MANO architecture by the introduction of Controller and Policy components. 
+
+%These capabilities are provided using two major architectural frameworks: 
+% enables product/service independent capabilities for design, creation and lifecycle management. 
+% ECOMP expands the scope of ETSI MANO coverage by including Controller and Policy components. 
+% https://www.openecomp.org -> https://www.onap.org/
+%Amdocs has announced that it will partner with the Linux Foundation to accelerate the global adoption of the open source Enhanced Control, Orchestration, Management and Policy (ECOMP) platform.
+
+
+
+%http://www.lightreading.com/nfv/nfv-mano/onap-makes-splashy-ons-debut/d/d-id/731887
+% (i) % One early test will be unification of a higher-level information model, that would enable the combined project to continue using different data models in different layers of the ecosystem. That's important because Tosca is the modeling language adopted by Open-O, and used in some parts of ECOMP, but the latter makes wider use of Yang, which is the more traditional telecom networking approach
+% (ii) And one key goal is to create a standard approach to the onboarding and lifecycle management of virtual network functions (VNFs) so that potentially thousands of these can be introduced, and onboarded by users is an automated process, Gilbert says. Today, VNF onboarding requires teams of developers.
+
+%How long does it take to merge eight million lines of code from ATT’s ECOMP framework with the code from the Open-O project, which is also very large?
+ 
+%https://www.onap.org/
+
+% "Tosca is an evolving capability -- when we started [ECOMP] four to five years ago, it was at its infancy and not production quality," Gilbert commented. "In reality, there is not one data model that is the right model, there are multiple layers to this and those may use different data models. The first challenge is unification at a higher-level information model."
+
+\subsubsection{TeNOR}
+Developed by the T-NOVA project~\cite{FP7projectT-NOVAT-NOVAInfrastructures}, the main focus of this Multitenant/Multi NFVI-PoP orchestration platform is to manage the entire \gls{ns} lifecycle service, optimizing the networking and IT resources usage. TeNOR~\cite{7502419} presents an architecture based on a collection of loosely coupled, collaborating services (also know as micro-service architecture) that ensure a modular operation of the system. Micro-services are responsible for managing, providing and monitoring \gls{ns}/\glspl{vnf}, in addition to forcing SLA agreements and determining required infrastructure resources to support an NS instance. 
+
+Its architecture is split into two main components: \textit{Network Service Orchestrator}, responsible for NS lifecycle and associated tasks, and \textit{Virtualized Resource Orchestrator}, responsible for the management of the underlying physical resources. To map the best available location in the infrastructure, TeNOR implements service mapping algorithms using \gls{ns} and \gls{vnf} descriptors. Both descriptors follow the TeNOR's data model specifications that are a derived and extended version of the ETSI NSD and VNFD data model.
+%https://www.researchgate.net/profile/George_Xilouris/publication/304624865_T-NOVA_Network_Functions-as-a-Service_NFaaS_over_virtualised_NetworkIT_infrastructures/links/5775108608ae4645d60b83e0/T-NOVA-Network-Functions-as-a-Service-NFaaS-over-virtualised-Network-IT-infrastructures.pdf
+%is focused on: – automated deployment and configuration of services composed of virtualized functions management and – optimization of networking and IT resources for VNF hosting.
+
+
+\subsubsection{X--MANO}
+X--MANO~\cite{francescon2017x} is an orchestration framework to coordinate end-to-end network service delivery across different administrative domains. 
+
+X--MANO introduces components and interfaces to address several challenges and requirements for cross-domain network service orchestration such as (i) business aspects and architectural considerations, (ii) confidentiality, and (iii) life-cycle management. In the former case,  X--MANO supports hierarchical, cascading and peer-to-peer architectural solutions by introducing a flexible, deployment-agnostic federation interface between different administrative and technological domains. The confidentiality requirement is addressed by the introduction of a set of abstractions (backed by a consistent information model) so that each domain advertises capabilities, resources, and \glspl{vnf} without exposing details of implementation to external entities. To address the multi-domain life-cycle management requirement, X--MANO introduces the concept of programmable network service based on a domain specific scripting language to allow network service developers to use a flexible programmable Multi-Domain Network Service Descriptor (MDNS), so that network services are deployed and managed in a customized way.
+% For the multi-domain life-cycle cycle is the FM. This is done using a flexible programmable NSD which allows network service developers to customize the way network services are deployed and managed. NSDs
+%network service which relies on a domain specific scripting language in order to allow network service developers to implement custom life–cycle management policies.
+%X--MANO introduces a confidentially-preserving interface for Inter–domain federation, an information model and a concept of programmable network service to address different challenges and requirements for cross-domain network service orchestration such as life-cycle management, business aspects, architectural considerations, confidentiality, etc.
+
+
+
+%http://ariatosca.incubator.apache.org/
+%https://github.com/apache/incubator-ariatosca
+%http://cloudify.co/2016/03/15/cloud-open-networking-summit-nfv-sdn-aria-tosca-application-orchestration-automation.html
+%http://ariatosca.org/?__hstc=10735851.7b474c677647278b0e663e5cb8faf4cc.1506015982839.1506015982839.1506015982839.1&__hssc=10735851.1.1506015982839&__hsfp=2853998135
+% \subsubsection{ARIA TOSCA}
+% Under the Apache Software Foundation, Agile Reference Implementation of Automation~(ARIA)~\cite{ariatosca} is a framework for building TOSCA-based orchestration solutions. It supports multi-cloud and multi-VIM environments while offering a Command Line Interface~(CLI) to develop and execute TOSCA templates, and an easily consumable Software Development Kit~(SDK) for building TOSCA enabled software. By taking advantage of its programmable interface libraries, ARIA can be embedded into collaborative projects that want to implement TOSCA-based orchestration. For example, Open-O~\cite{Foundation} is using the ARIA TOSCA code-base to create its SDN \& NFV orchestration tool~\cite{ariatoscacloudify}.
+
+%that can be utilized by any organization that wants to implement TOSCA-based orchestration in its current or future solutions, whether a multi-cloud enterprise application, or an NFV or SDN solution for multiple virtual infrastructure managers. 
+%ARIA offers a Command Line Interface~(CLI) to develop and execute TOSCA templates, and an easily consumable Software Development Kit~(SDK) for building TOSCA enabled software.
+%lightweight and CLI-driven library
+%Through CLI, it is possible to develop and execute TOSCA templates 
+%It provides a completely vendor / cloud / technology neutral orchestration
+
+%ARIA is a vendor neutral and technology independent implementation of the OASIS TOSCA specification.
+% is an open, light, CLI-driven library of orchestration tools that other open projects can consume to easily build TOSCA-based orchestration solutions. 
+%ARIA is a an open-source, TOSCA-based, lightweight library and CLI for orchestration and for consumption by projects building TOSCA-based solutions for resources and services orchestration.
+%ARIA, which stands for Agile Reference Implementation of Automation, is an open source, TOSCA-based orchestration library, which supports multi-cloud and multi-VIM environments, that can be used by any organization wanting to integrate TOSCA orchestration capabilities into their current and future solutions. Its goal is to accelerate adoption of the TOSCA standard for orchestration with an open governance model by bringing together a large community of contributors to develop solutions more quickly.
+
+
+%http://xosproject.org/wp-content/uploads/2015/04/paper-xos-bigsys15.pdf
+%http://xos.wpengine.com/wp-content/uploads/2015/06/Whitepaper-XOS.pdf
+%https://www.sdxcentral.com/projects/xos/
+%http://guide.xosproject.org/archguide/
+\subsubsection{XOS}
+Designed around the idea of Everything-as-a-Service (XaaS), XOS~\cite{peterson2015xos} unifies SDN, NFV, and Cloud services (all running on commodity servers) under a single uniform programming environment. The XOS software structures is organized around three layers: (i) a Data Model (implemented in Django\footnote{https://www.djangoproject.com/}) which records the logically centralized state of the system, (ii) a set of Views (running on top of the Data Model) for customizing access to the XOS services and (iii) a Controller Framework (from-scratch program) is responsible for distributed state management. 
+
+XOS runs on the top of a mix of service controllers such as data center cloud management systems (e.g., OpenStack), SDN-based network controllers (e.g., ONOS), network hypervisors (e.g., OpenVirtex), virtualized access services (e.g., CORD), etc. This collection of services controllers allows the mapping to XOS onto the ETSI NFV Architecture playing the role of a \gls{vnfm}. Using XOS as the \gls{vnfm} facilitates unbundling the gls{nfvo} and enable to control both a set of EMs and the VIM~\cite{xos}.%it brings both SDN and NFV under the same orchestration framework.
+
+%Because XOS coordinates a collection of service controllers, it plays the role of a VNF Manager (VNFM). Interestingly, because XOS treats everything as a service—including the underlying IaaS—having the VNFM control both a set of EMs and the VIM is one of the biggest advantages XOS brings to the NFV architecture: It defines a single locus of control for coordinating both the infrastructure that hosts a VNF and the controller that manages a VNF. Our experience is that these two require careful synchronization.
+
+%Using XOS as the VNFM has a second advantage, which is to facilitate unbundling the NFV Orchestrator (NFVO). In particular, XOS Views provide an opportunity to build minimal/targeted orchestrators. Any given provider can program whatever policy­level functionality it needs into a customized View—including incorporating elements of their legacy OSS/BSS machinery—without having to adopt a one­size­fits­all third­party NFVO. Of course, it is also possible to implement an existing NFVO like HP’s NFV Director or Telefonica’s OpenMano on top of xoslib.
+
+%An important observation about the design is that XOS plays the role of VNFM in ETSI’s NFV Architecture. Doing so has three advantages: (1) it empowers both the operator and the software service vender by unbundling the NFVO; (2) it brings both SDN and NFV under the same orchestration framework; and (3) it provides a convenient implementation point for addressing the pragmatic issue of simultaneously controlling and programing VNFs.
+
+% we present ESCAPE, our prototyping framework developed to the UNIFY architecture.
+
+% \begin{table*}[t]
+% \small
+% \caption{Summary of Open Source NSO Implementations}            
+% %\footnotesize
+% \centering                                                                  
+% \rowcolors{2}{gray!25}{}
+% \renewcommand{\arraystretch}{1.3}
+% \begin{tabular}{c p{3cm} p{1.8cm} p{2cm} p{1.9cm} p{2cm} p{1.3cm} c}                                        
+% \hline                                                                      
+% \textbf{} & \textbf{Organization/Leader} & \textbf{Resource Domains} & \textbf{MANO}& \textbf{VNF Definition} & \textbf{Management Interface} & \textbf{Single/Multi-Domain} & \\ \hline\hline
+
+% OSM~\cite{ETSIOpenMANO} & ETSI & Cloud, SDN, NFV &  NFVO, VNFM, VIM & YANG  &  CLI, API, GUI & Intra &   \\
+
+% Tacker~\cite{OpenStackFoundation2016} & OpenStack Foundation  & Cloud, NFV & NFVO, VNFM  &  HOT, TOSCA  & CLI, API, GUI  & Intra  &   \\
+
+% Cloudify~\cite{GigaSpaces2015}  & GigaSpace  & Cloud & NFVO, VNFM & TOSCA  & CLI, API, GUI &  Intra &   \\
+% % Cloudify
+% % MANO: NFVO, VNFM https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/solutions/industry/cloudify-nfv-vmware-joint-solution-brief.pdf
+
+% %Open-O~\cite{Foundation} & Linux Foundation & Cloud, SDN, Legacy  & NFVO & YANG, TOSCA  &  CLI, API, GUI & Both  &   \\
+% %https://tools.ietf.org/html/draft-deng-opsawg-nfvrg-sdnrg-openo-00
+
+% X--MANO~\cite{francescon2017x}  & VITAL  & - & NFVO & TOSCA  & API, GUI  &  Inter &   \\
+% %NFVO(SO): https://github.com/5g-empower/x-mano
+
+% ESCAPE~\cite{csoma2014escape} & FP7 UNIFY  &  Cloud, SDN & NFVO, VIM  & Unify(NFFG) & CLI, API  & Both  &   \\
+ 
+% %OpenECOMP~\cite{ATT2016ECOMPPaper} & Linux Foundation & Cloud, SDN, Legacy & NFVO, VNFM &  YANG & GUI & Both &   \\
+% %http://www.lightreading.com/nfv/nfv-mano/onap-makes-splashy-ons-debut/d/d-id/731887
+
+% ONAP~\cite{onap} & Linux Foundation & Cloud, SDN, NFV,  Legacy & NFVO, VNFM & HOT, TOSCA, YANG  & CLI, API, GUI & Both &   \\
+% %http://www.telcotransformation.com/author.asp?section_id=401&doc_id=732273
+
+% OpenBaton~\cite{openbatongit} & Fraunhofer / TU Berlin & Cloud, NFV & NFVO, VNFM & TOSCA, Own & CLI, API, GUI & Intra &   \\
+
+% ARIA TOSCA~\cite{ariatosca} & Apache Foundation  & Cloud & - & TOSCA  & CLI, API & Intra &   \\
+% %NFVO: https://pages.netcracker.com/rs/937-BYM-547/images/FY16%20MANO%20Competitive%20Dynamics%20and%20Solution%20Assessments.pdf
+
+% XOS~\cite{peterson2015xos} & ON.Lab & Cloud, SDN, NFV & VNFM & -  & API, GUI  & Both &   \\
+% %Cloud,sdn,vfn http://xos.wpengine.com/wp-content/uploads/2015/06/Whitepaper-XOS.pdf
+% %API, GUI http://guide.xosproject.org/archguide/
+
+% TeNOR~\cite{7502419} & FP7 T-NOVA & Cloud, SDN, NFV & NFVO & Own(ETSI)  & API, GUI  & Intra &  \\
+
+% Gohan~\cite{gohan} & NTT Data & Cloud, SDN, NFV, Legacy & NFVO, VNFM & Own  & CLI, API, GUI & Intra &   \\
+% % JSON (Service definition)
+% %https://thenewstack.io/opensource-nfv-part-4-opensource-mano/
+
+% %Ericsson Harmonizer~\cite{iovanna2015effective} &  & SDN, Optical, Legacy &  &   &   & Single-Operator &   \\
+ 
+% \hline
+% %\multicolumn{8}{l}{\cellcolor{white}(1) .} 
+% %\multicolumn{8}{l}{.} 
+% %\\
+% %\multicolumn{8}{l}{(*) .}                         
+% \end{tabular}
+% \label{tab:NSOsolutions}                               
+% \end{table*}
+
+\begin{table*}[t]
+\centering
+\rowcolors{2}{gray!25}{}
+\renewcommand{\arraystretch}{1.3}
+\setlength{\arrayrulewidth}{1pt}
+\tiny
+%\scriptsize
+\caption{Summary of Open Source NSO Implementations}
+\label{tab:NSOsolutions}
+\begin{tabular}{p{1.6cm}p{1.5cm}p{1.7cm}|c|c|c|c|c|c|c|c|c|c|c|}
+\multirow{2}{*}{Solution} & \multirow{2}{*}{Leader} & \multirow{2}{*}{VNF Definition} & \multicolumn{4}{c|}{Resource Domain}                                                                           & \multicolumn{3}{c|}{MANO}                                                        & \multicolumn{3}{c|}{Interface Management}                                      & \multicolumn{1}{c|}{Multiple }                                 \\
+                          &                         &                                 & \multicolumn{1}{l|}{Cloud} & \multicolumn{1}{l|}{SDN} & \multicolumn{1}{l|}{NFV} & \multicolumn{1}{l|}{Legacy} & \multicolumn{1}{l|}{NFVO} & \multicolumn{1}{l|}{VNFM} & \multicolumn{1}{l|}{VIM} & \multicolumn{1}{l|}{CLI} & \multicolumn{1}{l|}{API} & \multicolumn{1}{l|}{GUI} & \multicolumn{1}{l|}{Domains} \\ \hline\hline 
+Cloudify~\cite{GigaSpaces2015}                 & GigaSpace               & TOSCA                           &    \ding{51}                         &                          &      \ding{51}                    &                             &     \ding{51}                       &      \ding{51}                      &                          &           \ding{51}                &        \ding{51}                   &         \ding{51}                  &                               \\
+ESCAPE~\cite{unify}                    & FP7 UNIFY               & Unify                           &      \ding{51}                       &       \ding{51}                    &       \ding{51}                   &                             &      \ding{51}                      &                           &       \ding{51}                    &        \ding{51}                   &   \ding{51}                        &                          &         \ding{51}                      \\
+Gohan~\cite{gohan}                     & NTT Data                & Own                             &      \ding{51}                       &      \ding{51}                    &       \ding{51}                   &     \ding{51}                        &       \ding{51}                    &        \ding{51}                   &                          &       \ding{51}                   &       \ding{51}                   &      \ding{51}                    &                               \\
+ONAP~\cite{onap}                      & Linux Foundation        & HOT, TOSCA, YANG                &       \ding{51}                      &     \ding{51}                     &     \ding{51}                     &    \ding{51}                         &      \ding{51}                     &        \ding{51}                   &    \ding{51}                       &      \ding{51}                    &    \ding{51}                      &      \ding{51}                    &        \ding{51}              \\
+Open Baton~\cite{openbatongit}                & Fraunhofer / TU Berlin  & TOSCA, Own                      &        \ding{51}                     &                          &        \ding{51}                  &                             &       \ding{51}                    &       \ding{51}                    &                          &      \ding{51}                    &         \ding{51}                 &         \ding{51}                 &                               \\
+OSM~\cite{ETSIOpenMANO}                       & ETSI                    & YANG                            &        \ding{51}                     &       \ding{51}                   &      \ding{51}                    &                             &     \ding{51}                      &          \ding{51}                 &          \ding{51}                &        \ding{51}                  &      \ding{51}                    &           \ding{51}               &                               \\
+Tacker~\cite{OpenStackFoundation2016}                    & OpenStack Foundation    & HOT, TOSCA                      &        \ding{51}                     &                          &        \ding{51}                  &                             &     \ding{51}                      &       \ding{51}                    &                          &     \ding{51}                     &          \ding{51}                &        \ding{51}                  &                               \\
+TeNOR~\cite{7502419}                     & FP7 T-NOVA              & ETSI                            &         \ding{51}                    &        \ding{51}                  &       \ding{51}                   &                             &        \ding{51}                   &                           &                          &                          &        \ding{51}                  &         \ding{51}                 &                               \\
+X-MANO~\cite{francescon2017x}                    & H2020 VITAL             & TOSCA                           &                            &                          &         \ding{51}                 &                             &    \ding{51}                       &                           &                          &                          &       \ding{51}                   &   \ding{51}                      &          \ding{51}                     \\
+XOS~\cite{peterson2015xos}                       & ON.Lab                  & \multicolumn{1}{c|}{-}          &         \ding{51}                    &      \ding{51}                    &       \ding{51}                   &                             &                           &        \ding{51}                   &                          &                          &    \ding{51}                      &       \ding{51}                   &     \ding{51}      \\ \hline                  
+\end{tabular}
+\end{table*}
+
+
+
+
+\subsection{Commercial Solutions}
+
+The commercial orchestration solutions market is rising and will be formed by diverse types of companies including new startups, service provider IT vendors, VNF vendors, and the traditional network equipment vendors~\cite{Sdxcentral2016LifecycleOverview}.    
+
+Some software and hardware vendors already offer network orchestration solutions. Below are presented the major commercial products that we consider as mature and robust solutions. All information about the products was got through the vendor's site and technical reports.
+
+Cisco offers a product named Network Services Orchestrator enabled by Tail-f~\cite{CiscoIncNetworkCisco}. It is an orchestration platform that provides lifecycle service automation for hybrid networks (i.e., multi-vendors). Cisco NSO enables to design and deliver services faster and proposes an end-to-end orchestration across multiple domains. The platform deploys some management and orchestration functions such as \gls{nso}, Telco cloud orchestration, \gls{nfvo}, and \gls{vnfm}.    
+
+The Blue Planet SDN/NFV Orchestration platform~\cite{BluePlanet2017BLUESUITE} is a Ciena's solution that provides an integration of orchestration, management and analytics capabilities. It aims to automate and virtualize network service across physical and virtual domains. The platform supports multiple use cases, including SD-WAN service orchestration, NFV-based service automation, and \gls{cord} orchestration.
+
+Another commercial solution is the HPE Service Director of the Hewlett Packard Enterprise. The product is a service orchestration \gls{oss} solution that manages end-to-end service and provides analytics-based planning and closed-loop automation using declarations-based service model. It supports multi-vendor VNF, multi-VIM, various OpenStack flavors, and multiple SDN controllers.
+
+The Oracle Communications Network Service Orchestration solution~\cite{OracleCommunicationsOracleSolution} orchestrates, automates, and optimizes VNF and network service lifecycle management by integrating with BSS/OSS, service portals, and orchestrators. It has two environments to deploy the network services: one design-time environment to design, define and program the capabilities, and a run-time execution environment to execute the logic programmed and lifecycle management. In essence, it plays the roles of the \gls{nfvo}, Telco cloud orchestration, and end-to-end service.  
+
+%Mateus: see above for Ericsson products
+%The 
+Ericsson offers some solutions in the scope of the cloud, \gls{sdn} and orchestration. One of them is the Ericsson Network Manager~\cite{EricssonInc.EricssonManager} that provides a unified multi-layer, multi-domain (\gls{sdn}, \gls{nfv}, radio, transport and core) management systems and plays various roles such as \gls{vnfm}, network slicing, and network analytics. 
+
+Many of the products mentioned above are often extensions of proprietary platforms. There are few details publicly available, mostly marketing material. The list of commercial solutions is not exhaustive and will undoubtedly become outdated. However, the overview should serve as a glimpse of the expected rise of commercial NSO solutions in the near future as enabling open source technologies and standards mature.
+
+%Juniper NorthStar, Cisco Evolved Programmable Network\cite{Alvizu2016AdvanceEra}.
