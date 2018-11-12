@@ -4,18 +4,10 @@
 \gls{nso} promises to improve efficiency when instantiating (day~1) and operating (day~2) network services, but the path ahead is not without  challenges. 
 This section provides a discussion on the main challenges and research opportunities for \gls{nso}, including scalability, security, resource modeling, performance, and interoperability.
 
-%%%%%% enabling a true end to end service orchestration across virtual and physical network domains %%%%%%
-
-%Some of the standards and solutions presented in this survey are in their initial phase and will need further investigation and development before they can be used by service providers and operators.
-
-%\subsection{In-Operation analysis and Network Telemetry}
-%\subsection{Orchestrator Scalability}
-
 \subsection{Interoperability}
 
 Typically, operators infrastructures are organized in several domains that differ in geographical locations, management (e.g., legacy or \gls{sdn}), administrative boundaries, and technologies. One of the challenges for service providers is to create and to manage services across unique and proprietary interfaces, making integration and startup difficult tasks to be achieved, as well as increasing the operational costs.  
 
-%In the order to describe the semantics and relationships of information exchanged across management interfaces, a information model that provides common and consensually defined terms, concepts, and objects is needed. 
 In this scenario, interoperability is essential to enable the deployment of end-to-end network services. Few end-to-end services will be confined within the boundaries of a single domain. They normally encompass a multi-domain orchestration environment composed of providers and vendors with different incentives and business models~\cite{Katsalis2016Multi-DomainDirections}. There is no consensus about how would be the exchanging process between the multiple actors in deployment end-to-end network services. In fact, \gls{etsi} \gls{mano} architecture does not bring any provisioning for this kind of exchange~\cite{ETSIIndustrySpecificationGroupISGNFV2014NetworkNFV}. 
 
 A number of orchestration solutions based on the ETSI MANO architecture have emerged with the objective of proposing a complete orchestration framework. Table~\ref{tab:NSOsolutions} shows notable solutions. Although the progress made by ETSI in defining architecture and interfaces, each solution uses a particular implementation and data model, which makes interoperability difficult to achieve (cf.~\cite{NOn}). As a result, chaining network functions leveraging different solutions for a single network service deployment and operation is currently a very costly proposition regarding development efforts and time-to-market.   
@@ -28,9 +20,6 @@ Network services need to be efficiently modeled towards deploying resource requi
 
 However, it is a major challenge to translate higher-level policies, which are generated from the resource allocation and optimization mechanisms, into a lower level configuration. Templates and standards should be developed to guarantee automated and consistent translation~\cite{YongLi2015Software-DefinedSurvey}. Besides, the standardization can enable the interoperability and integration of network services templates and addresses limitations arising in the deployment of services in heterogeneous landscape.
 
-%A prerequisite for joint placement decisions of compute, storage and network is the adequate description of available resources.
-%In the \gls{nso}, the service and resources modeling is a key challenge to the success in the integration and interoperability of the different orchestration solutions. 
-
 There are templates and data modeling languages for \acrfull{nfv} and \acrfull{ns} such as TOSCA, YANG, and HOT. In addition, some organizations propose their approaches to the definition of Network Services, e.g., Open Baton and Gohan.
 
 \gls{etsi} \gls{nfv} \gls{mano} proposes VNF and Network Service descriptors as templates for the definition of functions and services. According to \gls{etsi}, \gls{ns} is defined as a set of \glspl{vnf} and/or \glspl{pnf} interconnected by \glspl{vl} and one or more \acrlong{vnffg}. 
@@ -40,11 +29,6 @@ On the other hand, \gls{etsi} \gls{ns} specifies lowest level resources such as 
 On the other hand, the \gls{ietf} \gls{sfc} provides the ability to define an ordered list of network services, or service functions (e.g., firewalls, load balancers, DPI) connecting them in a virtual chain. However, \gls{sfc} does not describe the underlying resource, since its primary focus is service operation, apart from the forwarding topology. As opposed to ETSI, SFC scope covers multi-domain connections.   
 
 Resource and service modeling in softwarized networks including multi-domain scenarios need further work. This evolution will enable interoperability of network services and the correct mapping between the high-level configuration and the underlying infrastructure. Currently, the interoperability among the diverse orchestration platforms does not exist.
-
-%Talk about HOT and TOSCA???
-
-
-%To improve consistency in representing information in end-to-end applications, common data types and common vocabularies are required. For example: specification of fault codes and location codes used across multiple resources. 
 
 \subsection{Network Service Lifecycle Management}
 
@@ -62,21 +46,15 @@ The changes that orchestration technology brings to the telecommunication infras
 
 This change reflects on enabling technologies. For instance, the \gls{nfv} should meet performance requirements to support, in a standard server, the packet processing, including high I/O speed, fast transmission, and short delays~\cite{YongLi2015Software-DefinedSurvey}. The \glspl{vnf} must achieve a performance comparable to specialized hardware. According to~\cite{Mijumbi2016NetworkChallenges}, some applications require specific capabilities, but virtualization can degrade their performance. This generates a trade-off between performance and flexibility. However, recent advances in CPU and virtualization technologies are overcoming these challenges include \gls{dpdk}~\cite{LinuxFoundationDPDKKit} -- libraries and drivers for fast packet processing, NetVM~\cite{7036139} -- enabling high bandwidth network functions to operate at near line speed, and ClickOS~\cite{Martins:2014:CAN:2616448.2616491} -- minimalist operating that supports high throughput, low delay, and isolation. Likewise, the document~\cite{ETSIGSPractises} of the \gls{etsi}  provides a set of recommendations on the minimum requirements that the hardware and virtualized layer should have to achieve high performance.
 
-%Besides, the \gls{nfv} solution should support multi-tenancy in order to attend different operators.
-
 Another question is performance monitoring coupled with Network Services maintenance. Both require a global view of the resources and a unified control and optimization process with various optimization policies running in it. The monitoring is required to avoid the violation of \glspl{sla} in the Service layer. In order to keep NS performance, it is demanded that the system equally performs in different layers. In multi-domain scenarios, this becomes more complex because it is necessary the exchange of information and resources between different organizations/domains~\cite{md2}. 
 VNF benchmarking~\cite{7313620} and NS chain profiling~\cite{7956044} coupled to NSO lifecycles and run-time MANO resource allocation and management decisions are potential techniques towards service guarantees and SLA compliance.  
 
 In addition, a better composition between the traffic forwarding and \gls{nf} placement is required towards optimizing the \gls{ns} deployment. The first steps to provide service performance guarantees are to avoid heavily loaded service nodes and to identify bottleneck links. Algorithms and machine learning techniques can archive better results in this composition.   
 
 Thus, how to achieve high performance is an important problem in the research and development of \gls{nso} solutions. Projects within the 5G Infrastructure Public Private Partnership (5G-PPP)~\cite{elayoubi:hal-01488208} are targeting enhanced performance towards better user experience. 
-%Performance studies (optimization, scheduling, portability, reliability)
-
-
 
 \subsection{Scalability}
 
-%The future networks will be composed of millions or even billions of distributed computing nodes. 
 Some studies assume that 5G network might connect 50 billion devices until 2020~\cite{Panwar2016ACommunication},~\cite{Evans2011TheEverything}. This growth is due to the emergence of vertical industries such as Internet of Things, Smart Cities, and Sensor Networks. In this scenario, orchestration process requires the ability to handle the growth of networks and services to support the huge amount of connected nodes.
 
 In addition, the network services can be deployed over different domains managed by third parties, infrastructure covering large geographical space and diverse type of resources such as access, transport, and core networks. This environment demands high scalability of the components involved, including orchestrators, controllers, and managers. 
@@ -86,15 +64,11 @@ Most current \gls{nso} use cases are just based on deploying a network service i
 Some orchestration solutions mainly focus on centralized solutions, which pose scalability issues. The works~\cite{Alvizu2016AdvanceEra} and~\cite{Garay2016ServiceForward} suggest different orchestrators involved in the orchestration process of end-to-end network services, not being limited to a single orchestrator. However, there are several particularities on each layer that could be better explored with specific orchestrators, instead of adopting a global orchestrator approach. In this way, we argue that the whole orchestration process can experience better results if split among different actors (or orchestrators). 
 
 A key challenge is therefore to develop an orchestration process that is massively scalable. This process could involve one or more orchestrators, becoming open and flexible enough to address future applications and enable the integration with external components. The orchestration must avoid the congestions and bottlenecks in the management and orchestration plane to handle the requests for network services.
-  
-
-%ability of a system to handle growing amounts of work or usage in a graceful manner and its ability to be enlarged to accommodate that growth.
-
+ 
 \subsection{Security and Resiliency}
 
 Softwarized networks modify the way how services are deployed replacing the hardware-based network service components with software-based solutions~\cite{Draxler2017SONATA:Networksb}. Through technologies such as \gls{sdn} and \gls{nfv}, such network can provide automation, programmability, and flexibility. Generally, it depends on centralized control, which leads to risks to security and resiliency~\cite{Arfaoui2017SecurityDirections}. Thus, new protection capabilities need to be put in place, including advanced management capabilities such as authentication, access control, and fault management. 
 
-%The resilience of critical elements in orchestration such as the controllers and Orchestrators is a hot topic in research. The fault management ensures the service delivery according to resilience requirements. 
 Security and resiliency must be considered both in design and operation stages of network services. Typically, the services are deployed first, prior to any efforts regarding security development. However, security must be a mandatory issue, mainly in a highly connected and virtualized environment. 
 
 Service instantiation involves automated processes that add and delete network elements and functions without human intervention. A critical problem is the addition of a malicious node that can perform attacks, catch valuable information and even the disruption of the entire services.      
@@ -102,23 +76,3 @@ Service instantiation involves automated processes that add and delete network e
 An essential requirement for a multi-domain orchestration platform is the capability to hide specific details of each domain. This ensures privacy and confidentiality of the domains, preserving capabilities and resources to an external component~\cite{francescon2017x}.
 
 Resilience in main NSO components such as orchestrators, controllers, and managers is also a critical problem because it can impact directly in overall service operation. Besides, open interfaces that support network programmability and \gls{nso} components communication with other external elements such as \gls{oss} and other orchestrators are an open issue and a hot topic in research ~\cite{Ordonez-Lucena2017NetworkChallenges}, ~\cite{Arfaoui2017SecurityDirections},~\cite{7345422}. In the same direction, the 5G-PPP published a white paper~\cite{elayoubi:hal-01488208} suggesting that the orchestration platform must be secure, reliable and flexible.
-
-%Mateus: we are talking about resource modeling but neglected resource management. 
-%If we have time please check the following paper: "Management and Orchestration Challenges in Network Function Virtualization", section V-A
-
-%%%%%% Ideal NSO challenge %%%%%%
-%we have a very agile and dynamic network where the VMs [virtual machines] that are being served by the VNFs could themselves be moving,” she explains. “There are multiple layers – the VNF software, the cloud – and trying to stitch it all together is a very exciting opportunity for those of us who do analytics - TM Forum
-
-
-%implement custom life–cycle management policies
-
-
-%Interoperability test:
-%https://www.sdxcentral.com/articles/analysis/nfv-interoperability-testing/2017/02/?utm_source=SDxCentral.com+Mailing+List&utm_campaign=976bdebe70-SDxCentral+Newsletter+2017-08-10&utm_medium=email&utm_term=0_c2b6e504a2-976bdebe70-82004737
-
-
-%Nowadays, network, cloud and service infrastructures are organized in multiple domains that differ in geographical locations, management, control (e.g., legacy or different evolution to SDN), administrator boundaries, and vendor-specific technologies.%Reescrever e encontrar referencia(5GEx)
-
-%The opportunities offered by virtualization are significant, but due to the complexity, many operators are taking an incremental step-by-step approach to get there.
-
-%Describe the semantics and relationships of information exchanged across management interfaces, a federated information model that provides common and consensually defined terms, concepts, and objects is required. To lower integration complexity, a set of common interface operations are required for covering request and response patterns, as well as the behaviour and sequencing of those requests and responses for each of fault, configuration, accounting, performance, inventory, and security management.%[gs_NFV-MAN001v010101p]

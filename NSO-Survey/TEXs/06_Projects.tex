@@ -1,7 +1,6 @@
 \section{Research Projects}
 \label{sec:project}
-
-%The approaches and projects directly focusing on network service orchestration can be divided into two classes. The first consists of research projects, such as UNIFY and SONATA, and the second class consists of solutions, such as ONAP, OpenBaton, and Open Source MANO. 
+ 
 This section presents an overview of relevant \gls{nso} research projects and positions our taxonomy accordingly as summarized in Table~\ref{table:project}, providing a single vision of their scope and status. 
 The following subsections are identified by project name and its duration.
 
@@ -13,8 +12,6 @@ The focus of the FP7 T-NOVA project~\cite{FP7projectT-NOVAT-NOVAInfrastructures}
 In the T-NOVA architecture, TeNOR is the highest-level infrastructure management entity that supports multi-pop/multi-administration domain, transport network (i.e.MPLS, Optical, Carrier    Ethernet, etc.) management between POPs, and data center cloud assets. The TeNOR Orchestrator is split into two elements: (i) \textit{Network Service Orchestrator} that manages the Network Service lifecycle, and (ii) \textit{Virtualized Resource Orchestrator} that orchestrates the underlying computing and network resources~\cite{Kourtis2017T-NOVA:Infrastructures}. 
 
 T-NOVA leverages cloud management architectures for the provision of resources (compute and storage) and extends SDN for efficient management of the network infrastructure~\cite{T-NOVAD2.1:Requirements}. Its architecture is based on concepts from ETSI NFV model and expands it with a marketplace layer and specific add-on features. All softwares produced in the project are available as open source at github\footnote{https://github.com/T-NOVA}.
-
-%-- for federated management of network and IT resources in order to compose and provision the network services  
 
 \subsection{UNIFY (2013/11-2016/04)}
 
@@ -28,29 +25,7 @@ Different demos showcasing joint orchestration of computing and network resource
 
 Following the \gls{onf} \gls{sdn} architecture, Unify demonstrated methods to apply recursiveness across its functional components in order to decompose network services to technological-specific domains. 
 
-
-%Ref: Multi-domain Orchestration and Management of Software Defined Infrastructures: a Bottom-Up Approach
-%REf: Network Function Virtualization: State-of-the-Art and Research Challenges
-%Ref: Analysis of end-to-end multi-domain management and orchestration frameworks for software defined infrastructures: an architectural survey
-
-
-% \subsection{H2020}
-% Horizon 2020 [] is an EU public and private research program that has captured \$89.8 billion in funding in over seven years (2014 until 2020). The goal of Horizon 2020 is increase Europe’s competitiveness through research and innovation.
-% Source: https://www.sdxcentral.com/
-
-%https://5g-ppp.eu/
-%https://www.fiercewireless.com/special-report/how-itu-5gppp-ngmn-and-others-will-create-standard-for-5g
-
-% \subsection{5GPPP}
-% The \gls{5gppp} is organized basically in three stages: (i)  conceptual or research with 19 projects (among them are 5GEx[] and SONATA~\cite{sonata}), (ii) development of prototype implementations based on the phase 1 concepts, which includes 21 projects (current phase) and (iii) large-scale trials.
-
-% In addition, the group also aims to hold 20 percent of the 5G standards essential patents. The group expects to conduct research and development through 2017, with standardization and trials beginning the following year.
-
-%https://www.fiercewireless.com/special-report/how-itu-5gppp-ngmn-and-others-will-create-standard-for-5g
-%The \gls{5gppp} [] is considered one of the front runners in 5G standardization. It has a broad scope of goals for network standards including 1000x increased capacity, 90 percent reduced energy (particularly in mobile), drastically reduced service creation time cycle, secure and ubiquitous coverage with low latency, dense wireless communication links, and an increase in user security. 
-
 \subsection{5GEx (03/2015-03/2018) } 
-%5GEx was created in 2015 by the \gls{5gppp} and Ericsson to unify the European 5G infrastructure market, which has numerous operators and technologies. The group was charged with creating orchestration and automated provisioning across multiple vendors and multiple operators using \gls{nfv} and \gls{sdn}. The project is supposed to last until March 2018 and now includes more vendors and operators including Huawei, HPE, Orange, Deutsche Telekom, and Telenor.
 
 The 5GEx project aims agile exchange mechanisms for contracting, invoking and settling for the wholesale consumption of resources and virtual network service across administrative domains. 
 Formed by a consortium of vendors, operators, and universities, 5GEx allows end-to-end network and service elements to mix in multi-vendor, heterogeneous technology and resource environments.
@@ -61,9 +36,6 @@ Basically, 5GEx extends \gls{etsi} \gls{nfv} \gls{mano} architecture with new fu
 Among its main components, the project defines modules for: topology abstraction; topology distribution; resource repository; \gls{sla} manager; policy database; resource monitoring; service catalog; and an inter-provider \gls{nfvo}.
 5GEx currently utilizes outcome resources mostly from projects Unify and T-NOVA, especially joining their open source components into already prototyped demonstrations. 
 
-%https://5g-ppp.eu/sonata/
-%http://www.sonata-nfv.eu/node/1
-%https://sonata-nfv.github.io/
 \subsection{SONATA (07/2015-12/2017)}
 
 With 15 partners representing the telecommunication operators, service providers, academic institutes (among others), the \acrfull{sonata} project~\cite{sonata} targets to address two significant technological challenges envisioned for 5G networks: (i) \textit{flexible programmability} and (ii) \textit{deployment optimization} of software networks for complex services/applications. To do so, \acrshort{sonata} provides an integrated development and operational process for supporting network function chaining and orchestration~\cite{karl2016devops}. 
@@ -74,24 +46,6 @@ The project describes the use cases envisioned for the SONATA framework and the 
 
 Moreover, the project proposes to interact and manage with not only VNFs also support legacy~\cite{SONATAProject2016D2.3Design}. Besides, it describes technical requirements for integrating network slicing in the SONATA platform.  The \gls{sonata} framework complies with the \gls{etsi} \gls{nfvmano} reference architecture~\cite{SONATAProject2016D2.3Design}. The results of the project are shared with the community through a public repository.
 
-%\gls{sonata} is based mainly on the two main Software Networks technologies, SDN and NFV[D2.2]. 
-
-%Ref_ETSI:SONATA: Service Programming and Orchestration for Virtualized Software Networks
-
-
-%\subsection{Selfnet}
-%https://selfnet-5g.eu/deliverables/
-%https://5g-ppp.eu/selfnet/
-
-
-%https://5g-ppp.eu/
-%http://cordis.europa.eu/project/rcn/211061_en.html
-%\textit{5G-MoNArch: Motivation: The expected diversity of services and use cases in 5G requires a flexible, adaptable, and programmable architecture. While the design of such an architecture has been addressed by 5G-PPP Phase 1 at a conceptual level, it must be brought into practice in Phase 2. To this end, 5G-MoNArch will (i) evolve 5G-PPP Phase 1 concepts to a fully-fledged architecture, (ii) develop prototype implementations and (iii) apply these prototypes to representative use cases.}
-
-%http://cordis.europa.eu/project/rcn/194250_en.html
-%http://www.ict-vital.eu/
-%http://www.ict-vital.eu/documents/deliverables
-%https://drive.google.com/file/d/0B5yhgJbT3R8kYTNLUkYwVlVudHc/view
 \subsection{VITAL (02/2015-07/2017)}
 
 The H2020 VITAL project~\cite{vital} addresses the integration of Terrestrial and Satellite networks through the applicability of two key technologies such as SDN and NFV. The main VITAL outcomes are (i) the virtualization and abstraction of satellite network functions and (ii) supporting Multi-domain service/resource orchestration capabilities for a hybrid combination of satellite and terrestrial networks~\cite{vitalD23}. 
@@ -100,32 +54,12 @@ The VITAL overall architecture is in line with the principal directions establis
 
 Implementing the relevant parts of the VITAL architecture, X--MANO~\cite{francescon2017x} is a cross-domain network service orchestration framework. It supports different orchestration architectures such as hierarchical, cascading and peer-to-peer. Moreover, it introduces an information model and a programmable network service in order to enable confidentiality and network service lifecycle programmability, respectively.
 
-%Based on the VITAL architecture, 
-%Finally, a multidomain service federator and orchestrator, called X--MANO~\cite{francescon2017x}, is a framework based on the VITAL architecture. It supports different orchestration architectures such as hierarchical, cascading (or recursive) and peer-to-peer. It also introduces an information model and a programmable network service in order to enable confidentiality and lifecycle programmability, respectively.
-
 \subsection{5G-Transformer (06/2017-11/2019)}
 The 5G-Transformer Project~\cite{5g-TransformerProject20175GVerticals} consists of a group of 18 companies including mobile operators, vendors, and universities. The objective of the project is to transform current’s mobile transport network into a Mobile Transport and Computing Platform (MTP) based on \gls{sdn}, \gls{nfv}, orchestration, and analytics, which brings the Network Slicing paradigm into mobile transport networks. The project will support a variety of vertical industries use cases such as automotive, healthcare, and media/entertainment. 
 
 Likewise, 5G-Transformer defines three new components to the proposed architecture: (i) \textit{vertical slicer} as a logical entry point to create network slices, (ii) \textit{Service Orchestrator} for end-to-end service orchestration and computing resources, and (iii) \textit{Mobile Transport and Computing Platform} for integrate fronthaul and backhaul networks. The Service Orchestrator is the main decision point of the system. It interacts with others \glspl{so} to the end-to-end service (de)composition of virtual resources and orchestrates the resources even across multiple administrative domains. Its function is similar to our definition of \gls{nso}. Internally the components of the architecture are organized hierarchically, but the end-to-end orchestration of services across multiple domains occurs in a distributed way.
 
 The project is in its second year with some outcomes. Parts of all the results produced in the project will be published as open source. The proposed solutions are aligned with standards developed by 3GPP and ETSI~\cite{H20205G-TRANSFORMERProject2018}.
-
-%The goal of this group is to analyze and address unification and applicability of key research topics related to Software Networking including SDN/NFV.
-%Service Orchestrator for orchestrating the resources even across multiple administrative domains
-
-
-
-
-
-%of abstractions (backed by a consistent information model) enabling network service life–cycle programmability.
-%The combination and integration of the resource advertisement mechanism together with the flexibility in defining the NS life–cycle is the key of the proposed solution.
-%a proof–of–concept X–MANO prototype
-%A prototype implementation called X--MANO~\cite{francescon2017x},  
-%a multidomain service federator and orchestrator
-%x-mano bussiness aspects
-
-%\textit{``It is focused on the exploitation of hybrid terrestrial and satellite networks. An important aspect to mention is that this convergence does not involve only technical issues but also issues related to the crossing of administrative boundaries.''. From 2015-02-01 to 2017-07-31, closed project}
-%\subsection{NSF}
 
 \begin{table*}[ht!]
 \centering
@@ -196,14 +130,8 @@ The project is in its second year with some outcomes. Parts of all the results p
 
 
 \subsection{Other Research Efforts}
-Further architectural proposals and research contributions can be found in the recent literature. % not fully implemented or deployed at time of writing of this survey. 
+Further architectural proposals and research contributions can be found in the recent literature. 
 
 Recent research works have addressed the definition of NFV/SDN architectures. Vilalta et al.~\cite{Vilalta2016SDNServices} present and NFV/SDN architecture for delivery of 5G services across multi technological and administrative domains. The solution is different from the \gls{nfv} reference architecture. It consists of four main functional blocks: Virtualized Functions Orchestrator (VF-O), SDN IT and Network Orchestrator, Cloud/Fog Orchestrator and \gls{sdn} Orchestrator. The VF-O is the main component orchestrating generalized virtualized functions such as \gls{nfv} and IoT. Giotis et al.~\cite{Giotis2015} propose a modular architecture that enables policy-based management of \glsdesc{vnf}s. The proposed architecture can handle the lifecycle of \glspl{vnf} and instantiate applications as service chains. The work also offers an Information Model towards map the \gls{vnf} functions and capabilities.
 
 The work in~\cite{Devlic2017NESMO:Framework} proposes a novel network slicing management and orchestration framework. The proposed framework automates service network design, deployment, configuration, activation, and lifecycle management in a multi-domain environment. It can manage resources of the same type such as \gls{nfv}, \gls{sdn} and \gls{pnf}, belonging to different organizational domains and belonging to the same network domain such as access, core, and transport.
-
-%Mateus: not sure if it is a good idea to cite  product names. I would go for concepts instead of names. In any case, if you keep this, my suggestion for Ericsson is the following:
-%- Dynamic Orchestration:  https://www.ericsson.com/ourportfolio/digital-services-products/dynamic-orchestration?nav=fgb_101_0813%7Cfgb_101_0790
-%Ericsson cloud manager: https://www.ericsson.com/ourportfolio/digital-services-products/cloud-manager?nav=productcategory020
-
-%Regarding \gls{nfv} architecture, Giotis et al. \cite{Giotis2015} propose a modular architecture that enables policy-based management of \glsdesc{vnf}s. The proposed architecture can handle the lifecycle of \glspl{vnf} and instantiate applications as service chains. The work also propose an Information Model towards map the \gls{vnf} functions and capabilities. 
