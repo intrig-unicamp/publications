@@ -29,7 +29,9 @@ for multi-domain Network Service Orchestration, featuring a
 Multi-Domain Orchestrator (MDO) per administrative realm
 and including the notion of a Marketplace for business interactions.
 
-![High-level reference model to illustrate the scope of Network Service Orchestration (NSO)](/Figures/01_Introduction/nso.pdf)
+![High-level reference model to illustrate the scope of Network Service Orchestration (NSO)](
+        publications/NSO-Survey/Figures/01_Introduction/nso.pdf
+      )
 
 In this survey, our main objectives are to provide a comprehensive
 review of research, standardization and software
