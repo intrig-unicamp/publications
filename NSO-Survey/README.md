@@ -30,7 +30,7 @@ Multi-Domain Orchestrator (MDO) per administrative realm
 and including the notion of a Marketplace for business interactions.
 
 ![High-level reference model to illustrate the scope of Network Service Orchestration (NSO)]( 
-        Figures/01_Introduction/mdo.png
+        Figures/01_Introduction/fig2.png
       )
 
 In this survey, our main objectives are to provide a comprehensive
