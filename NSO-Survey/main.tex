@@ -48,15 +48,6 @@
 
 %\usepackage[acronym,smallcaps]{glossaries}
 
-%Timeline
-%\usepackage[utf8]{inputenc}
-%\usepackage[TS1,T1]{fontenc}
-%\usepackage{fourier, heuristica}
-%\usepackage{array, booktabs}
-%\usepackage{graphicx}
-%\usepackage[x11names,table]{xcolor}
-%\usepackage{caption}
-
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage[x11names,table,xcdraw]{xcolor}
@@ -81,12 +72,14 @@
 
 \usepackage{array, booktabs}
 \usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{soul}
 
 \newcommand{\foo}{\color{LightSteelBlue3}\makebox[0pt]{\textbullet}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
 
 \input{./acronyms}
 
-\journal{Computer Communications}
+\journal{Computer Communications (Accepted for publication)}
 
 \begin{document}
 
@@ -125,15 +118,14 @@
 \author[Second]{Mateus A. S. Santos}
 \author[First]{Christian Esteve Rothenberg}
 
-\address[First]{Department of Computer Engineering and Industrial Automation, School of Electrical and Computer Engineering, University of Campinas - UNICAMP, Campinas, SP, Brazil}
+\address[First]{Department of Computer Engineering and Industrial Automation, School of Electrical and Computer Engineering, University of Campinas --- UNICAMP, Campinas, SP, Brazil}
 \address[Second]{Ericsson Research, Indaiatuba, SP, Brazil}
 
-\fntext[*]{This work is under submission for peer review. Until then, and even after an eventual publication, the authors are most welcome for any feedback to improve the work and turn the \textit{github} and \textit{arxiv} versions of this publication a ``living document'' driven by community contributions as NSO evolves.  
-Do not hesitate to contact the authors and/or submit \textit{github} pull requests or issues: 
+\fntext[*]{Any feedback is welcome to improve the work turning the \textit{github} and \textit{arxiv} versions of this publication a ``living document'' driven by community contributions as NSO evolves.  Do not hesitate to contact the authors and submit \textit{github} pull requests or issues: 
 https://github.com/intrig-unicamp/publications/tree/master/NSO-Survey.}
 
 \begin{abstract}
-Business models of network service providers are undergoing an evolving transformation fueled by vertical customer demands and technological advances such as 5G, Software Defined Networking~(SDN), and Network Function Virtualization~(NFV). Emerging scenarios call for agile network services consuming network, storage, and compute resources across heterogeneous infrastructures and administrative domains. Coordinating resource control and service creation across interconnected domains and diverse technologies becomes a grand  challenge. Research and development efforts are being devoted to enabling orchestration processes to  automate, coordinate, and manage the deployment and operation of network services. In this survey, we delve into the topic of Network Service Orchestration~(NSO) by reviewing the historical background, relevant research projects, enabling technologies, and standardization activities. We define key concepts and propose a taxonomy of NSO approaches and solutions to pave the way to a common understanding of the various ongoing efforts towards the realization of diverse NSO application scenarios. Based on the analysis of the state of affairs, we present a series of open challenges and research opportunities, altogether contributing to a timely and comprehensive survey on the vibrant and strategic topic of network service orchestration.
+Business models of network service providers are undergoing an evolving transformation fueled by vertical customer demands and technological advances such as 5G, Software Defined Networking~(SDN), and Network Function Virtualization~(NFV). Emerging scenarios call for agile network services consuming network, storage, and compute resources across heterogeneous infrastructures and administrative domains. Coordinating resource control and service creation across interconnected domains and diverse technologies becomes a grand  challenge. Research and development efforts are being devoted to enabling orchestration processes to  automate, coordinate, and manage the deployment and operation of network services. In this survey, we delve into the topic of Network Service Orchestration~(NSO) by reviewing the historical background, relevant research projects, enabling technologies, and standardization activities. We define key concepts and propose a taxonomy of NSO approaches and solutions to pave the way towards a common understanding of the various ongoing efforts around the realization of diverse NSO application scenarios. Based on the analysis of the state of affairs, we present a series of open challenges and research opportunities, altogether contributing to a timely and comprehensive survey on the vibrant and strategic topic of network service orchestration.
 
 \end{abstract}
 
@@ -149,6 +141,8 @@ Network Service Orchestration~(NSO) \sep SDN \sep NFV \sep multi-domain \sep orc
 \end{keyword}
 
 \end{frontmatter}
+
+%\tableofcontents
 
 %% \linenumbers
 
@@ -188,17 +182,10 @@ Network Service Orchestration~(NSO) \sep SDN \sep NFV \sep multi-domain \sep orc
 %% \bibitem[Author(year)]{label}
 %% Text of bibliographic item
 
-%\bibitem[ ()]{}
-
-%\end{thebibliography}
-
 \section*{Acknowledgment}
+This research was supported by the Innovation Center, Ericsson S.A., Brazil, grant UNI.62 and Federal Institute of Piaui (IFPI). This document, however, does not necessarily represent Ericsson's official viewpoint. The authors would also like to express their gratitude to contributions from David Moura, Lucian Beraldo, Nazrul Islam, and Suneet Singh (in alphabetical order) funded by the EU-Brazil NECOS project under grant agreement no. 777067.
 
-This research was supported by the Innovation Center, Ericsson S.A., Brazil, grant UNI.62. The authors would also like to express their gratitude to review contributions from David Moura,  Lucian Beraldo, Nazrul Islam, and Suneet Singh (in alphabetical order) funded by the EU-Brazil NECOS project under grant agreement no. 777067.
-The authors are thankful for any feedback to improve the work. Do not hesitate to contact the authors and/or via \textit{github}: 
-https://github.com/intrig-unicamp/publications/tree/master/NSO-Survey.
-
-
+\section*{References}
 \bibliographystyle{elsarticle-harv} 
 \bibliography{bib/refs}
 

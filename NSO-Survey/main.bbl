@@ -1,4 +1,4 @@
-\begin{thebibliography}{151}
+\begin{thebibliography}{158}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -265,11 +265,23 @@
   Infrastructure association}}, \bibinfo{address}{Barcelone, Spain}.
 \newblock \URLprefix \url{https://hal.inria.fr/hal-01488208}.
 %Type = Misc
-\bibitem[{{Ericsson Inc.}()}]{EricssonInc.EricssonManager}
-\bibinfo{author}{{Ericsson Inc.}}, .
+\bibitem[{{Ericsson Inc.}(a)}]{DynamicOrchestrator}
+\bibinfo{author}{{Ericsson Inc.}}, a.
+\newblock \bibinfo{title}{{Dynamic Orchestration}}.
+\newblock \URLprefix
+  \url{https://www.ericsson.com/en/portfolio/digital-services/automated-network-operations/orchestration/dynamic-orchestration}.
+%Type = Misc
+\bibitem[{{Ericsson Inc.}(b)}]{EricssonInc.EricssonManager}
+\bibinfo{author}{{Ericsson Inc.}}, b.
 \newblock \bibinfo{title}{{Ericsson Network Manager}}.
 \newblock \URLprefix
-  \url{https://www.ericsson.com/ourportfolio/it-and-cloud-products/network-manager?nav=productcategory}.
+  \url{https://www.ericsson.com/en/portfolio/digital-services/automated-network-operations/network-management/network-manager}.
+%Type = Misc
+\bibitem[{{Ericsson Inc.}(c)}]{EricssonOrchestrator}
+\bibinfo{author}{{Ericsson Inc.}}, c.
+\newblock \bibinfo{title}{{Ericsson Orchestrator}}.
+\newblock \URLprefix
+  \url{https://www.ericsson.com/en/portfolio/digital-services/automated-network-operations/orchestration/ericsson-orchestrator}.
 %Type = Techreport
 \bibitem[{{Ericsson Inc.}(2015)}]{EricssonInc.2015}
 \bibinfo{author}{{Ericsson Inc.}}, \bibinfo{year}{2015}.
@@ -479,9 +491,17 @@
 \newblock \bibinfo{type}{Technical Report}.
 \newblock \URLprefix
   \url{http://www.t-nova.eu/wp-content/uploads/2014/11/TNOVA_D2.1_Use_Cases_and_Requirements.pdf}.
-%Type = Misc
-\bibitem[{{FP7 project T-NOVA}(b)}]{FP7projectT-NOVAT-NOVAInfrastructures}
+%Type = Techreport
+\bibitem[{{FP7 project T-NOVA}(b)}]{T-NOVA-D833}
 \bibinfo{author}{{FP7 project T-NOVA}}, b.
+\newblock \bibinfo{title}{{Deliverable D8.33: Final Report on Dissemination and
+  Communication Activities}}.
+\newblock \bibinfo{type}{Technical Report}.
+\newblock \URLprefix
+  \url{http://www.t-nova.eu/wp-content/uploads/2017/02/TNOVA_D8.33_Final_Report_on_Dissemination_and_Communication_Activities_v1.0.pdf}.
+%Type = Misc
+\bibitem[{{FP7 project T-NOVA}(c)}]{FP7projectT-NOVAT-NOVAInfrastructures}
+\bibinfo{author}{{FP7 project T-NOVA}}, c.
 \newblock \bibinfo{title}{{T-NOVA Project, Network Functions as a Service over
   Virtualised Infrastructures}}.
 \newblock \URLprefix \url{http://www.t-nova.eu/}.
@@ -657,13 +677,6 @@
 \newblock \bibinfo{journal}{IEEE Transactions on Network and Service
   Management} \bibinfo{volume}{12}, \bibinfo{pages}{34--47}.
 \newblock \DOIprefix\doi{10.1109/TNSM.2015.2401568}.
-%Type = Misc
-\bibitem[{{Infonetics Research}(2015)}]{SDNevolution}
-\bibinfo{author}{{Infonetics Research}}, \bibinfo{year}{2015}.
-\newblock \bibinfo{title}{{The Evolution of SDN and NFV Orchestration}}.
-\newblock \URLprefix
-  \url{https://www.juniper.net/assets/cn/zh/local/pdf/analyst-reports/2000604-en.pdf}.
-  \bibinfo{note}{accessed 2018-02-12}.
 %Type = Misc
 \bibitem[{{International Telecommunication Union}()}]{ITUITU:World}
 \bibinfo{author}{{International Telecommunication Union}}, .
@@ -1105,6 +1118,14 @@
 \newblock \URLprefix \url{http://www.ict-vital.eu/}. \bibinfo{note}{accessed
   2017-10-09}.
 %Type = Misc
+\bibitem[{Project(2017)}]{vitalD65}
+\bibinfo{author}{Project, H.V.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{D6.5 Dissemination and promotion activities report
+  (3)}}.
+\newblock \URLprefix
+  \url{https://drive.google.com/file/d/0B5yhgJbT3R8kcjVNR000Qy1ReWc/view}.
+  \bibinfo{note}{accessed 2019-03-01}.
+%Type = Misc
 \bibitem[{Project(2015)}]{xos}
 \bibinfo{author}{Project, O.}, \bibinfo{year}{2015}.
 \newblock \bibinfo{title}{{XOS: A Service Abstract Layer for CORD}}.
@@ -1217,6 +1238,24 @@
   Advances in Computing and Communications}, pp. \bibinfo{pages}{247--250}.
 \newblock \DOIprefix\doi{10.1109/ICACC.2014.66}.
 %Type = Article
+\bibitem[{Saadon et~al.(2019)Saadon, Haddad and Simoni}]{SAADON201917}
+\bibinfo{author}{Saadon, G.}, \bibinfo{author}{Haddad, Y.},
+  \bibinfo{author}{Simoni, N.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{A survey of application orchestration and oss in
+  next-generation network management}.
+\newblock \bibinfo{journal}{Computer Standards & Interfaces}
+  \bibinfo{volume}{62}, \bibinfo{pages}{17 -- 31}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0920548917304014},
+  \DOIprefix\doi{https://doi.org/10.1016/j.csi.2018.07.003}.
+%Type = Misc
+\bibitem[{{SDX Central}(2015)}]{SDXCentral2015WhatSDNOrc}
+\bibinfo{author}{{SDX Central}}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{What is SDN Orchestration (SDN Policy
+  Orchestration)?}}
+\newblock \URLprefix
+  \url{https://www.sdxcentral.com/networking/sdn/definitions/what-is-sdn-orchestration/}.
+%Type = Article
 \bibitem[{{Sdxcentral}(2016a)}]{Sdxcentral20162016:}
 \bibinfo{author}{{Sdxcentral}}, \bibinfo{year}{2016}a.
 \newblock \bibinfo{title}{{2016 Mega NFV Report Pt . 1 :}} \URLprefix
@@ -1227,6 +1266,23 @@
 \newblock \bibinfo{title}{{Lifecycle Service Orchestration (LSO) Market
   Overview}}.
 \newblock \bibinfo{type}{Technical Report}.
+%Type = Inproceedings
+\bibitem[{Silva et~al.(2018)Silva, Lemos, Medeiros, Neto, Pasquini, Moura,
+  Rothenberg, Mamatas, Correa, Cardoso, Marcondes, Abelem, Nascimento, Galis,
+  Contreras, Serrat and Papadimitriou}]{dantas2018necos}
+\bibinfo{author}{Silva, F.S.D.}, \bibinfo{author}{Lemos, M.},
+  \bibinfo{author}{Medeiros, A.}, \bibinfo{author}{Neto, A.V.},
+  \bibinfo{author}{Pasquini, R.}, \bibinfo{author}{Moura, D.},
+  \bibinfo{author}{Rothenberg, C.E.}, \bibinfo{author}{Mamatas, L.},
+  \bibinfo{author}{Correa, S.L.}, \bibinfo{author}{Cardoso, K.V.},
+  \bibinfo{author}{Marcondes, C.}, \bibinfo{author}{Abelem, A.},
+  \bibinfo{author}{Nascimento, M.}, \bibinfo{author}{Galis, A.},
+  \bibinfo{author}{Contreras, L.}, \bibinfo{author}{Serrat, J.},
+  \bibinfo{author}{Papadimitriou, P.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{NECOS Project: Towards Lightweight Slicing of
+  Cloud-Federated Infrastructures}}, in: \bibinfo{booktitle}{Workshop on
+  Advances in Slicing for Softwarized Infrastructures {(S4SI 2018) - IEEE}
+  Conference on Network Softwarization {(NETSOFT)}}.
 %Type = Techreport
 \bibitem[{{SONATA Consortium}(2015)}]{SONATAProject2015D2.2Design}
 \bibinfo{author}{{SONATA Consortium}}, \bibinfo{year}{2015}.
@@ -1328,6 +1384,20 @@
 \newblock \bibinfo{title}{{UNIFY: Unifying Cloud and Carrier Networks}}.
 \newblock \URLprefix \url{http://www.fp7-unify.eu/}. \bibinfo{note}{accessed
   2017-12-01}.
+%Type = Article
+\bibitem[{Vaquero et~al.(2019)Vaquero, Cuadrado, Elkhatib, Bernal-Bernabe,
+  Srirama and Zhani}]{VAQUERO201920}
+\bibinfo{author}{Vaquero, L.M.}, \bibinfo{author}{Cuadrado, F.},
+  \bibinfo{author}{Elkhatib, Y.}, \bibinfo{author}{Bernal-Bernabe, J.},
+  \bibinfo{author}{Srirama, S.N.}, \bibinfo{author}{Zhani, M.F.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Research challenges in nextgen service
+  orchestration}.
+\newblock \bibinfo{journal}{Future Generation Computer Systems}
+  \bibinfo{volume}{90}, \bibinfo{pages}{20 -- 38}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0167739X18303157},
+  \DOIprefix\doi{https://doi.org/10.1016/j.future.2018.07.039}.
 %Type = Article
 \bibitem[{Vaughan-Nichols(2011)}]{5984813}
 \bibinfo{author}{Vaughan-Nichols, S.J.}, \bibinfo{year}{2011}.
