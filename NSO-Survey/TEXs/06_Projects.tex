@@ -1,6 +1,6 @@
 \section{Research Projects}
 \label{sec:project}
- 
+
 This section presents an overview of relevant \gls{nso} research projects and positions our taxonomy accordingly as summarized in Table~\ref{table:project}, providing a single vision of their scope and status. 
 The following subsections are identified by project name and its duration.
 
@@ -11,7 +11,7 @@ The focus of the FP7 T-NOVA project~\cite{FP7projectT-NOVAT-NOVAInfrastructures}
 
 In the T-NOVA architecture, TeNOR is the highest-level infrastructure management entity that supports multi-pop/multi-administration domain, transport network (i.e.MPLS, Optical, Carrier    Ethernet, etc.) management between POPs, and data center cloud assets. The TeNOR Orchestrator is split into two elements: (i) \textit{Network Service Orchestrator} that manages the Network Service lifecycle, and (ii) \textit{Virtualized Resource Orchestrator} that orchestrates the underlying computing and network resources~\cite{Kourtis2017T-NOVA:Infrastructures}. 
 
-T-NOVA leverages cloud management architectures for the provision of resources (compute and storage) and extends SDN for efficient management of the network infrastructure~\cite{T-NOVAD2.1:Requirements}. Its architecture is based on concepts from ETSI NFV model and expands it with a marketplace layer and specific add-on features. All softwares produced in the project are available as open source at github\footnote{https://github.com/T-NOVA}.
+T-NOVA leverages cloud management architectures for the provision of resources (compute and storage) and extends SDN for efficient management of the network infrastructure~\cite{T-NOVAD2.1:Requirements}. Its architecture is based on concepts from ETSI NFV model and expands it with a marketplace layer and specific add-on features. All softwares produced in the project are available as open source at github\footnote{https://github.com/T-NOVA}. Moreover, during the three years of  the  project, other results have led to papers   published in international refereed journals (7) and conferences (31), demos/exhibitions of the developed systems (8), and workshops/meetings with liaised projects (6)~\cite{T-NOVA-D833}.
 
 \subsection{UNIFY (2013/11-2016/04)}
 
@@ -38,13 +38,15 @@ Among its main components, the project defines modules for: topology abstraction
 
 \subsection{SONATA (07/2015-12/2017)}
 
-With 15 partners representing the telecommunication operators, service providers, academic institutes (among others), the \acrfull{sonata} project~\cite{sonata} targets to address two significant technological challenges envisioned for 5G networks: (i) \textit{flexible programmability} and (ii) \textit{deployment optimization} of software networks for complex services/applications. To do so, \acrshort{sonata} provides an integrated development and operational process for supporting network function chaining and orchestration~\cite{karl2016devops}. 
+With 15 partners representing the telecommunication operators, service providers, academic institutes (among others), the \gls{sonata} project~\cite{sonata} targets to address two significant technological challenges envisioned for 5G networks: (i) \textit{flexible programmability} and (ii) \textit{deployment optimization} of software networks for complex services/applications. To do so, \acrshort{sonata} provides an integrated development and operational process for supporting network function chaining and orchestration~\cite{karl2016devops}. 
 
 The major components of the SONATA architecture consist of two parts: (i) the SONATA \textit{Software Development Kit (SDK)} that supports functionalities and tools for the development and validation of \glspl{vnf} and \gls{ns} and (ii) the SONATA \textit{Service Platform}, which offers the functionalities to orchestrate and manage network services during their lifecycles with a MANO framework and interact with the underlying virtual infrastructure through Virtual Infrastructure Managers (VIM) and WAN Infrastructure Managers (WIM)~\cite{Draxler2017SONATA:Networksb}.
 
 The project describes the use cases envisioned for the SONATA framework and the requirements extracted from them. These use cases encompass a wide range of network services including \gls{nfviaas}, VNFaaS,  v\gls{cdn}, and personal security. One of the use cases consists of hierarchical service providers simulating one multi-domain scenario. In this scenario, \gls{sonata} does not address the business aspects only the technical approaches are in scope. \gls{sonata} intends to cover aspects in the cloud, SDN and NFV domains~\cite{SONATAProject2015D2.2Design}.
 
-Moreover, the project proposes to interact and manage with not only VNFs also support legacy~\cite{SONATAProject2016D2.3Design}. Besides, it describes technical requirements for integrating network slicing in the SONATA platform.  The \gls{sonata} framework complies with the \gls{etsi} \gls{nfvmano} reference architecture~\cite{SONATAProject2016D2.3Design}. The results of the project are shared with the community through a public repository.
+Moreover, the project proposes to interact and manage with not only VNFs also support legacy~\cite{SONATAProject2016D2.3Design}. Besides, it describes technical requirements for integrating network slicing in the SONATA platform.  The \gls{sonata} framework complies with the \gls{etsi} \gls{nfvmano} reference architecture~\cite{SONATAProject2016D2.3Design}. 
+
+The results of the project are shared with the community through a public repository\footnote{https://github.com/sonata-nfv} under Apache v2.0 license. Besides, it collaborated to open source solutions such as OSM and OpenStack, and contributed to SDOs such as ETSI, IETF, and ITU-T. Research project as 5G-Picture\footnote{https://www.5g-picture-project.eu/}, NRG-5\footnote{http://www.nrg5.eu/}, 5Gmedia\footnote{http://www.5gmedia.eu/}, and 5G-Transformer had adopted SONATA platform in their implementations. Currently, SONATA is now being enhanced and extended by 5GTANGO\footnote{https://5gtango.eu/} project.
 
 \subsection{VITAL (02/2015-07/2017)}
 
@@ -52,14 +54,14 @@ The H2020 VITAL project~\cite{vital} addresses the integration of Terrestrial an
 
 The VITAL overall architecture is in line with the principal directions established by ETSI ISG NFV~\cite{ETSIIndustrySpecificationGroupISGNFV2013NetworkFramework}, with additional concepts extended to the satellite communication domains and network service orchestration deployed across different administrative domains. This architecture includes, among other, functional entities (NFVO, VNFM, SO, Federation Layer) for the provision and management of the NS lifecycle. In addition, a physical network infrastructure block with virtualization support includes SDN and non-SDN (legacy) based network elements for flexible and scalable infrastructure management.
 
-Implementing the relevant parts of the VITAL architecture, X--MANO~\cite{francescon2017x} is a cross-domain network service orchestration framework. It supports different orchestration architectures such as hierarchical, cascading and peer-to-peer. Moreover, it introduces an information model and a programmable network service in order to enable confidentiality and network service lifecycle programmability, respectively.
+In terms of dissemination, main achievements of this project include the publication of journal and conference papers (20+), participation in different scientific events (21), collaborations with other national and international research projects (4), and seminars in the academic domain (2)~\cite{vitalD65}. Also, during this project, entire open source software packages have been released, such as OpenSAND\footnote{https://forge.net4sat.org/opensand/opensand} and X-MANO\footnote{https://github.com/ingdestino/x-mano}. X-MANO~\cite{francescon2017x}, for example, is a cross-domain network service orchestration framework with support for different orchestration architectures such as hierarchical, cascading and peer-to-peer. Moreover, it introduces an information model and a programmable network service in order to enable confidentiality and network service lifecycle programmability, respectively.
 
 \subsection{5G-Transformer (06/2017-11/2019)}
 The 5G-Transformer Project~\cite{5g-TransformerProject20175GVerticals} consists of a group of 18 companies including mobile operators, vendors, and universities. The objective of the project is to transform current’s mobile transport network into a Mobile Transport and Computing Platform (MTP) based on \gls{sdn}, \gls{nfv}, orchestration, and analytics, which brings the Network Slicing paradigm into mobile transport networks. The project will support a variety of vertical industries use cases such as automotive, healthcare, and media/entertainment. 
 
 Likewise, 5G-Transformer defines three new components to the proposed architecture: (i) \textit{vertical slicer} as a logical entry point to create network slices, (ii) \textit{Service Orchestrator} for end-to-end service orchestration and computing resources, and (iii) \textit{Mobile Transport and Computing Platform} for integrate fronthaul and backhaul networks. The Service Orchestrator is the main decision point of the system. It interacts with others \glspl{so} to the end-to-end service (de)composition of virtual resources and orchestrates the resources even across multiple administrative domains. Its function is similar to our definition of \gls{nso}. Internally the components of the architecture are organized hierarchically, but the end-to-end orchestration of services across multiple domains occurs in a distributed way.
 
-The project is in its second year with some outcomes. Parts of all the results produced in the project will be published as open source. The proposed solutions are aligned with standards developed by 3GPP and ETSI~\cite{H20205G-TRANSFORMERProject2018}.
+The project is in its third year with some outcomes. In this time, many scientific articles (37+) have been published in peer-reviewed journals, conferences, and workshops, as well as it has registered two Intellectual Property Rights. The development activities are published as open source in GitHub\footnote{https://github.com/5g-transformer/}. However, only Mobile Transport and Computing Platform Code is available. PoCs are scheduled to start in March 2019 including the Automotive, e-Health, Media Provider, Factory 4.0, and Mobile Virtual Network Operator vertical industries.  The proposed solutions are aligned with standards developed by 3GPP and ETSI~\cite{H20205G-TRANSFORMERProject2018}.
 
 \begin{table*}[ht!]
 \centering
@@ -91,7 +93,7 @@ The project is in its second year with some outcomes. Parts of all the results p
                                                                  \rowcolor{gray!25} \cellcolor{white} & Compute &  \CIRCLE & \CIRCLE & \Circle & \Circle & \CIRCLE & \Circle \\ 
 \multirow{-2}{*}{Resource} & Storage & \CIRCLE & \CIRCLE & \Circle & \Circle & \CIRCLE & \Circle \\ \hline
 
-\rowcolor{gray!25} \cellcolor{white} & Cloud & \CIRCLE & \CIRCLE & \CIRCLE & \CIRCLE & & \CIRCLE \\  
+\rowcolor{gray!25} \cellcolor{white} & Cloud & \CIRCLE & \CIRCLE & \CIRCLE & \CIRCLE & \CIRCLE & \CIRCLE \\  
                                                                   & SDN & \CIRCLE & \CIRCLE & \CIRCLE & \CIRCLE & \CIRCLE & \CIRCLE \\  
 
 \rowcolor{gray!25} \cellcolor{white} & NFV & \CIRCLE & \CIRCLE & \CIRCLE & \CIRCLE & \CIRCLE & \CIRCLE \\ 
@@ -120,9 +122,9 @@ The project is in its second year with some outcomes. Parts of all the results p
                                                                  \rowcolor{gray!25} \cellcolor{white} & ETSI & \CIRCLE & \LEFTcircle & \LEFTcircle & \CIRCLE & \CIRCLE & \LEFTcircle \\ 
                                                                   & MEF & \Circle & \Circle & \Circle & \Circle & \Circle & \Circle \\ 
                                                                  \rowcolor{gray!25} \cellcolor{white} & 3GPP & \Circle & \Circle & \Circle & \Circle & \Circle & \LEFTcircle \\ 
-                                                                  & MGMN & \Circle & \Circle & \Circle & \Circle & \Circle & \Circle \\
+                                                                  & NGMN & \Circle & \Circle & \Circle & \Circle & \Circle & \Circle \\
 
-\rowcolor{gray!25} \cellcolor{white} \multirow{-5}{*}{SDO} & Others & \Circle & \LEFTcircle & \Circle & \Circle & \Circle & \Circle \\ \hline
+\rowcolor{gray!25} \cellcolor{white} \multirow{-5}{*}{SDO} & Others & \Circle & \LEFTcircle & \LEFTcircle & \Circle & \Circle & \Circle \\ \hline
 
 \multicolumn{8}{l}{\footnotesize\textit{\Circle \quad  Outside the Scope, \qquad \LEFTcircle \quad Partial Scope, \qquad \CIRCLE \quad Within the Scope, \qquad \O \quad Undefined }}\\
                                                                            \end{tabular}
@@ -130,8 +132,17 @@ The project is in its second year with some outcomes. Parts of all the results p
 
 
 \subsection{Other Research Efforts}
-Further architectural proposals and research contributions can be found in the recent literature. 
+Further architectural proposals and research contributions can be found in the recent literature.  
 
 Recent research works have addressed the definition of NFV/SDN architectures. Vilalta et al.~\cite{Vilalta2016SDNServices} present and NFV/SDN architecture for delivery of 5G services across multi technological and administrative domains. The solution is different from the \gls{nfv} reference architecture. It consists of four main functional blocks: Virtualized Functions Orchestrator (VF-O), SDN IT and Network Orchestrator, Cloud/Fog Orchestrator and \gls{sdn} Orchestrator. The VF-O is the main component orchestrating generalized virtualized functions such as \gls{nfv} and IoT. Giotis et al.~\cite{Giotis2015} propose a modular architecture that enables policy-based management of \glsdesc{vnf}s. The proposed architecture can handle the lifecycle of \glspl{vnf} and instantiate applications as service chains. The work also offers an Information Model towards map the \gls{vnf} functions and capabilities.
 
 The work in~\cite{Devlic2017NESMO:Framework} proposes a novel network slicing management and orchestration framework. The proposed framework automates service network design, deployment, configuration, activation, and lifecycle management in a multi-domain environment. It can manage resources of the same type such as \gls{nfv}, \gls{sdn} and \gls{pnf}, belonging to different organizational domains and belonging to the same network domain such as access, core, and transport.
+
+The NECOS project\footnote{http://www.h2020-necos.eu} proposes a cloud network slicing approach, also referred to as Lightweight Slice Defined Cloud (LSDC)~\cite{dantas2018necos}  under a Slice as a Service model where a slice provider orchestrates the required resources to enable end-to-end network services across different segments from federated administrative and/or technical domains. The actual high-level  service orchestration is carried by the slice tenant but leverages technology-independent abstractions for control and monitoring of a different set of resources across multiple domains.
+
+
+Finally, there still exists a large set of NSO related projects sponsored by the European Union Horizon 2020 research and innovation programme in the 5G Infrastructure Public Private Partnership phases 1, 2, and 3\footnote{https://5g-ppp.eu/}.
+In different manners, those projects relate to orchestration detaining common relationship with open source projects such as the Open Source MANO (OSM) initiative, further described.
+To quote some of them, for instance: 5GCity\footnote{https://www.5gcity.eu/} aims an infrastructure business model for the 5G city networks; 5G-MEDIA\footnote{http://www.5gmedia.eu/} works to integrate media-industry applications with the underlying 5G programmable service platform based on SDN/NFV technologies; and Sat5G\footnote{http://sat5g-project.eu/} intends to establish a plug-and-play satellite infrastructure integrated with 5G connectivity aiming unserved and underserved areas.
+Such myriad of projects walk towards the consolidation of 5G ideas into live demonstrations of projects, such as the coordination of cross-border corridors for 5G experimental test beds.
+In essence, all of them were established on ground concepts of NSO, extensively based on and contributing to standardization bodies (e.g., ETSI, ONF, 3GPP).

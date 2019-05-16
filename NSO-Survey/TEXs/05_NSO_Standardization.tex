@@ -1,4 +1,4 @@
-\section{NSO and Standardization}
+\section{NSO and Standardization} 
 \label{sec:stand}
 
 \begin{table*}[t]
@@ -68,41 +68,47 @@ Definition of Orchestration~\cite{ONF:Orch:2017} \\ \hline
 Interoperability and standardization constitute essential factors of the success of a network service orchestration solution. An important design goal for any new networking paradigm relates to openness of interfaces, especially in order to overcome interoperability issues~\cite{Rotsos2017NetworkSurvey}. 
 Several standardization efforts are delivering collections of norms and recommendations to define  architectural guidelines and/or frameworks in addition to standardized protocol extensions to enable NSO. This section presents the main standardization bodies at the \gls{nso} scope. Table~\ref{Tab:NSO} presents a summary of the main SDOs and organizations related to \gls{nso} standardization, as well as the main outcomes produced to date.
 
-\subsection{\gls{etsi}}
+\subsection{\acrfull{etsi}}
 
 \gls{etsi} \gls{isg} \gls{nfv} defines the \gls{mano} architectural framework to enable orchestration of \glspl{vnf} on top of virtualized infrastructures. Since 2012, the group provides pre-standardization studies, specification documents and Proof of Concepts (PoCs) in different areas, including management and orchestration. \gls{nfvo} takes a fundamental role in \gls{nfvmano} functional components, as defined in~\cite{GSNFV-MAN001:2014} realizing:
-\begin{itemize}
-\item the orchestration of infrastructure resources (including multiple \glspl{vim}), fulfilling the Resource Orchestration functions 
-\item and the management of Network Services, fulfilling the network service orchestration functions.
-\end{itemize}
+\textit{(i)} the orchestration of infrastructure resources (including multiple \glspl{vim}), fulfilling the Resource Orchestration functions,
+\textit{(ii)} and the management of Network Services, fulfilling the network service orchestration functions.
 
-Logically composing \gls{etsi} \gls{nfvo}, \gls{nso} stipulates general workflows on network services (e.g., scaling, topology/performance management, automation), which consequently reach abstracted functionalities in other \gls{mano} components -- lifecycle management of \glspl{vnf} in coordination with \gls{vnfm} and the consume of \gls{nfvi} resources in accordance with \gls{vim} operational tasks.
+Logically composing \gls{etsi} \gls{nfvo}, \gls{nso} stipulates general workflows on network services (e.g., scaling, topology/performance management, automation), which consequently reach abstracted functionalities in other \gls{mano} components --- lifecycle management of \glspl{vnf} in coordination with \gls{vnfm} and the consume of \gls{nfvi} resources in accordance with \gls{vim} operational tasks.
 
 Currently, \gls{etsi} matures \gls{nfv} in different areas, such as architecture, testing, evolution and ecosystem. Among ongoing topics approached, network slicing report, multi-administrative domain support~\cite{ETSIIndustrySpecificationGroupISGNFV2014NetworkOptions},~\cite{ETSIGRDomains}, context-aware policies, and multi-site services~\cite{ETSIISGNFV2018} highlight important aspects of evolving the \gls{nfv} architectural framework, including possible new \gls{nso} functionalities. 
 In the upcoming years, \gls{etsi} is expected to keep playing a driving role represents a path towards realization of concepts built upon the recommendations/reports, as attested by open source projects such as OPNFV and \gls{osm}.
 
-\subsection{MEF}
+\subsection{\acrfull{mef}}
 \acrfull{mef}'s Third Network~\cite{MEF:Third:2015} approaches \gls{naas} comprising agility, assurance and orchestration as its main characteristics to broach \gls{lso} in their defined Carrier Ethernet 2.0. \gls{lso}, as a primer component, provides network service lifecycle management when approaching series of capabilities (e.g., control, performance, analytics) towards fulfilling network service level specifications. \acrfull{mef}'s \gls{lso} provides re-usable engineering specifications to realize end-to-end automated and orchestrated connectivity services through common information models, open \glspl{api}, well-defined interface profiles, and attaining detailed business process flows. Therefore, in \gls{lso} Service Providers orchestrate connectivity across all internal and external domains from one or more network administrative domains. 
 
 A detailed \gls{lso} reference architecture~\cite{MEF:LSO:2016} presents common functional components and interfaces being exemplified in comparison with \gls{etsi} \gls{nfv} framework and \gls{onf} \gls{sdn} architecture. Internally, a Service Orchestration Functionality provides to \gls{lso} coordinated end-to-end management and control of Layer 2 and Layer 3 Connectivity Services realizing lifecycle management supporting different capabilities.
 Besides, \gls{lso} defines \glspl{api} for essential functions such as service ordering, configuration, fulfillment, assurance and billing. A recent example of \gls{mef}'s use case conceptualization presents an understanding of \gls{sdwan} managed services in face of \gls{lso} reference architecture~\cite{MEF:SDWAN:2017}. Note that the \gls{lso} functionalities are similar to our \gls{nso} approach.
 
-\subsection{TM Forum}
+\subsection{TeleManagement Forum (TM Forum)}
 TeleManagement Forum (TM Forum) is a global association for
 digital businesses (e.g., service providers, telecom operators, etc.) which provides industry best practices, standards and proofs-of-concept for the operational management systems, also known as Operations Support Systems (OSSs). 
 
 One of the biggest TM Forum achievements is the definition of a telecom business process (eTOM) and application (TAM) maps, including all activities related to an operator, from the services design to the runtime operation, considering assurance, charging, and billing of the customer, among others. In order to accommodate the \gls{sdn}/\gls{nfv} impacts, the TM Forum has created the Zero-Touch Orchestration, Operations and Management (ZOOM) program, which intends to build more dynamic support systems, fostering service and business agility.
 
-As a related research project, SELFNET is, on one side, actively following and aligning its architecture definition with the TM Forum ZOOM and FMO recommendations. Additionally, SELFNET, through one partner of the consortium that is an active member of TM Forum, is also going to actively contribute to the ZOOM working group with respect to the impact that the NFV/SDN paradigm has on the \gls{oss} information model (CFS – Customer Facing Service, RFS – Resource Facing Services, LR – Logical Resources, PR – Physical Resources). Besides the ZOOM working group, SELFNET will also contribute to the FMO working group by participating in the next generation \gls{oss} architecture, which includes the autonomic management capabilities to close the autonomic management loop: 1) Supervision – 2) Autonomic – 3) Orchestration/Actuation.
+As a related research project, SELFNET is, on one side, actively following and aligning its architecture definition with the TM Forum ZOOM and FMO recommendations. Additionally, SELFNET, through one partner of the consortium that is an active member of TM Forum, is also going to actively contribute to the ZOOM working group with respect to the impact that the NFV/SDN paradigm has on the \gls{oss} information model (CFS --– Customer Facing Service, RFS --– Resource Facing Services, LR --– Logical Resources, PR --– Physical Resources). Besides the ZOOM working group, SELFNET will also contribute to the FMO working group by participating in the next generation \gls{oss} architecture, which includes the autonomic management capabilities to close the autonomic management loop: 1) Supervision – 2) Autonomic – 3) Orchestration/Actuation.
 
-\subsection{IETF}
+\subsection{\acrfull{ietf}}
 Different working and research groups at \gls{ietf} address \gls{nso} from varying angles. Traffic Engineering Architecture and Signaling (TEAS) working group characterizes protocols, methods, interfaces, and mechanisms for centralized (e.g., PCE) and distributed path computation (e.g., MPLS, GMPLS) of traffic engineered paths/tunnels delivering specific network metrics (e.g., throughput, latency).  
 \gls{abno}~\cite{RFC7491} proposes modular a modular control architecture, standardized by \gls{ietf} aggregating already standard components, such as \gls{pce} to orchestrate connectivity services.  
 \gls{sfc} \gls{wg} defines a distributed architecture to enable network elements compute \gls{nf} forwarding graphs realizing overlay paths.
-
+ 
 The list of protocols involved in NSO is by far not complete and many new extensions to existing protocols and new ones are expected due to the broadening needs of interoperable network service orchestration solutions.
 
-\subsection{NGMN}
+
+Conceptually, IETF establishes no direct relationship with orchestration, keeping the core concerns majorly on the development of protocols and not their orchestrated operations. However, the development of protocol-related systems, information models and management interfaces by different working groups are actual enablers of  orchestration of services such as layer 3 VPN\footnote{https://datatracker.ietf.org/wg/l3vpn/about/}.
+Even more, as the core network service of the Internet, routing detains the capabilities to be managed by orchestration interfaces through the work being performed by the Interface to the Routing System (i2rs) working group.  
+For instance, i2rs facilitates ``information, policies, and operational parameters to be injected into and retrieved (as read or by notification) from the routing system while retaining data consistency and coherency across the routers and routing infrastructure, and among multiple interactions with the routing system''.
+As such, RFCs developed by different IETF working groups
+sit in the scope of SDN, enablers of programmable networks, and therefore, inherit orchestration capabilities.
+
+
+\subsection{\acrfull{ngmn}}
 \gls{ngmn} in~\cite{NGMN:5G:2017} provides key requirements and high-level architecture principles of Network and Service Management including Orchestration for 5G. Based on a series of user stories (e.g., slice creation, real-time provisioning, 5G end-to-end service management), the document establishes a common set of requirements. Among them self-healing, scalability, testing and automation, analysis, modeling, etc. Regarding orchestration functionalities, the presented user stories introduce components (e.g., \gls{sdn} controllers and \gls{etsi} \gls{nfvo}), which execute actions to perform actors goals. For instance, slice creation would be end-to-end service orchestration interpreting and translate service definitions into a configuration of resources (virtualized or not) needed for service fulfillment.  
 
 As part of the initially envisioned 5G White Paper~\cite{NGMNAlliance20155GPaper}, \gls{ngmn} provided business models and use cases based on added values that 5G would bring for future mobile networks. In general, \gls{sdn} and \gls{nfv} components are listed as enablers for operational sustainability that will drive cost/energy efficiency, flexibility and scalability, operations awareness, among other factors for simplified network deployment, operation, and management. Such technology candidates highlight the importance of orchestration capabilities besides the evolution of radio access technologies towards 5G realization.
@@ -110,26 +116,32 @@ As part of the initially envisioned 5G White Paper~\cite{NGMNAlliance20155GPaper
 In addition, the document~\cite{NGMNAlliance2018} defines the requirements necessary that characterize an End-to-End framework. It considers three possible orchestration architecture: (i) Vertical (Hierarchical), that involves processes that ranges from the business level to lower level resource instantiations, (ii) Federated, when the services are provisioned over multiple operators’ networks or over various domains, and (iii) Hybrid (Federated and Vertical), that include characteristics of both federated and vertical orchestration.  
 
 
-\subsection{3GPP}
+\subsection{\acrfull{3gpp}}
 Related to the ongoing specification ``Study on management and orchestration architecture of next generation network and service''~\cite{3gppStudy:28800:2017}, 3GPP analyzes its existing architectural management mechanisms in contrast with next generation networks and services in order to recommend enhancements, for instance, to support network operational features (e.g., real-time, on-demand, automation) as evolution from \gls{lte} management. Among the item sets contained in the scope, the specification addresses: the scenario in which the applications are hosted close to the access network; end-to-end user services; and vertical applications, such as critical communications. 
-
 Another ongoing specification, ``Telecommunication management; Study on management and orchestration of network slicing for next generation network''~\cite{3GPP2017TRNetwork}, presents comprehensive 3GPP views on network slicing associated with automation, sharing, isolation/separation and related aspects of \gls{etsi} \gls{nfv} \gls{mano}. In both documents, use cases and requirements cover single and multi-operator services taking into consideration performance, fault tolerance and configuration aspects.
 
-\subsection{OASIS}
+3GPP establishes a relationship with orchestration most notably through management models for network slicing. Related to slicing, the 3GPP TS28 series of documents defines, among other specifications, a network resource model for 5G networks. 
+In a protocol and technology neutral way, such models enable management interfaces for the lifecycle management of 5G networks (e.g., core, access, and radio access technologies). 
+Closely related to NFV, in 3GPP the study of management and virtualization aspects of 5G networks takes places involving the characterization of performance management and fault supervision.
+For instance, in a first stage, TS 28.545 defines the use cases and requirements for fault supervision of 5G networks and network slicing.
+Towards synergic studies of 3GPP systems with NFV, there exists on-going work to elaborate further on the energy efficiency control framework defined in TR 21.866 and identify potential gaps concerning existing management architectures, including self-organizing networks and NFV based architectures.
+Therefore, related to all the major benefits of introducing NFV paradigms into 3GPP, the management of 5G networks and network slices addresses orchestration in its essence, concerning mostly fault and performance.
+
+\subsection{\acrfull{oasis}}
 \gls{oasis} standardizes \gls{tosca} focused on ``Enhancing the portability and operational management of cloud applications and services across their entire lifecycle''. \gls{tosca} Simple Profile in YAML v1.0 was approved as standard in 2016 in a rapidly growing ecosystem of open source communities, vendors, researchers and cloud service providers. Currently, it is in version 1.2~\cite{OASIS2017TOSCA1.2}. Looking forward, \gls{tosca} Technical Committee develops a Simple Profile for \gls{nfv}~\cite{OASIS2017TOSCA1.0} based on \gls{etsi} \gls{nfv} recommendations. 
 
 Logically, \gls{tosca} allows the expressiveness of service to resource mappings via flexible and compoundable data structures, also providing methods for specifying workflows and, therefore, enable lifecycle management tasks. In both Simple and \gls{nfv} Profiles, \gls{tosca} models service behaviors defining components containing capabilities and requirements, and relationships among them. \gls{tosca} realizes a compliant model of conformance and interoperability for \glspl{nso}, enhancing the portability of network services. 
 
-\subsection{ONF}
+\subsection{\acrfull{onf}}
 At \gls{onf}, the \gls{sdn} architecture defines orchestration as TR-521~\cite{ONF:Orch:2017} states: ``In the sense of feedback control, orchestration is the defining characteristic of an SDN controller. Orchestration is the selection of resources to satisfy service demands in an optimal way, where the available resources, the service demands, and the optimization criteria are all subject to change''.  
 
 Logically, \gls{onf} perceives the \gls{sdn} controller jointly overseeing service and resource-oriented models to orchestrate network services through intents on a client-server basis. From top-to-bottom, a service-oriented perspective relates to invocation and management of a service-oriented \gls{api} to establish one or more service contexts and to fulfill client's requested service attributes. 
 Such requirements guide the \gls{sdn} controller in orchestrating and virtualizing underlying resources to build mappings that satisfy the network service abstraction and realization. While in a bottom-up view, a resource-oriented model consists of \gls{sdn} controller exposing underlying resource contexts so clients might query information and request services on top of them. In accordance, resource alterations might imply in reallocation or exception handling of service behavior, which might be contained in policies specified by client's specific attributes in a service request.
 
-Recursively, stacks of \gls{sdn} controllers might coordinate a hierarchy of network service requests into resource allocation according to their visibility and control of underlying technological and administrative network domains (e.g., Cross Stratum Orchestration~\cite{ONF:CSO:2017}). Thus, \gls{sdn} controllers might have North-South and/or East/West relationships with each other. At last, a common ground for orchestration concepts is published by \gls{onf} as ``Orchestration: A More Holistic View''~\cite{ONF:Orch:2017}, elucidating considerations of its capabilities, among them, employing policy to guide decisions and resources feedback, as well its analysis.  
+Recursively, stacks of \gls{sdn} controllers might coordinate a hierarchy of network service requests into resource allocation according to their visibility and control of underlying technological and administrative network domains (e.g., Cross Stratum Orchestration~\cite{ONF:CSO:2017}). Thus, \gls{sdn} controllers might have North--south and/or East/West relationships with each other. At last, a common ground for orchestration concepts is published by \gls{onf} as ``Orchestration: A More Holistic View''~\cite{ONF:Orch:2017}, elucidating considerations of its capabilities, among them, employing policy to guide decisions and resources feedback, as well its analysis.  
 
 
-\subsection {ITU}
+\subsection {\acrfull{itu}}
 International Telecommunications Union (ITU) is the United Nations specialized agency for information and communication technologies (ICTs). It develops technical standards that ensure networks and technologies seamlessly interconnected. The Study Groups of ITU’s Telecommunication Standardization Sector (ITU-T) develops international standards known as ITU-T Recommendations which act as defining elements in the global infrastructure of ICTs~\cite{ITUITU:World}.
 
 The ITU is working on the definition of the framework and overall objectives of the future 5G systems, named as IMT-2020 (International Mobile Telecommunications for 2020) systems~\cite{ITU-R2015RecommendationBeyond}. The documentation is detailed in Recommendation ITU-R M.2083-0. It describes potential user and application trends, growth in traffic, technological trends and spectrum implications aiming to provide guidelines on the telecommunications for 2020 and beyond.
